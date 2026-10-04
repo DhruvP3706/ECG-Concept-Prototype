@@ -1,0 +1,47 @@
+# =========================
+# ECG dataset - DO NOT PUSH
+# =========================
+data/raw/
+data/processed/
+
+# =========================
+# Model checkpoints - DO NOT PUSH
+# =========================
+models/pretrained/*.pt
+models/pretrained/*.npy
+
+# =========================
+# Experiment outputs
+# =========================
+results/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+.env
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
