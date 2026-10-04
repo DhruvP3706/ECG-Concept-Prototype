@@ -7,8 +7,7 @@ data/processed/
 # =========================
 # Model checkpoints - DO NOT PUSH
 # =========================
-models/pretrained/*.pt
-models/pretrained/*.npy
+
 
 # =========================
 # Experiment outputs
