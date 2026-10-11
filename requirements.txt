@@ -1,3 +1,4 @@
 # Dependencies will be added during Step 2
 # when the existing LightECGNetV2 implementation and
 # dataset pipeline are audited.
+scipy==1.18.1
