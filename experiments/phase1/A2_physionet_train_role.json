@@ -1,0 +1,59 @@
+{
+ "name": "A2_physionet_trainrole",
+ "status": "READY_AFTER_CACHE (inner folds 0,1,2)",
+ "dataset": "physionet",
+ "cache_dir": "data/processed/physionet_train_role_v1",
+ "num_classes": 45,
+ "arch": {
+  "block_variant": "v2",
+  "la_bias": true,
+  "la_relu_after_fc2": false,
+  "stem_proj_bn": true,
+  "post_add_relu": true,
+  "head_dropout": 0.4,
+  "pool_fusion": "concat"
+ },
+ "train": {
+  "lr": 0.001,
+  "lr_min": 1e-05,
+  "warmup_epochs": 5,
+  "weight_decay": 0.0001,
+  "epochs": 120,
+  "patience": 15,
+  "eval_every": 5,
+  "physical_batch": 64,
+  "accumulation": 4,
+  "precision": "fp32",
+  "grad_clip": 1.0
+ },
+ "loss": {
+  "pos_weight_cap": 50.0
+ },
+ "augment": {
+  "enabled": true,
+  "mixup_alpha": 0.2,
+  "params": {
+   "p": 0.5,
+   "noise_sigma": 0.02,
+   "max_shift": 250,
+   "scale": [
+    0.8,
+    1.2
+   ],
+   "p_lead_drop": 0.3,
+   "max_drop": 3
+  }
+ },
+ "sampler": null,
+ "seed": 42,
+ "init": {
+  "type": "scratch"
+ },
+ "protocol": "PROTOCOL_PHASE1.md section 3 (A2): training role only (35,568), duplicate-aware inner 3-fold CV; historical validation / test never used for selection",
+ "deviations_from_paper": [
+  "batch 256 realised as 64x4 gradient accumulation (BatchNorm statistics differ from true batch 256; measured logit effect in results/phase1_infrastructure/hw_benchmark.json)",
+  "FP32 instead of the paper's BFloat16 (bf16 is emulated on the GTX 1650)",
+  "augmentation details not given by the paper are fixed in data_v3.py (circular roll, 1-3 leads dropped)",
+  "TCN kernel sizes / block dropouts are the recovered V2 values, not paper-confirmed"
+ ]
+}

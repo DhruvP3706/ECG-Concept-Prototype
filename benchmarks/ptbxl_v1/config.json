@@ -1,0 +1,47 @@
+{
+  "config_version": "ptbxl_benchmark_v1",
+  "status": "FROZEN initial benchmark definition (labels, splits, reader). Model, preprocessing for the backbone, and thresholds are NOT frozen here.",
+  "dataset": {
+    "name": "PTB-XL",
+    "version": "1.0.3",
+    "root": "data/raw/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3",
+    "citation": "Wagner et al., Scientific Data 7, 154 (2020), doi:10.1038/s41597-020-0495-6",
+    "ptbxl_database_csv_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+    "scp_statements_csv_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+    "n_records": 21799,
+    "n_patients": 18869,
+    "sampling_rate_used_hz": 500,
+    "separate_from": "PhysioNet arrhythmia dataset and the PTB-XL-derived Challenge 2021 copy in data/raw/ptb-xl (never mixed; Challenge/PTB-XL record overlap not established)"
+  },
+  "roles": {
+    "train": {"folds": [1, 2, 3, 4, 5, 6, 7, 8], "use": "fitting; label vocabulary and any data-dependent statistic derived here only"},
+    "validation": {"folds": [9], "use": "model selection and operating-threshold selection"},
+    "test_reserved": {"folds": [10], "use": "ONE final evaluation after every decision is frozen; no waveform access before then"}
+  },
+  "labels": {
+    "level": "superclass",
+    "categories": ["diagnostic"],
+    "vocabulary": ["NORM", "MI", "STTC", "CD", "HYP"],
+    "vocabulary_order_is_column_order": true,
+    "min_likelihood": 50,
+    "unknown_as_positive": false,
+    "rule": "class positive iff some diagnostic statement mapped to that superclass has likelihood >= 50; likelihood 0 (unknown) never positive",
+    "records_without_positive_label": "excluded from supervised diagnosis training/evaluation; kept in the manifest with exclusion_reason=no_positive_diagnostic_superclass",
+    "vocabulary_derivation": "ptbxl.derive_vocabulary on training records (folds 1-8); must equal the set above (checked by the manifest script)"
+  },
+  "signal_reader": {
+    "module": "src/ecg_concept/ptbxl_reader.py",
+    "format": "WFDB format 16, single .dat, 12 signals, little-endian int16, sample-major, no skew/offset/samples-per-frame",
+    "fs": 500, "n_samples": 5000, "gain_counts_per_mV": 1000.0, "baseline": 0, "adc_resolution": 16, "adc_zero": 0, "units": "mV",
+    "lead_order_in_files": ["I", "II", "III", "AVR", "AVL", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"],
+    "returned": "digital int16 (12, 5000) in model lead order (I, II, III, aVR, aVL, aVF, V1-V6), reordered by name, no calibration/filtering/normalisation"
+  },
+  "protocol": {
+    "validation_fold": 9,
+    "test_fold": 10,
+    "test_evaluation_count": 1,
+    "operating_thresholds": "chosen on fold 9 only",
+    "confidence_intervals": "patient-level cluster bootstrap (not yet implemented)"
+  },
+  "not_frozen": ["backbone preprocessing choice (int16 truncation quirk, scaling)", "model/head architecture", "threshold values", "metric implementation details beyond the list in docs/PTBXL_PROTOCOL.md"]
+}

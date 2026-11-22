@@ -1,0 +1,61 @@
+{
+ "name": "B_ptbxl_init_v2",
+ "status": "READY_AFTER_CACHE (inner folds 0-3)",
+ "dataset": "ptbxl",
+ "cache_dir": "data/processed/ptbxl_train_v1",
+ "num_classes": 5,
+ "arch": {
+  "block_variant": "v2",
+  "la_bias": true,
+  "la_relu_after_fc2": false,
+  "stem_proj_bn": true,
+  "post_add_relu": true,
+  "head_dropout": 0.4,
+  "pool_fusion": "concat"
+ },
+ "train": {
+  "lr": 0.0002,
+  "lr_min": 1e-05,
+  "warmup_epochs": 1,
+  "weight_decay": 0.0001,
+  "epochs": 40,
+  "patience": 8,
+  "eval_every": 1,
+  "physical_batch": 64,
+  "accumulation": 4,
+  "precision": "fp32",
+  "grad_clip": 1.0
+ },
+ "loss": {
+  "pos_weight_cap": 50.0
+ },
+ "augment": {
+  "enabled": true,
+  "mixup_alpha": 0.0,
+  "params": {
+   "p": 0.5,
+   "noise_sigma": 0.02,
+   "max_shift": 250,
+   "scale": [
+    0.8,
+    1.2
+   ],
+   "p_lead_drop": 0.3,
+   "max_drop": 3
+  }
+ },
+ "sampler": null,
+ "seed": 42,
+ "init": {
+  "type": "v2_checkpoint",
+  "path": "models/pretrained/lightv2_ft_fold0.pt",
+  "drop_head": true
+ },
+ "protocol": "PROTOCOL_PHASE1.md section 4 (B / D forward): backbone initialised from the immutable reference checkpoint (read only), new 5-class head",
+ "deviations_from_paper": [
+  "batch 256 realised as 64x4 gradient accumulation (BatchNorm statistics differ from true batch 256; measured logit effect in results/phase1_infrastructure/hw_benchmark.json)",
+  "FP32 instead of the paper's BFloat16 (bf16 is emulated on the GTX 1650)",
+  "augmentation details not given by the paper are fixed in data_v3.py (circular roll, 1-3 leads dropped)",
+  "TCN kernel sizes / block dropouts are the recovered V2 values, not paper-confirmed"
+ ]
+}

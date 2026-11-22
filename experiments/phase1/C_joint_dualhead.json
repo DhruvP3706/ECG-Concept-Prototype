@@ -1,0 +1,39 @@
+{
+ "name": "C_joint",
+ "status": "NOT_IMPLEMENTED: needs scripts/train_joint_v3.py (alternating/balanced sampler, per-dataset masked loss, gradient-conflict logging, optional dataset-specific BN). Model, loss and tests exist; the training driver does not.",
+ "dataset": "physionet+ptbxl",
+ "caches": [
+  "data/processed/physionet_train_role_v1",
+  "data/processed/ptbxl_train_v1"
+ ],
+ "model": "DualHeadLightECGNet(heads={'physionet':45,'ptbxl':5})",
+ "grid_declared_in_advance": {
+  "sampler": [
+   "alternating",
+   "balanced_50_50",
+   "sqrt_size"
+  ],
+  "loss_weights": [
+   "equal_per_dataset_mean"
+  ],
+  "normalisation": [
+   "shared_bn",
+   "dataset_specific_bn(not implemented)"
+  ],
+  "sharing": [
+   "full",
+   "stage3_split(not implemented)"
+  ]
+ },
+ "seed": 42,
+ "arch": {
+  "block_variant": "v2",
+  "la_bias": true,
+  "la_relu_after_fc2": false,
+  "stem_proj_bn": true,
+  "post_add_relu": true,
+  "head_dropout": 0.4,
+  "pool_fusion": "concat"
+ },
+ "protocol": "PROTOCOL_PHASE1.md section 5 (C)"
+}

@@ -1,0 +1,81 @@
+{
+ "n_checked": 19601,
+ "n_ok": 19601,
+ "n_failed": 0,
+ "failed": {},
+ "per_fold_ok_failed": {
+  "1": [
+   2175,
+   0
+  ],
+  "2": [
+   2181,
+   0
+  ],
+  "3": [
+   2192,
+   0
+  ],
+  "4": [
+   2174,
+   0
+  ],
+  "5": [
+   2174,
+   0
+  ],
+  "6": [
+   2173,
+   0
+  ],
+  "7": [
+   2176,
+   0
+  ],
+  "8": [
+   2173,
+   0
+  ],
+  "9": [
+   2183,
+   0
+  ]
+ },
+ "sample_min": -32692,
+ "sample_max": 32716,
+ "records_with_a_constant_lead": 1,
+ "header_lead_orders": {
+  "I,II,III,AVR,AVL,AVF,V1,V2,V3,V4,V5,V6": 19601
+ },
+ "seconds": 317,
+ "fold10_files_opened": 0,
+ "code_sha256": {
+  "ptbxl.py": "29e817015ef3b94016821fedffb546dddfab43765ceef4209490063fe3fef539",
+  "ptbxl_reader.py": "9b595c4e5f9f3d7b52ce0a1af7961bba498b56becc239962e4053c18d8b57c8a"
+ },
+ "config_sha256": "3c59a5c4604beb070167af70b792ad287935c545cff4d7228707e203860f98c1",
+ "manifest_sha256": {
+  "train_val": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+  "test_reserved": "cd5b4d7fd82650ede43932caa26440d5ddc36f74086652f8a48ca1cf784270ac"
+ },
+ "counts": {
+  "train_val": 19601,
+  "test_reserved": 2198,
+  "excluded_train": 1129,
+  "excluded_val": 149,
+  "train_support": {
+   "NORM": 7542,
+   "MI": 3307,
+   "STTC": 4062,
+   "CD": 3900,
+   "HYP": 1820
+  },
+  "val_support": {
+   "NORM": 942,
+   "MI": 412,
+   "STTC": 510,
+   "CD": 495,
+   "HYP": 216
+  }
+ }
+}
