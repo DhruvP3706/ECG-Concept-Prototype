@@ -1,0 +1,9 @@
+[03:57:38] Step 1: B differs from A in 129/160 pairs (129 B-competitors are predicted-positive classes); C available 160; non-positive margins {'A': 7, 'B': 99, 'C': 3}
+[03:58:44] Step 2: IG(f_k) for 289 new (pair, competitor) combinations in 65s
+[03:58:49] linearity check: max |IG(M) - (IG(c) - IG(k))| over 36 (pair, rule) checks = 3.71e-08; margin completeness rel err median 0.0190
+[03:58:53]   perturbation tests: pair 0/160 (3s)
+[04:00:45]   perturbation tests: pair 40/160 (115s)
+[04:02:45]   perturbation tests: pair 80/160 (234s)
+[04:04:49]   perturbation tests: pair 120/160 (359s)
+[04:06:51] model hash unchanged
+[04:07:00] saved; results sha256 7ed7bee03c2f9db7

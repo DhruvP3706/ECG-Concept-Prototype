@@ -1,0 +1,10 @@
+2026-11-11 12:08:44 header flags for 35568 train records in 58s
+2026-11-11 12:08:45 sampled {'LOCK-R': 100, 'DEV-S': 120, 'LOCK-S': 120} records {'LOCK-R': 100, 'DEV-S': 121, 'LOCK-S': 120} shortfalls {'DEV-S:S12_LVQRSAL': 5, 'LOCK-S:S12_LVQRSAL': 10} manifest sha256 4347a4aa1c7d4860
+2026-11-11 12:09:28 DEV-S processed 121 records in 8.0s -> C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step4_3\work\dev_concepts_20261111_120928.csv
+2026-11-11 12:09:28 DEV rate states {'UNCERTAIN': 2, 'ACCEPTED': 116, 'UNAVAILABLE': 2} irr states {'UNCERTAIN': 2, 'ACCEPTED': 116, 'UNAVAILABLE': 2} reasons {'DETECTOR_DISAGREEMENT': 2, 'FLAT_LEAD': 5, 'INSUFFICIENT_USABLE_LEADS': 2, 'CLIPPING_SUSPECT': 1}
+2026-11-11 12:09:28 DEV read failures 0
+2026-11-11 12:09:56 frozen config written C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step4_3\extraction_config.json params sha 4f5e41ea05c53bd3
+2026-11-11 12:10:31 processed 425 records (3 sampled sets + 84 DUP-CHECK records, frozen code) in 33.0s
+2026-11-11 12:10:33 determinism re-run on 20 DEV-S records identical: True
+2026-11-11 12:10:37 report summary written; verdict ENGINEERING READY {'unit_tests_pass': True, 'no_read_failures': True, 'determinism_identical': True, 'duplicate_identity_all': True, 'no_value_with_unavailable_state': True}
+2026-11-11 12:14:19 stability diagnostic + report rendered (scripts/step4_3_stability.py, scripts/step4_3_render_report.py)

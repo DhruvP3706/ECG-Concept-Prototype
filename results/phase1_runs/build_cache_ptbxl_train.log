@@ -1,0 +1,31 @@
+0 16289 0s
+2000 16289 10s
+4000 16289 36s
+6000 16289 74s
+8000 16289 113s
+10000 16289 153s
+12000 16289 192s
+14000 16289 231s
+16000 16289 269s
+{
+ "dataset": "ptbxl",
+ "partition": "train",
+ "n_records": 16289,
+ "inner_fold_sizes": {
+  "0": 4073,
+  "1": 4088,
+  "2": 4043,
+  "3": 4085
+ },
+ "n_classes": 5,
+ "waveforms_read": 16289,
+ "preprocessing": "ecg_concept.preprocessing.preprocess (original V2 pipeline, int16-truncation quirk kept) stored as float16",
+ "x_sha256": "54c2422d1b29c8d14df1d196783e2c01c6866155794ed17feb26c82199119ca5",
+ "fold10_guard_allowed_reads": 0,
+ "code_sha256": {
+  "scripts/build_cache.py": "837e23d3648bf07085128f35ed745183fabad40c95717decd9b4df8a1933abb8",
+  "src/ecg_concept/preprocessing.py": "4b6a6a54b573b2ef95ddb418e14bb80d1aca287ad25e62b0e9e52acb12070d66",
+  "src/ecg_concept/splits_v3.py": "43400a00e04cf5b578b7182fad31a85fb5a1e594696b0f26d49f61895cd7a74a"
+ }
+}
+EXIT 0

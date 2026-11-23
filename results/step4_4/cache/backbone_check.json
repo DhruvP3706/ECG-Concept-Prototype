@@ -1,0 +1,8 @@
+{
+ "backbone_state_sha256_before": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+ "backbone_state_sha256_after": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+ "unchanged": true,
+ "ckpt_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "device": "cuda",
+ "preprocessing": "ecg_concept.preprocessing.load_ecg(quantize_int16=True)"
+}

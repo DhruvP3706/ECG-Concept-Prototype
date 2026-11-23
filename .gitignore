@@ -9,10 +9,7 @@ data/processed/
 # =========================
 
 
-# =========================
-# Experiment outputs
-# =========================
-results/
+
 
 # =========================
 # Python
@@ -44,3 +41,7 @@ env/
 # =========================
 .DS_Store
 Thumbs.db
+
+# Large experimental outputs
+results/**/*.npz
+results/**/*.npy

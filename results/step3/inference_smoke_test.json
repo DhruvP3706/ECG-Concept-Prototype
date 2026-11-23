@@ -1,0 +1,736 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "torch": "2.12.0+cu126",
+  "numpy": "2.5.4",
+  "dtype": "float32 (no autocast)",
+  "preprocessing": {
+    "source": "HonsExAI training notebook load_ecg_mat",
+    "lead_order": "I,II,III,aVR,aVL,aVF,V1-V6",
+    "fs": 500,
+    "length": 5000,
+    "pad_crop": "zero-pad / crop tail",
+    "filter": "Butterworth order 3 bandpass 0.5-40 Hz, filtfilt (zero phase)",
+    "int16_truncation_after_filter": true,
+    "normalisation": "per-lead z-score (eps 1e-8)"
+  },
+  "input": {
+    "shape": [
+      5,
+      12,
+      5000
+    ],
+    "dtype": "torch.float32",
+    "finite": true,
+    "per_lead_mean_abs_max": 9.727478378351861e-09,
+    "per_lead_std_range": [
+      1.000100016593933,
+      1.000100016593933
+    ]
+  },
+  "records": [
+    {
+      "id": "JS42769",
+      "labels": [
+        "ST"
+      ]
+    },
+    {
+      "id": "JS37210",
+      "labels": [
+        "SR"
+      ]
+    },
+    {
+      "id": "JS10192",
+      "labels": [
+        "SVT"
+      ]
+    },
+    {
+      "id": "JS33756",
+      "labels": [
+        "SB"
+      ]
+    },
+    {
+      "id": "JS11191",
+      "labels": [
+        "ST",
+        "TWC"
+      ]
+    }
+  ],
+  "checkpoints": {
+    "lightv2_ft_fold0": {
+      "load": "strict=True, weights_only=True OK",
+      "trainable_params": 376108,
+      "training_mode": false,
+      "logits_shape": [
+        5,
+        45
+      ],
+      "probs_shape": [
+        5,
+        45
+      ],
+      "logits_range": [
+        -31.7713565826416,
+        7.937105655670166
+      ],
+      "probs_range": [
+        1.5917510907438592e-14,
+        0.9996428489685059
+      ],
+      "finite": true,
+      "max_abs_prob_diff_cuda_vs_cpu": 7.748603820800781e-07,
+      "max_abs_prob_diff_int16trunc_vs_float_filter": 0.007854551076889038,
+      "forward_equals_forward_features_logits": true,
+      "threshold_file": "lightv2_ft_fold0_thresh.npy",
+      "per_record": [
+        {
+          "id": "JS42769",
+          "truth": [
+            "ST"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9996
+            ],
+            [
+              "STTC",
+              0.9864
+            ],
+            [
+              "STDD",
+              0.7569
+            ]
+          ],
+          "pred_idx": [
+            31,
+            34
+          ],
+          "pred_labels": [
+            "ST",
+            "STTC"
+          ]
+        },
+        {
+          "id": "JS37210",
+          "truth": [
+            "SR"
+          ],
+          "top3": [
+            [
+              "SR",
+              0.9896
+            ],
+            [
+              "SA",
+              0.1861
+            ],
+            [
+              "TWC",
+              0.0431
+            ]
+          ],
+          "pred_idx": [
+            30
+          ],
+          "pred_labels": [
+            "SR"
+          ]
+        },
+        {
+          "id": "JS10192",
+          "truth": [
+            "SVT"
+          ],
+          "top3": [
+            [
+              "SVT",
+              0.9995
+            ],
+            [
+              "CCR",
+              0.8393
+            ],
+            [
+              "AVB",
+              0.5015
+            ]
+          ],
+          "pred_idx": [
+            36
+          ],
+          "pred_labels": [
+            "SVT"
+          ]
+        },
+        {
+          "id": "JS33756",
+          "truth": [
+            "SB"
+          ],
+          "top3": [
+            [
+              "SB",
+              0.9991
+            ],
+            [
+              "STTC",
+              0.0613
+            ],
+            [
+              "TWC",
+              0.0433
+            ]
+          ],
+          "pred_idx": [
+            29
+          ],
+          "pred_labels": [
+            "SB"
+          ]
+        },
+        {
+          "id": "JS11191",
+          "truth": [
+            "ST",
+            "TWC"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9991
+            ],
+            [
+              "LVQRSAL",
+              0.8832
+            ],
+            [
+              "PWC",
+              0.1705
+            ]
+          ],
+          "pred_idx": [
+            20,
+            31
+          ],
+          "pred_labels": [
+            "LVQRSAL",
+            "ST"
+          ]
+        }
+      ]
+    },
+    "lightv2_p1_fold0": {
+      "load": "strict=True, weights_only=True OK",
+      "trainable_params": 376108,
+      "training_mode": false,
+      "logits_shape": [
+        5,
+        45
+      ],
+      "probs_shape": [
+        5,
+        45
+      ],
+      "logits_range": [
+        -15.050680160522461,
+        6.193819046020508
+      ],
+      "probs_range": [
+        2.9078535135340644e-07,
+        0.9979621171951294
+      ],
+      "finite": true,
+      "max_abs_prob_diff_cuda_vs_cpu": 2.682209014892578e-07,
+      "max_abs_prob_diff_int16trunc_vs_float_filter": 0.00437086820602417,
+      "forward_equals_forward_features_logits": true,
+      "threshold_file": "lightv2_p1_fold0_thresh.npy",
+      "per_record": [
+        {
+          "id": "JS42769",
+          "truth": [
+            "ST"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9934
+            ],
+            [
+              "STTC",
+              0.8359
+            ],
+            [
+              "STDD",
+              0.4345
+            ]
+          ],
+          "pred_idx": [
+            31,
+            34
+          ],
+          "pred_labels": [
+            "ST",
+            "STTC"
+          ]
+        },
+        {
+          "id": "JS37210",
+          "truth": [
+            "SR"
+          ],
+          "top3": [
+            [
+              "SR",
+              0.9678
+            ],
+            [
+              "SA",
+              0.4213
+            ],
+            [
+              "SB",
+              0.037
+            ]
+          ],
+          "pred_idx": [
+            30
+          ],
+          "pred_labels": [
+            "SR"
+          ]
+        },
+        {
+          "id": "JS10192",
+          "truth": [
+            "SVT"
+          ],
+          "top3": [
+            [
+              "SVT",
+              0.998
+            ],
+            [
+              "CCR",
+              0.7866
+            ],
+            [
+              "STTC",
+              0.5642
+            ]
+          ],
+          "pred_idx": [
+            13,
+            36
+          ],
+          "pred_labels": [
+            "CCR",
+            "SVT"
+          ]
+        },
+        {
+          "id": "JS33756",
+          "truth": [
+            "SB"
+          ],
+          "top3": [
+            [
+              "SB",
+              0.9905
+            ],
+            [
+              "STTC",
+              0.0984
+            ],
+            [
+              "TWC",
+              0.0816
+            ]
+          ],
+          "pred_idx": [
+            29
+          ],
+          "pred_labels": [
+            "SB"
+          ]
+        },
+        {
+          "id": "JS11191",
+          "truth": [
+            "ST",
+            "TWC"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.993
+            ],
+            [
+              "STE",
+              0.5337
+            ],
+            [
+              "LVQRSAL",
+              0.4997
+            ]
+          ],
+          "pred_idx": [
+            31
+          ],
+          "pred_labels": [
+            "ST"
+          ]
+        }
+      ]
+    },
+    "lightv2_p1_fold1": {
+      "load": "strict=True, weights_only=True OK",
+      "trainable_params": 376108,
+      "training_mode": false,
+      "logits_shape": [
+        5,
+        45
+      ],
+      "probs_shape": [
+        5,
+        45
+      ],
+      "logits_range": [
+        -18.467182159423828,
+        6.259191513061523
+      ],
+      "probs_range": [
+        9.545632728702458e-09,
+        0.9980908036231995
+      ],
+      "finite": true,
+      "max_abs_prob_diff_cuda_vs_cpu": 5.364418029785156e-07,
+      "max_abs_prob_diff_int16trunc_vs_float_filter": 0.00485605001449585,
+      "forward_equals_forward_features_logits": true,
+      "threshold_file": "lightv2_p1_fold1_thresh.npy",
+      "per_record": [
+        {
+          "id": "JS42769",
+          "truth": [
+            "ST"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9959
+            ],
+            [
+              "STTC",
+              0.8936
+            ],
+            [
+              "STDD",
+              0.5768
+            ]
+          ],
+          "pred_idx": [
+            31,
+            34
+          ],
+          "pred_labels": [
+            "ST",
+            "STTC"
+          ]
+        },
+        {
+          "id": "JS37210",
+          "truth": [
+            "SR"
+          ],
+          "top3": [
+            [
+              "SR",
+              0.9888
+            ],
+            [
+              "SA",
+              0.1416
+            ],
+            [
+              "SB",
+              0.0397
+            ]
+          ],
+          "pred_idx": [
+            30
+          ],
+          "pred_labels": [
+            "SR"
+          ]
+        },
+        {
+          "id": "JS10192",
+          "truth": [
+            "SVT"
+          ],
+          "top3": [
+            [
+              "SVT",
+              0.9981
+            ],
+            [
+              "CCR",
+              0.7916
+            ],
+            [
+              "AVB",
+              0.3214
+            ]
+          ],
+          "pred_idx": [
+            13,
+            36
+          ],
+          "pred_labels": [
+            "CCR",
+            "SVT"
+          ]
+        },
+        {
+          "id": "JS33756",
+          "truth": [
+            "SB"
+          ],
+          "top3": [
+            [
+              "SB",
+              0.9981
+            ],
+            [
+              "STTC",
+              0.0632
+            ],
+            [
+              "TWC",
+              0.0399
+            ]
+          ],
+          "pred_idx": [
+            29
+          ],
+          "pred_labels": [
+            "SB"
+          ]
+        },
+        {
+          "id": "JS11191",
+          "truth": [
+            "ST",
+            "TWC"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9964
+            ],
+            [
+              "LVQRSAL",
+              0.9359
+            ],
+            [
+              "ALS",
+              0.4038
+            ]
+          ],
+          "pred_idx": [
+            20,
+            31
+          ],
+          "pred_labels": [
+            "LVQRSAL",
+            "ST"
+          ]
+        }
+      ]
+    },
+    "lightv2_p1_fold2": {
+      "load": "strict=True, weights_only=True OK",
+      "trainable_params": 376108,
+      "training_mode": false,
+      "logits_shape": [
+        5,
+        45
+      ],
+      "probs_shape": [
+        5,
+        45
+      ],
+      "logits_range": [
+        -16.97554588317871,
+        6.407957077026367
+      ],
+      "probs_range": [
+        4.242423656819483e-08,
+        0.9983543157577515
+      ],
+      "finite": true,
+      "max_abs_prob_diff_cuda_vs_cpu": 9.5367431640625e-07,
+      "max_abs_prob_diff_int16trunc_vs_float_filter": 0.013972848653793335,
+      "forward_equals_forward_features_logits": true,
+      "threshold_file": null,
+      "per_record": [
+        {
+          "id": "JS42769",
+          "truth": [
+            "ST"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9854
+            ],
+            [
+              "STTC",
+              0.9272
+            ],
+            [
+              "STDD",
+              0.73
+            ]
+          ],
+          "pred_idx": null,
+          "note": "no threshold file; no thresholded prediction made"
+        },
+        {
+          "id": "JS37210",
+          "truth": [
+            "SR"
+          ],
+          "top3": [
+            [
+              "SR",
+              0.9938
+            ],
+            [
+              "SA",
+              0.0395
+            ],
+            [
+              "TWC",
+              0.0309
+            ]
+          ],
+          "pred_idx": null,
+          "note": "no threshold file; no thresholded prediction made"
+        },
+        {
+          "id": "JS10192",
+          "truth": [
+            "SVT"
+          ],
+          "top3": [
+            [
+              "SVT",
+              0.9984
+            ],
+            [
+              "STTC",
+              0.4568
+            ],
+            [
+              "CCR",
+              0.4375
+            ]
+          ],
+          "pred_idx": null,
+          "note": "no threshold file; no thresholded prediction made"
+        },
+        {
+          "id": "JS33756",
+          "truth": [
+            "SB"
+          ],
+          "top3": [
+            [
+              "SB",
+              0.997
+            ],
+            [
+              "LVQRSAL",
+              0.0499
+            ],
+            [
+              "STTC",
+              0.0425
+            ]
+          ],
+          "pred_idx": null,
+          "note": "no threshold file; no thresholded prediction made"
+        },
+        {
+          "id": "JS11191",
+          "truth": [
+            "ST",
+            "TWC"
+          ],
+          "top3": [
+            [
+              "ST",
+              0.9895
+            ],
+            [
+              "LVQRSAL",
+              0.9058
+            ],
+            [
+              "STE",
+              0.6853
+            ]
+          ],
+          "pred_idx": null,
+          "note": "no threshold file; no thresholded prediction made"
+        }
+      ]
+    }
+  },
+  "feature_extraction": {
+    "checkpoint": "lightv2_p1_fold0",
+    "feature_map_tcn3b": {
+      "shape": [
+        5,
+        256,
+        625
+      ],
+      "min": 0.0,
+      "max": 11.710439682006836,
+      "per_time_step": true,
+      "hook_equals_forward_features": true,
+      "samples_per_time_step": 8
+    },
+    "pooled_512": {
+      "shape": [
+        5,
+        512
+      ],
+      "layout": "[global max (256) | global mean (256)]",
+      "equals_cat_of_feature_map_max_mean": true
+    },
+    "hidden_256": {
+      "shape": [
+        5,
+        256
+      ],
+      "post_relu": true,
+      "hook_equals": true,
+      "min": 0.0,
+      "zero_fraction": 0.7718750238418579
+    },
+    "predictions_unchanged_by_extraction_and_hooks": true,
+    "receptive_field_of_one_feature_step_samples": [
+      0,
+      4999,
+      5000
+    ],
+    "note_rf": "extent of non-zero input gradient for time step 312 of the feature map (centre); border effects absent"
+  }
+}

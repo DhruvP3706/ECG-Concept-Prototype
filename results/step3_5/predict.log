@@ -1,0 +1,43 @@
+14:15:35 device cuda NVIDIA GeForce GTX 1650
+14:22:02 index built 44476 records 387s fold sizes [4448, 4448, 4448, 4448, 4448, 4448, 4447, 4447, 4447, 4447]
+14:22:06 fold 9: 64/4447
+14:22:29 fold 9: 704/4447
+14:22:51 fold 9: 1344/4447
+14:23:13 fold 9: 1984/4447
+14:23:35 fold 9: 2624/4447
+14:23:57 fold 9: 3264/4447
+14:24:19 fold 9: 3904/4447
+14:24:42 fold 9 saved C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step3_5\cache\fold9.npz
+14:24:43 fold 0: 64/4448
+14:24:50 fold 0: 704/4448
+14:24:57 fold 0: 1344/4448
+14:25:06 fold 0: 1984/4448
+14:25:16 fold 0: 2624/4448
+14:25:26 fold 0: 3264/4448
+14:25:33 fold 0: 3904/4448
+14:25:38 fold 0 saved C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step3_5\cache\fold0.npz
+14:25:39 fold 1: 64/4448
+14:25:46 fold 1: 704/4448
+14:25:52 fold 1: 1344/4448
+14:25:59 fold 1: 1984/4448
+14:26:06 fold 1: 2624/4448
+14:26:12 fold 1: 3264/4448
+14:26:19 fold 1: 3904/4448
+14:26:25 fold 1 saved C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step3_5\cache\fold1.npz
+14:26:26 fold 2: 64/4448
+14:26:33 fold 2: 704/4448
+14:26:39 fold 2: 1344/4448
+14:26:46 fold 2: 1984/4448
+14:26:52 fold 2: 2624/4448
+14:26:59 fold 2: 3264/4448
+14:27:06 fold 2: 3904/4448
+14:27:12 fold 2 saved C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step3_5\cache\fold2.npz
+14:27:13 fold 5: 64/4448
+14:27:19 fold 5: 704/4448
+14:27:26 fold 5: 1344/4448
+14:27:33 fold 5: 1984/4448
+14:27:41 fold 5: 2624/4448
+14:27:48 fold 5: 3264/4448
+14:27:56 fold 5: 3904/4448
+14:28:04 fold 5 saved C:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\step3_5\cache\fold5.npz
+14:28:04 done 750s

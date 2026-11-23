@@ -1,0 +1,144 @@
+{
+ "frozen_at": "2026-11-11 12:09:56",
+ "frozen_before_processing_lock_sets": true,
+ "note": "source-code and parameter hashes replace a git commit (no Git operations were used)",
+ "parameters": {
+  "fs": 500,
+  "nonredundant_leads": [
+   0,
+   1,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "expected_leads": 12,
+  "min_samples_s": 2.0,
+  "refractory_s": 0.2,
+  "loc_band": [
+   5.0,
+   25.0
+  ],
+  "loc_halfwin_s": 0.08,
+  "A": {
+   "band": [
+    5.0,
+    15.0
+   ],
+   "mwi_s": 0.15,
+   "init_s": 2.0,
+   "thr_frac": 0.25,
+   "searchback_factor": 1.66,
+   "searchback_thr": 0.5
+  },
+  "B": {
+   "band": [
+    8.0,
+    20.0
+   ],
+   "w1_s": 0.097,
+   "w2_s": 0.611,
+   "beta": 0.08
+  },
+  "fuse_tol_s": 0.05,
+  "fuse_k_min": 3,
+  "match_tol_s": 0.05,
+  "edge_s": 0.1,
+  "flat_mode_frac": 0.8,
+  "clip_run": 4,
+  "clip_edge_frac": 0.02,
+  "int16_limits": [
+   -32768,
+   32767
+  ],
+  "min_usable_leads": 3,
+  "low_support_median": 4,
+  "low_usable_leads": 4,
+  "rate_min_beats": 2,
+  "irr_min_rr": 3
+ },
+ "parameters_sha256": "4f5e41ea05c53bd39bf0267039047a30a668652c2229b83e9ba0b11dfb00403c",
+ "source_sha256": {
+  "src/ecg_concept/beat_detection.py": "eee2c017a57d42b18a3b2dbee4c51880fad4cd3f7960e18f7389b208fa0158b5",
+  "src/ecg_concept/rr_concepts.py": "acbcfc67ad67108e7495684f82e99c20899f40329754b3ccefc2c7285fc807dd",
+  "src/ecg_concept/preprocessing.py": "4b6a6a54b573b2ef95ddb418e14bb80d1aca287ad25e62b0e9e52acb12070d66",
+  "scripts/step4_3_pilot.py": "da9fbe583238995e3220650394ac5c6542b6cf11cb7f32f8225f0acf6cd203bd",
+  "tests/test_rr_concepts.py": "25a9939421c79f84a776ede7f4b03ccc0029352bb7843d8e1f184a2f6da2db55"
+ },
+ "sampling": {
+  "eligible_units_per_stratum": {
+   "S03_AFIB": 1279,
+   "S09_SB": 11138,
+   "S04_AF_flutter": 6368,
+   "S11_SR": 5873,
+   "S10_ST": 4931,
+   "S07_conduction_wide_QRS": 1163,
+   "S06_ectopy": 1008,
+   "S01_timestamp_block": 811,
+   "S05_SVT_AT": 733,
+   "S99_other": 159,
+   "S08_SA": 1868,
+   "S02_age_missing": 189,
+   "S12_LVQRSAL": 5
+  },
+  "shortfalls": {
+   "DEV-S:S12_LVQRSAL": 5,
+   "LOCK-S:S12_LVQRSAL": 10
+  },
+  "seed": 20261111,
+  "quota_per_stratum": 10,
+  "set_unit_counts": {
+   "LOCK-R": 100,
+   "DEV-S": 120,
+   "LOCK-S": 120
+  },
+  "set_record_counts": {
+   "LOCK-R": 100,
+   "DEV-S": 121,
+   "LOCK-S": 120
+  },
+  "lists_sha256": "836b91deed5aa7c424ef51d5a3242ae69c871361809a9eda779f19304640e34f",
+  "manifest_sha256": "4347a4aa1c7d4860c81b66d9ae8e45212e94c7e23b46a9b9a32202df3185d790",
+  "rules": {
+   "unit": "duplicate group if within-train pair else record",
+   "key": "sha256(seed|unit_id) ascending",
+   "draw_order": "LOCK-R (SRS 100 over all train units) -> DEV-S -> LOCK-S",
+   "stratum_priority": [
+    "S01_timestamp_block",
+    "S02_age_missing",
+    "S03_AFIB",
+    "S04_AF_flutter",
+    "S05_SVT_AT",
+    "S06_ectopy",
+    "S07_conduction_wide_QRS",
+    "S08_SA",
+    "S09_SB",
+    "S10_ST",
+    "S11_SR",
+    "S12_LVQRSAL"
+   ],
+   "shortfall": "fill with next units by hash order from any stratum, selection='fallback'",
+   "metrics_member": "lowest record ID in the unit; partner is processed only for identical-output checks"
+  }
+ },
+ "input_sha256": {
+  "role_manifest": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+  "original_fold_manifest": "5fc86602f95a1668ad66d6a27747e42430e9603327382a9673a7c1b4cc9595f1",
+  "pilot_manifest": "4347a4aa1c7d4860c81b66d9ae8e45212e94c7e23b46a9b9a32202df3185d790",
+  "dup_check_manifest": "790272bcebfdcea6d7e077b415ea9065712ae52bbcd3475272e4e3c3d9fec109",
+  "label_dictionary": "05d6fa23acdcbb466b378310ccfad22ea6cef4d3abfa83e8f660c77016be028d"
+ },
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1"
+ },
+ "detectors": {
+  "A": "ADAPT: Pan-Tompkins-style adaptive-threshold energy detector (own implementation, not a verified reproduction)",
+  "B": "TMA: Elgendi-style two-moving-average detector (own implementation, not a verified reproduction)"
+ },
+ "fusion": "per-detector cross-lead clustering over leads I, II, V1-V6 (<=50 ms from first member, >=3 leads), then one-to-one detector matching (50 ms)",
+ "interpretation": "automatically derived 10-second RR statistics; not conventional HRV; no reference annotations; no accuracy claim"
+}

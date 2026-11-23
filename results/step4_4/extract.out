@@ -1,0 +1,11 @@
+2026-11-11 12:26:02 extract: 81 chunks, 81 to do
+2026-11-11 12:27:04   chunk 0 done; 500 records in 62s
+2026-11-11 12:28:01   chunk 10 done; 5500 records in 119s
+2026-11-11 12:28:37   chunk 20 done; 10500 records in 155s
+2026-11-11 12:29:49   chunk 30 done; 15500 records in 227s
+2026-11-11 12:30:45   chunk 40 done; 20500 records in 283s
+2026-11-11 12:31:42   chunk 50 done; 25500 records in 340s
+2026-11-11 12:32:37   chunk 60 done; 30500 records in 395s
+2026-11-11 12:33:33   chunk 70 done; 35500 records in 451s
+2026-11-11 12:34:08   chunk 80 done; 40005 records in 486s
+2026-11-11 12:34:09 extract finished: 40005 records in 487s

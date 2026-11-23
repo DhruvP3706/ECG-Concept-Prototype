@@ -1,0 +1,149 @@
+{
+ "n_records": 120,
+ "variants": {
+  "fuse_k_min=2": {
+   "records_state_changed": 4,
+   "records_accepted_status_changed": 4,
+   "rate_changed_gt_1bpm": 1,
+   "rate_changed_gt_5bpm": 1,
+   "rate_max_abs_change_bpm": 13.876040703052723,
+   "nrmssd_changed_gt_0.02": 1,
+   "n_compared": 118
+  },
+  "fuse_k_min=4": {
+   "records_state_changed": 1,
+   "records_accepted_status_changed": 1,
+   "rate_changed_gt_1bpm": 1,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 1.82470925115571,
+   "nrmssd_changed_gt_0.02": 1,
+   "n_compared": 118
+  },
+  "fuse_tol_s=0.03": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.6057698886023104,
+   "nrmssd_changed_gt_0.02": 3,
+   "n_compared": 118
+  },
+  "fuse_tol_s=0.08": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.40280267606004827,
+   "nrmssd_changed_gt_0.02": 2,
+   "n_compared": 118
+  },
+  "edge_s=0.05": {
+   "records_state_changed": 1,
+   "records_accepted_status_changed": 1,
+   "rate_changed_gt_1bpm": 3,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 2.1703960081489626,
+   "nrmssd_changed_gt_0.02": 2,
+   "n_compared": 118
+  },
+  "edge_s=0.20": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 1,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 2.205417115598351,
+   "nrmssd_changed_gt_0.02": 1,
+   "n_compared": 118
+  },
+  "A.thr_frac=0.20": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0167434511318163,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "A.thr_frac=0.30": {
+   "records_state_changed": 1,
+   "records_accepted_status_changed": 1,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.029477071832815227,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "A.mwi_s=0.12": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.03637492676298848,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "A.mwi_s=0.18": {
+   "records_state_changed": 1,
+   "records_accepted_status_changed": 1,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.029477071832815227,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "B.beta=0.06": {
+   "records_state_changed": 1,
+   "records_accepted_status_changed": 1,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "B.beta=0.10": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "loc_halfwin_s=0.06": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.04091628356106014,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "loc_halfwin_s=0.10": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "match_tol_s=0.03": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  },
+  "match_tol_s=0.08": {
+   "records_state_changed": 0,
+   "records_accepted_status_changed": 0,
+   "rate_changed_gt_1bpm": 0,
+   "rate_changed_gt_5bpm": 0,
+   "rate_max_abs_change_bpm": 0.0,
+   "nrmssd_changed_gt_0.02": 0,
+   "n_compared": 118
+  }
+ }
+}

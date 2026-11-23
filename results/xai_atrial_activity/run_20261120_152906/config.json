@@ -1,0 +1,71 @@
+{
+ "fwave_target_rms_per_lead": [
+  20.724106678959437,
+  24.237179443769676,
+  26.21164818200134,
+  19.13123545780002,
+  20.94716386279805,
+  23.010319012728967,
+  32.43973227682107,
+  26.534723383474933,
+  25.034935001533324,
+  20.878204832572628,
+  19.95048081468918,
+  20.281945117471437
+ ],
+ "seed": 20261120,
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "conditions_atrial": [
+  [
+   "flat",
+   160,
+   0.0
+  ],
+  [
+   "g05",
+   160,
+   0.5
+  ],
+  [
+   "g15",
+   160,
+   1.5
+  ],
+  [
+   "g20",
+   160,
+   2.0
+  ],
+  [
+   "flat_short",
+   120,
+   0.0
+  ],
+  [
+   "flat_long",
+   200,
+   0.0
+  ]
+ ],
+ "min_eligible_beats": 4,
+ "rms_min": 2.0,
+ "diff_ratio_max": 1.0,
+ "sham_ratio": [
+  0.8,
+  1.25
+ ],
+ "timing_tol": 2,
+ "factorial_cv": 0.2,
+ "rigid_factorial": {
+  "rigid_post": 150,
+  "rigid_pre": 170
+ },
+ "exp7_run": "results\\xai_graded_rr\\run_20261120_145324",
+ "records_beats_sha256": "c916f5733baaeb0bc3a4803c3a28a03b35e6f8a6ab3cb070209f6ee0dd46405a",
+ "audit_sha256": "a0a0d8d5c0d7c61910b5f5eaea38418e0a8ee8fd0f135ebed8c360c09f560dec",
+ "code_sha256": {
+  "src/ecg_concept/atrial_ops.py": "490a2c856d0147123e31e7f864f2ff4feff824b5925266fdf7c0012840f8457c",
+  "scripts/atrial_core.py": "55a2347aaa89ccd6440589288aa9023cc8aa519f4a78f2cb947f3c65dfe0fb44",
+  "scripts/xai_atrial_activity.py": "2cf4155d69892e492eceae5f1c64985e206056562ad296b697d17839bfa11cd7"
+ }
+}

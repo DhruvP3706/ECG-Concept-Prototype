@@ -1,0 +1,1 @@
+{"models": ["A_orig_head", "B_embedding_linear", "C2_concept_only", "D_prototype", "CTRL_mask_only", "CTRL_extracted_target"], "val_ids_sha256": "f9384ce8a23d2571322c06854c6931b97d5b78fda5cd1ec228c20c35bc795c3c", "n_val": 4437}

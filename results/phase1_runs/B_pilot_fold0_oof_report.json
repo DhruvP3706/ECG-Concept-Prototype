@@ -1,0 +1,78 @@
+{
+ "macro_auroc": 0.9347092665532845,
+ "macro_auprc": 0.8098352069556419,
+ "macro_f1": 0.749028829574563,
+ "micro_f1": 0.7939910231748649,
+ "macro_sensitivity": 0.7975293686730254,
+ "macro_specificity": 0.9027253786931897,
+ "rare_class_sensitivity": null,
+ "n_rare_classes": 0,
+ "ece_macro": 0.07705314312565921,
+ "brier_macro": 0.08536461962574778,
+ "undefined_auroc_classes": [],
+ "per_class": {
+  "NORM": {
+   "support": 1897,
+   "auroc": 0.9649492523023969,
+   "auprc": 0.9571799890319941,
+   "sensitivity": 0.9536109646810754,
+   "specificity": 0.8405330882352942,
+   "ece": 0.05013990871930209,
+   "brier": 0.0762937191535619
+  },
+  "MI": {
+   "support": 820,
+   "auroc": 0.9514856830093047,
+   "auprc": 0.8564871744538668,
+   "sensitivity": 0.775609756097561,
+   "specificity": 0.9443590531816785,
+   "ece": 0.048146173666165484,
+   "brier": 0.07084607329666791
+  },
+  "STTC": {
+   "support": 1020,
+   "auroc": 0.9408903489335465,
+   "auprc": 0.8426879191246897,
+   "sensitivity": 0.7872549019607843,
+   "specificity": 0.9256469046839174,
+   "ece": 0.05068950939810568,
+   "brier": 0.08387469151341816
+  },
+  "CD": {
+   "support": 963,
+   "auroc": 0.9449159078843246,
+   "auprc": 0.8722826023793403,
+   "sensitivity": 0.8213914849428868,
+   "specificity": 0.9241157556270096,
+   "ece": 0.12310763254666576,
+   "brier": 0.09751920401514694
+  },
+  "HYP": {
+   "support": 454,
+   "auroc": 0.8713051406368493,
+   "auprc": 0.5205383497883189,
+   "sensitivity": 0.6497797356828194,
+   "specificity": 0.8789720917380491,
+   "ece": 0.11318249129805699,
+   "brier": 0.09828941014994395
+  }
+ },
+ "macro_auroc_cluster_ci": [
+  0.9347092665532845,
+  0.9296951661694727,
+  0.9396649969309873
+ ],
+ "n_records": 4073,
+ "n_groups": 3513,
+ "thresholds": [
+  0.45,
+  0.6000000000000001,
+  0.55,
+  0.7000000000000001,
+  0.45
+ ],
+ "runs": [
+  "results/phase1_runs/B_ptbxl_scratch_f0_s42_20261120_170048"
+ ],
+ "note": "pooled out-of-fold inner-validation predictions; thresholds fitted on the same OOF predictions (optimistic F1; use only for relative comparison); no exposed partition used"
+}

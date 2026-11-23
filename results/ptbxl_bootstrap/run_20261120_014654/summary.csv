@@ -1,0 +1,46 @@
+kind,model_or_comparison,seed,metric,fold9_point_estimate,bootstrap_mean,ci95_low,ci95_high,invalid_replicates,valid_replicates
+model,frozen_linear,,macro_auroc,0.91986,0.91985,0.91205,0.92753,0,5000
+model,frozen_linear,,macro_ap,0.77862,0.7792,0.75946,0.79842,0,5000
+model,frozen_linear,,hyp_auroc,0.85593,0.85593,0.82999,0.8812,0,5000
+model,frozen_mlp,,macro_auroc,0.92496,0.92495,0.91732,0.93246,0,5000
+model,frozen_mlp,,macro_ap,0.78929,0.78976,0.76979,0.80901,0,5000
+model,frozen_mlp,,hyp_auroc,0.86619,0.8662,0.84105,0.89038,0,5000
+model,finetuned,,macro_auroc,0.92538,0.92536,0.91749,0.93299,0,5000
+model,finetuned,,macro_ap,0.79167,0.79244,0.77246,0.81165,0,5000
+model,finetuned,,hyp_auroc,0.86015,0.86013,0.83281,0.886,0,5000
+difference,finetuned - frozen_linear,,macro_auroc,0.00552,0.00552,0.00215,0.00882,0,5000
+difference,finetuned - frozen_linear,,macro_ap,0.01305,0.01323,0.00529,0.02162,0,5000
+difference,finetuned - frozen_linear,,hyp_auroc,0.00422,0.00421,-0.00849,0.01675,0,5000
+difference_same_seed,finetuned - frozen_linear,42,macro_auroc,0.00449,0.00447,0.00091,0.00793,0,5000
+difference_same_seed,finetuned - frozen_linear,42,macro_ap,nan,0.00982,0.00109,0.0189,0,5000
+difference_same_seed,finetuned - frozen_linear,42,hyp_auroc,nan,0.005,-0.00845,0.0183,0,5000
+difference_same_seed,finetuned - frozen_linear,43,macro_auroc,0.00747,0.00748,0.00368,0.01129,0,5000
+difference_same_seed,finetuned - frozen_linear,43,macro_ap,nan,0.01856,0.00891,0.02836,0,5000
+difference_same_seed,finetuned - frozen_linear,43,hyp_auroc,nan,0.01009,-0.00395,0.0245,0,5000
+difference_same_seed,finetuned - frozen_linear,44,macro_auroc,0.0046,0.00461,0.00085,0.00826,0,5000
+difference_same_seed,finetuned - frozen_linear,44,macro_ap,nan,0.01132,0.0029,0.02028,0,5000
+difference_same_seed,finetuned - frozen_linear,44,hyp_auroc,nan,-0.00247,-0.0172,0.01161,0,5000
+difference,finetuned - frozen_mlp,,macro_auroc,0.00042,0.00041,-0.00256,0.00325,0,5000
+difference,finetuned - frozen_mlp,,macro_ap,0.00238,0.00268,-0.00422,0.00987,0,5000
+difference,finetuned - frozen_mlp,,hyp_auroc,-0.00604,-0.00607,-0.01704,0.0049,0,5000
+difference_same_seed,finetuned - frozen_mlp,42,macro_auroc,-0.00054,-0.00055,-0.0037,0.00249,0,5000
+difference_same_seed,finetuned - frozen_mlp,42,macro_ap,nan,0.00124,-0.00642,0.00886,0,5000
+difference_same_seed,finetuned - frozen_mlp,42,hyp_auroc,nan,-0.0079,-0.01955,0.00346,0,5000
+difference_same_seed,finetuned - frozen_mlp,43,macro_auroc,0.00277,0.00275,-0.00081,0.00638,0,5000
+difference_same_seed,finetuned - frozen_mlp,43,macro_ap,nan,0.00609,-0.00226,0.01467,0,5000
+difference_same_seed,finetuned - frozen_mlp,43,hyp_auroc,nan,0.00194,-0.01139,0.01621,0,5000
+difference_same_seed,finetuned - frozen_mlp,44,macro_auroc,-0.00096,-0.00097,-0.00454,0.00257,0,5000
+difference_same_seed,finetuned - frozen_mlp,44,macro_ap,nan,0.00071,-0.00796,0.00983,0,5000
+difference_same_seed,finetuned - frozen_mlp,44,hyp_auroc,nan,-0.01226,-0.02563,0.00074,0,5000
+difference,frozen_mlp - frozen_linear,,macro_auroc,0.0051,0.00511,0.00268,0.00756,0,5000
+difference,frozen_mlp - frozen_linear,,macro_ap,0.01067,0.01055,0.00444,0.01692,0,5000
+difference,frozen_mlp - frozen_linear,,hyp_auroc,0.01027,0.01028,0.00074,0.02016,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,42,macro_auroc,0.00503,0.00502,0.00204,0.00793,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,42,macro_ap,nan,0.00858,0.0016,0.01564,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,42,hyp_auroc,nan,0.0129,0.00093,0.0255,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,43,macro_auroc,0.00471,0.00472,0.00214,0.00736,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,43,macro_ap,nan,0.01247,0.00514,0.01996,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,43,hyp_auroc,nan,0.00814,-0.00219,0.01851,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,44,macro_auroc,0.00556,0.00558,0.00297,0.00813,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,44,macro_ap,nan,0.01062,0.00441,0.01683,0,5000
+difference_same_seed,frozen_mlp - frozen_linear,44,hyp_auroc,nan,0.00979,0.00027,0.01927,0,5000

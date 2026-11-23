@@ -1,0 +1,32 @@
+2026-11-11 12:25:59 index written 40005 records; rejected (never read): {'test_reserved': 4447, 'excluded': 24}
+2026-11-11 12:26:02 extract: 81 chunks, 81 to do
+2026-11-11 12:27:04   chunk 0 done; 500 records in 62s
+2026-11-11 12:28:01   chunk 10 done; 5500 records in 119s
+2026-11-11 12:28:37   chunk 20 done; 10500 records in 155s
+2026-11-11 12:29:49   chunk 30 done; 15500 records in 227s
+2026-11-11 12:30:45   chunk 40 done; 20500 records in 283s
+2026-11-11 12:31:42   chunk 50 done; 25500 records in 340s
+2026-11-11 12:32:37   chunk 60 done; 30500 records in 395s
+2026-11-11 12:33:33   chunk 70 done; 35500 records in 451s
+2026-11-11 12:34:08   chunk 80 done; 40005 records in 486s
+2026-11-11 12:34:09 extract finished: 40005 records in 487s
+2026-11-11 12:34:44   embed chunk 0: 500 records in 7s
+2026-11-11 12:35:36   embed chunk 10: 5500 records in 58s
+2026-11-11 12:36:28   embed chunk 20: 10500 records in 110s
+2026-11-11 12:37:21   embed chunk 30: 15500 records in 163s
+2026-11-11 12:38:09   embed chunk 40: 20500 records in 211s
+2026-11-11 12:38:57   embed chunk 50: 25500 records in 259s
+2026-11-11 12:39:47   embed chunk 60: 30500 records in 310s
+2026-11-11 12:40:33   embed chunk 70: 35500 records in 355s
+2026-11-11 12:41:16   embed chunk 80: 40005 records in 399s
+2026-11-11 12:41:16 embed finished in 399s; backbone state hash unchanged: True
+2026-11-11 12:45:11 merged 40005 records; embeddings ok 40005; reads ok 40005
+2026-11-11 12:45:32 experiment config written 1e02d1ffcfa2fe4c {'train_embedding_eligible': 35568, 'validation_embedding_eligible': 4437, 'train_records': 35568, 'validation_records': 4437, 'train_accepted_per_concept': {'accepted_rate_mean_bpm': 34343, 'accepted_rr_cv': 34341, 'accepted_rr_nrmssd': 34341, 'accepted_rr_mad_succ': 34341}, 'validation_accepted_per_concept': {'accepted_rate_mean_bpm': 4288, 'accepted_rr_cv': 4288, 'accepted_rr_nrmssd': 4288, 'accepted_rr_mad_succ': 4288}, 'train_fully_accepted': 34341, 'validation_fully_accepted': 4288}
+2026-11-11 12:47:15 seed 42 trained in 87s; epochs: {'B_embedding_linear': 97, 'C_concept_predictor': 39, 'C2_concept_only': 72, 'D_prototype': 100, 'CTRL_mask_only': 39, 'CTRL_extracted_target': 63} tau 0.1224
+2026-11-11 12:48:41 seed 43 trained in 173s; epochs: {'B_embedding_linear': 99, 'C_concept_predictor': 34, 'C2_concept_only': 88, 'D_prototype': 100, 'CTRL_mask_only': 49, 'CTRL_extracted_target': 72} tau 0.1234
+2026-11-11 12:50:07 seed 44 trained in 259s; epochs: {'B_embedding_linear': 96, 'C_concept_predictor': 37, 'C2_concept_only': 76, 'D_prototype': 100, 'CTRL_mask_only': 55, 'CTRL_extracted_target': 50} tau 0.1185
+2026-11-11 12:51:31 reproducibility (seed 42 re-run) max abs prob diff: {'B_embedding_linear': 0.0, 'C2_concept_only': 0.0, 'D_prototype': 0.0, 'CTRL_mask_only': 0.0, 'CTRL_extracted_target': 0.0, 'concept_Zhat_max_abs_diff': 0.0}
+2026-11-11 12:51:47 engineering checks {'backbone_state_unchanged_during_embedding': True, 'backbone_ckpt_sha256_matches_declared': True, 'no_train_val_id_overlap': True, 'no_train_val_dup_group_overlap': True, 'no_test_or_excluded_records_in_caches': True, 'roles_only_train_validation': True, 'embedding_scaler_fit_on_train_only': True, 'concept_scaler_fit_on_accepted_train_only': True, 'no_nan_in_predictions': True, 'cache_alignment_spot_check_300_ids': True, 'prototype_logits_identity_max_abs_diff': 7.62939453125e-06, 'prototype_head_inputs_similarities_only': True, 'concept_predictor_frozen_during_head_training': True, 'extraction_matches_frozen_config': True}
+2026-11-11 12:51:47 train stage finished in 360s
+2026-11-11 12:54:28 coverage summaries and report rendered
+2026-11-11 12:55:10 coverage summaries and report rendered

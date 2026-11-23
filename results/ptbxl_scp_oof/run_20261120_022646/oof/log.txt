@@ -1,0 +1,7 @@
+[02:27:52] patient separation verified: no patient shared between any held-out internal fold and its training partition, nor with fold 9
+[02:28:47] seed 42 done (53s); final-predictor epochs exp 12, v17 13; OOF best epochs exp [2, 3, 2, 2, 2, 3, 3, 2]
+[02:29:39] seed 43 done (104s); final-predictor epochs exp 12, v17 13; OOF best epochs exp [2, 3, 2, 2, 2, 2, 2, 2]
+[02:30:29] seed 44 done (154s); final-predictor epochs exp 13, v17 13; OOF best epochs exp [2, 2, 2, 2, 2, 3, 2, 3]
+[02:30:56] reproducibility (expanded, seed 42 rerun) max abs diff: {'oof_linear': 0.0, 'oof_proto': 0.0, 'oof_shuffled': 0.0, 'insample_linear': 0.0, 'oof_matrix': 0.0}
+[02:37:15] bootstrap 5000 replicates in 378s; undefined-class replicates AUROC 0, AP 0
+[02:37:16] done in 561s

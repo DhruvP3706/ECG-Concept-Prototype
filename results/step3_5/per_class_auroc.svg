@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="656" font-family="sans-serif" font-size="10">
+<rect width="100%" height="100%" fill="white"/>
+<text x="90" y="16" font-size="12" font-weight="bold">Per-class test AUROC (95% bootstrap CI), classes ordered by #positives (n in brackets)</text>
+<line x1="90.0" y1="24" x2="90.0" y2="646" stroke="#ddd"/><text x="82.0" y="656" fill="#555">0.7</text>
+<line x1="300.0000000000002" y1="24" x2="300.0000000000002" y2="646" stroke="#ddd"/><text x="292.0000000000002" y="656" fill="#555">0.8</text>
+<line x1="510.00000000000017" y1="24" x2="510.00000000000017" y2="646" stroke="#ddd"/><text x="502.00000000000017" y="656" fill="#555">0.9</text>
+<line x1="720.0000000000001" y1="24" x2="720.0000000000001" y2="646" stroke="#ddd"/><text x="712.0000000000001" y="656" fill="#555">1.0</text>
+<text x="4" y="39" fill="#222">SB [1725]</text>
+<line x1="715.5333000000002" y1="33" x2="717.8685000000002" y2="33" stroke="#1f77b4" stroke-width="1.5"/><circle cx="716.8059000000002" cy="33" r="2.5" fill="#1f77b4"/>
+<line x1="716.0877000000003" y1="38" x2="718.2044999999999" y2="38" stroke="#d95f02" stroke-width="1.5"/><circle cx="717.2217000000002" cy="38" r="2.5" fill="#d95f02"/>
+<text x="4" y="53" fill="#222">SR [831]</text>
+<line x1="680.8854" y1="47" x2="699.0294" y2="47" stroke="#1f77b4" stroke-width="1.5"/><circle cx="690.7008000000002" cy="47" r="2.5" fill="#1f77b4"/>
+<line x1="686.9061000000002" y1="52" x2="701.0055000000002" y2="52" stroke="#d95f02" stroke-width="1.5"/><circle cx="694.4241000000001" cy="52" r="2.5" fill="#d95f02"/>
+<text x="4" y="67" fill="#222">AF [795]</text>
+<line x1="663.9951" y1="61" x2="681.5679000000001" y2="61" stroke="#1f77b4" stroke-width="1.5"/><circle cx="672.7416000000002" cy="61" r="2.5" fill="#1f77b4"/>
+<line x1="663.8859000000001" y1="66" x2="681.3579000000001" y2="66" stroke="#d95f02" stroke-width="1.5"/><circle cx="673.0797000000001" cy="66" r="2.5" fill="#d95f02"/>
+<text x="4" y="81" fill="#222">TWC [719]</text>
+<line x1="487.83450000000016" y1="75" x2="534.3852" y2="75" stroke="#1f77b4" stroke-width="1.5"/><circle cx="512.0748000000001" cy="75" r="2.5" fill="#1f77b4"/>
+<line x1="511.6044000000001" y1="80" x2="553.5183000000001" y2="80" stroke="#d95f02" stroke-width="1.5"/><circle cx="533.5956000000002" cy="80" r="2.5" fill="#d95f02"/>
+<text x="4" y="95" fill="#222">ST [691]</text>
+<line x1="709.2102000000002" y1="89" x2="715.863" y2="89" stroke="#1f77b4" stroke-width="1.5"/><circle cx="712.9293000000001" cy="89" r="2.5" fill="#1f77b4"/>
+<line x1="712.545" y1="94" x2="717.1923" y2="94" stroke="#d95f02" stroke-width="1.5"/><circle cx="715.2351000000002" cy="94" r="2.5" fill="#d95f02"/>
+<text x="4" y="109" fill="#222">TWO [264]</text>
+<line x1="575.3856000000001" y1="103" x2="614.7564" y2="103" stroke="#1f77b4" stroke-width="1.5"/><circle cx="595.9635000000001" cy="103" r="2.5" fill="#1f77b4"/>
+<line x1="580.5936000000002" y1="108" x2="619.2252000000001" y2="108" stroke="#d95f02" stroke-width="1.5"/><circle cx="600.7683000000002" cy="108" r="2.5" fill="#d95f02"/>
+<text x="4" y="123" fill="#222">SA [259]</text>
+<line x1="668.7327" y1="117" x2="688.9326000000001" y2="117" stroke="#1f77b4" stroke-width="1.5"/><circle cx="679.4385000000002" cy="117" r="2.5" fill="#1f77b4"/>
+<line x1="663.6633" y1="122" x2="684.0396000000001" y2="122" stroke="#d95f02" stroke-width="1.5"/><circle cx="673.6971000000001" cy="122" r="2.5" fill="#d95f02"/>
+<text x="4" y="137" fill="#222">STDD [165]</text>
+<line x1="594.5817000000002" y1="131" x2="637.8564" y2="131" stroke="#1f77b4" stroke-width="1.5"/><circle cx="617.7132000000001" cy="131" r="2.5" fill="#1f77b4"/>
+<line x1="605.8524000000002" y1="136" x2="644.8137" y2="136" stroke="#d95f02" stroke-width="1.5"/><circle cx="626.1258000000001" cy="136" r="2.5" fill="#d95f02"/>
+<text x="4" y="151" fill="#222">AFIB [158]</text>
+<line x1="546.9075000000003" y1="145" x2="585.6525000000001" y2="145" stroke="#1f77b4" stroke-width="1.5"/><circle cx="566.7336" cy="145" r="2.5" fill="#1f77b4"/>
+<line x1="542.1384" y1="150" x2="580.7700000000001" y2="150" stroke="#d95f02" stroke-width="1.5"/><circle cx="562.6869000000003" cy="150" r="2.5" fill="#d95f02"/>
+<text x="4" y="165" fill="#222">ALS [154]</text>
+<line x1="672.0507000000001" y1="159" x2="691.2384" y2="159" stroke="#1f77b4" stroke-width="1.5"/><circle cx="682.2588000000002" cy="159" r="2.5" fill="#1f77b4"/>
+<line x1="675.9084000000001" y1="164" x2="692.9163" y2="164" stroke="#d95f02" stroke-width="1.5"/><circle cx="684.7389000000001" cy="164" r="2.5" fill="#d95f02"/>
+<text x="4" y="179" fill="#222">APB [144]</text>
+<line x1="654.9420000000001" y1="173" x2="694.2036000000002" y2="173" stroke="#1f77b4" stroke-width="1.5"/><circle cx="675.7383000000001" cy="173" r="2.5" fill="#1f77b4"/>
+<line x1="675.6102000000002" y1="178" x2="702.0555" y2="178" stroke="#d95f02" stroke-width="1.5"/><circle cx="690.0162000000001" cy="178" r="2.5" fill="#d95f02"/>
+<text x="4" y="193" fill="#222">1AVB [128]</text>
+<line x1="679.0458000000001" y1="187" x2="703.7103000000001" y2="187" stroke="#1f77b4" stroke-width="1.5"/><circle cx="692.3619000000002" cy="187" r="2.5" fill="#1f77b4"/>
+<line x1="693.0885000000001" y1="192" x2="706.9779000000001" y2="192" stroke="#d95f02" stroke-width="1.5"/><circle cx="700.7220000000002" cy="192" r="2.5" fill="#d95f02"/>
+<text x="4" y="207" fill="#222">STTC [109]</text>
+<line x1="424.0932" y1="201" x2="534.1038000000001" y2="201" stroke="#1f77b4" stroke-width="1.5"/><circle cx="481.83690000000007" cy="201" r="2.5" fill="#1f77b4"/>
+<line x1="437.9826000000001" y1="206" x2="548.3607000000002" y2="206" stroke="#d95f02" stroke-width="1.5"/><circle cx="499.2459000000001" cy="206" r="2.5" fill="#d95f02"/>
+<text x="4" y="221" fill="#222">AQW [106]</text>
+<line x1="621.2328000000002" y1="215" x2="684.9762000000002" y2="215" stroke="#1f77b4" stroke-width="1.5"/><circle cx="656.0298000000001" cy="215" r="2.5" fill="#1f77b4"/>
+<line x1="635.1747" y1="220" x2="689.3253000000001" y2="220" stroke="#d95f02" stroke-width="1.5"/><circle cx="666.5907000000001" cy="220" r="2.5" fill="#d95f02"/>
+<text x="4" y="235" fill="#222">LVQRSAL [101]</text>
+<line x1="409.5087000000001" y1="229" x2="535.4100000000002" y2="229" stroke="#1f77b4" stroke-width="1.5"/><circle cx="475.40880000000004" cy="229" r="2.5" fill="#1f77b4"/>
+<line x1="406.8291000000002" y1="234" x2="544.8705000000001" y2="234" stroke="#d95f02" stroke-width="1.5"/><circle cx="477.7146000000002" cy="234" r="2.5" fill="#d95f02"/>
+<text x="4" y="249" fill="#222">STE [95]</text>
+<line x1="553.5960000000001" y1="243" x2="640.4646000000001" y2="243" stroke="#1f77b4" stroke-width="1.5"/><circle cx="598.0866000000001" cy="243" r="2.5" fill="#1f77b4"/>
+<line x1="592.8786000000002" y1="248" x2="654.9357000000001" y2="248" stroke="#d95f02" stroke-width="1.5"/><circle cx="625.5693000000001" cy="248" r="2.5" fill="#d95f02"/>
+<text x="4" y="263" fill="#222">ARS [82]</text>
+<line x1="670.3077000000001" y1="257" x2="698.7102000000001" y2="257" stroke="#1f77b4" stroke-width="1.5"/><circle cx="686.0346000000001" cy="257" r="2.5" fill="#1f77b4"/>
+<line x1="675.9273000000002" y1="262" x2="703.4688000000001" y2="262" stroke="#d95f02" stroke-width="1.5"/><circle cx="692.5299000000001" cy="262" r="2.5" fill="#d95f02"/>
+<text x="4" y="277" fill="#222">SVT [76]</text>
+<line x1="709.3320000000002" y1="271" x2="717.6207" y2="271" stroke="#1f77b4" stroke-width="1.5"/><circle cx="713.9877000000002" cy="271" r="2.5" fill="#1f77b4"/>
+<line x1="712.6206000000001" y1="276" x2="717.9756000000002" y2="276" stroke="#d95f02" stroke-width="1.5"/><circle cx="715.6194" cy="276" r="2.5" fill="#d95f02"/>
+<text x="4" y="291" fill="#222">IVB [73]</text>
+<line x1="551.3301000000001" y1="285" x2="655.7757" y2="285" stroke="#1f77b4" stroke-width="1.5"/><circle cx="609.4959" cy="285" r="2.5" fill="#1f77b4"/>
+<line x1="576.6351000000001" y1="290" x2="664.1169" y2="290" stroke="#d95f02" stroke-width="1.5"/><circle cx="625.1220000000001" cy="290" r="2.5" fill="#d95f02"/>
+<text x="4" y="305" fill="#222">RBBB [55]</text>
+<line x1="665.2677000000002" y1="299" x2="698.7417000000002" y2="299" stroke="#1f77b4" stroke-width="1.5"/><circle cx="684.8439000000001" cy="299" r="2.5" fill="#1f77b4"/>
+<line x1="673.7895" y1="304" x2="696.3099000000002" y2="304" stroke="#d95f02" stroke-width="1.5"/><circle cx="686.4609000000002" cy="304" r="2.5" fill="#d95f02"/>
+<text x="4" y="319" fill="#222">LVH [50]</text>
+<line x1="571.1247000000001" y1="313" x2="658.3608" y2="313" stroke="#1f77b4" stroke-width="1.5"/><circle cx="616.2180000000001" cy="313" r="2.5" fill="#1f77b4"/>
+<line x1="561.1014" y1="318" x2="664.3962000000001" y2="318" stroke="#d95f02" stroke-width="1.5"/><circle cx="619.3218" cy="318" r="2.5" fill="#d95f02"/>
+<text x="4" y="333" fill="#222">QTIE [49]</text>
+<line x1="313.47780000000006" y1="327" x2="533.2806" y2="327" stroke="#1f77b4" stroke-width="1.5"/><circle cx="428.62500000000006" cy="327" r="2.5" fill="#1f77b4"/>
+<line x1="433.6650000000002" y1="332" x2="583.7625" y2="332" stroke="#d95f02" stroke-width="1.5"/><circle cx="515.0694000000003" cy="332" r="2.5" fill="#d95f02"/>
+<text x="4" y="347" fill="#222">ERV [45]</text>
+<line x1="568.1469000000001" y1="341" x2="679.8375000000002" y2="341" stroke="#1f77b4" stroke-width="1.5"/><circle cx="631.947" cy="341" r="2.5" fill="#1f77b4"/>
+<line x1="618.2466000000001" y1="346" x2="685.6146000000001" y2="346" stroke="#d95f02" stroke-width="1.5"/><circle cx="655.7778000000001" cy="346" r="2.5" fill="#d95f02"/>
+<text x="4" y="361" fill="#222">AVB [30]</text>
+<line x1="607.7151000000001" y1="355" x2="671.2275" y2="355" stroke="#1f77b4" stroke-width="1.5"/><circle cx="641.0925000000001" cy="355" r="2.5" fill="#1f77b4"/>
+<line x1="610.7979000000001" y1="360" x2="669.1548000000001" y2="360" stroke="#d95f02" stroke-width="1.5"/><circle cx="640.6809000000001" cy="360" r="2.5" fill="#d95f02"/>
+<text x="4" y="375" fill="#222">AT [29]</text>
+<line x1="607.5492" y1="369" x2="690.5517000000001" y2="369" stroke="#1f77b4" stroke-width="1.5"/><circle cx="654.0432000000002" cy="369" r="2.5" fill="#1f77b4"/>
+<line x1="659.8917000000002" y1="374" x2="698.9013000000001" y2="374" stroke="#d95f02" stroke-width="1.5"/><circle cx="681.5154000000002" cy="374" r="2.5" fill="#d95f02"/>
+<text x="4" y="389" fill="#222">VPB [23]</text>
+<line x1="595.6611000000003" y1="383" x2="692.2674000000001" y2="383" stroke="#1f77b4" stroke-width="1.5"/><circle cx="656.7648" cy="383" r="2.5" fill="#1f77b4"/>
+<line x1="581.4315000000001" y1="388" x2="693.1053" y2="388" stroke="#d95f02" stroke-width="1.5"/><circle cx="646.9809000000001" cy="388" r="2.5" fill="#d95f02"/>
+<text x="4" y="403" fill="#222">PWC [19]</text>
+<line x1="370.4592" y1="397" x2="605.4303000000002" y2="397" stroke="#1f77b4" stroke-width="1.5"/><circle cx="498.34920000000017" cy="397" r="2.5" fill="#1f77b4"/>
+<line x1="524.3976" y1="402" x2="653.9067000000002" y2="402" stroke="#d95f02" stroke-width="1.5"/><circle cx="594.7728000000001" cy="402" r="2.5" fill="#d95f02"/>
+<text x="4" y="417" fill="#222">MISW [18]</text>
+<line x1="621.5184" y1="411" x2="710.5857000000001" y2="411" stroke="#1f77b4" stroke-width="1.5"/><circle cx="671.8470000000001" cy="411" r="2.5" fill="#1f77b4"/>
+<line x1="630.3279000000001" y1="416" x2="713.8092000000003" y2="416" stroke="#d95f02" stroke-width="1.5"/><circle cx="682.9644000000002" cy="416" r="2.5" fill="#d95f02"/>
+<text x="4" y="431" fill="#222">STTU [18]</text>
+<line x1="450.6582000000002" y1="425" x2="669.2409" y2="425" stroke="#1f77b4" stroke-width="1.5"/><circle cx="578.1240000000003" cy="425" r="2.5" fill="#1f77b4"/>
+<line x1="460.4337000000001" y1="430" x2="676.0428000000002" y2="430" stroke="#d95f02" stroke-width="1.5"/><circle cx="595.6149" cy="430" r="2.5" fill="#d95f02"/>
+<text x="4" y="445" fill="#222">UW [18]</text>
+<line x1="559.1988000000001" y1="439" x2="666.4395000000001" y2="439" stroke="#1f77b4" stroke-width="1.5"/><circle cx="615.0021000000002" cy="439" r="2.5" fill="#1f77b4"/>
+<line x1="582.5424000000003" y1="444" x2="675.3771000000002" y2="444" stroke="#d95f02" stroke-width="1.5"/><circle cx="634.2843000000001" cy="444" r="2.5" fill="#d95f02"/>
+<text x="4" y="459" fill="#222">LFBBB [16]</text>
+<line x1="681.2718000000002" y1="453" x2="706.6461" y2="453" stroke="#1f77b4" stroke-width="1.5"/><circle cx="695.7702" cy="453" r="2.5" fill="#1f77b4"/>
+<line x1="690.7827000000002" y1="458" x2="711.4698000000001" y2="458" stroke="#d95f02" stroke-width="1.5"/><circle cx="701.3394000000002" cy="458" r="2.5" fill="#d95f02"/>
+<text x="4" y="473" fill="#222">VFW [11]</text>
+<line x1="675.4737000000001" y1="467" x2="711.2913000000001" y2="467" stroke="#1f77b4" stroke-width="1.5"/><circle cx="696.2868000000002" cy="467" r="2.5" fill="#1f77b4"/>
+<line x1="660.2697000000001" y1="472" x2="710.8209" y2="472" stroke="#d95f02" stroke-width="1.5"/><circle cx="689.3589000000001" cy="472" r="2.5" fill="#d95f02"/>
+<text x="4" y="487" fill="#222">CCR [10]</text>
+<line x1="657.4347000000002" y1="481" x2="698.1096000000001" y2="481" stroke="#1f77b4" stroke-width="1.5"/><circle cx="680.4801" cy="481" r="2.5" fill="#1f77b4"/>
+<line x1="645.8364000000001" y1="486" x2="694.8714" y2="486" stroke="#d95f02" stroke-width="1.5"/><circle cx="673.5228000000001" cy="486" r="2.5" fill="#d95f02"/>
+<text x="4" y="501" fill="#222">CR [9]</text>
+<line x1="645.4752000000002" y1="495" x2="704.0127000000002" y2="495" stroke="#1f77b4" stroke-width="1.5"/><circle cx="676.2045000000002" cy="495" r="2.5" fill="#1f77b4"/>
+<line x1="645.3450000000001" y1="500" x2="703.8657000000002" y2="500" stroke="#d95f02" stroke-width="1.5"/><circle cx="676.4145000000002" cy="500" r="2.5" fill="#d95f02"/>
+<text x="4" y="515" fill="#222">JEB [7]</text>
+<line x1="673.3737000000002" y1="509" x2="699.4956000000001" y2="509" stroke="#1f77b4" stroke-width="1.5"/><circle cx="687.0279000000002" cy="509" r="2.5" fill="#1f77b4"/>
+<line x1="653.1507000000001" y1="514" x2="705.7515000000001" y2="514" stroke="#d95f02" stroke-width="1.5"/><circle cx="681.9585000000002" cy="514" r="2.5" fill="#d95f02"/>
+<text x="4" y="529" fill="#222">WPW [6]</text>
+<line x1="568.4010000000002" y1="523" x2="720.0000000000001" y2="523" stroke="#1f77b4" stroke-width="1.5"/><circle cx="671.7672000000001" cy="523" r="2.5" fill="#1f77b4"/>
+<line x1="269.9196000000002" y1="528" x2="720.0000000000001" y2="528" stroke="#d95f02" stroke-width="1.5"/><circle cx="587.2821000000001" cy="528" r="2.5" fill="#d95f02"/>
+<text x="4" y="543" fill="#222">2AVB [5]</text>
+<line x1="527.9634000000001" y1="537" x2="717.5115000000002" y2="537" stroke="#1f77b4" stroke-width="1.5"/><circle cx="636.4158000000001" cy="537" r="2.5" fill="#1f77b4"/>
+<line x1="650.9079000000002" y1="542" x2="719.0550000000003" y2="542" stroke="#d95f02" stroke-width="1.5"/><circle cx="689.8377" cy="542" r="2.5" fill="#d95f02"/>
+<text x="4" y="557" fill="#222">RVH [5]</text>
+<line x1="704.9934000000002" y1="551" x2="719.3091000000001" y2="551" stroke="#1f77b4" stroke-width="1.5"/><circle cx="714.1368000000001" cy="551" r="2.5" fill="#1f77b4"/>
+<line x1="709.2543000000001" y1="556" x2="720.0000000000001" y2="556" stroke="#d95f02" stroke-width="1.5"/><circle cx="716.3124000000001" cy="556" r="2.5" fill="#d95f02"/>
+<text x="4" y="571" fill="#222">VEB [5]</text>
+<line x1="702.3264000000001" y1="565" x2="717.5178000000001" y2="565" stroke="#1f77b4" stroke-width="1.5"/><circle cx="711.3018000000002" cy="565" r="2.5" fill="#1f77b4"/>
+<line x1="711.5979000000001" y1="570" x2="719.1747000000001" y2="570" stroke="#d95f02" stroke-width="1.5"/><circle cx="716.3124000000001" cy="570" r="2.5" fill="#d95f02"/>
+<text x="4" y="585" fill="#222">3AVB [3]</text>
+<line x1="678.9072000000001" y1="579" x2="713.8596000000001" y2="579" stroke="#1f77b4" stroke-width="1.5"/><circle cx="697.4754" cy="579" r="2.5" fill="#1f77b4"/>
+<line x1="649.3434000000002" y1="584" x2="719.5275" y2="584" stroke="#d95f02" stroke-width="1.5"/><circle cx="684.0858000000002" cy="584" r="2.5" fill="#d95f02"/>
+<text x="4" y="599" fill="#222">PRIE [3]</text>
+<line x1="480.99900000000014" y1="593" x2="567.1452000000002" y2="593" stroke="#1f77b4" stroke-width="1.5"/><circle cx="520.7436000000002" cy="593" r="2.5" fill="#1f77b4"/>
+<line x1="90.0" y1="598" x2="615.6132000000002" y2="598" stroke="#d95f02" stroke-width="1.5"/><circle cx="145.0683" cy="598" r="2.5" fill="#d95f02"/>
+<text x="4" y="613" fill="#222">2AVB1 [2]</text>
+<line x1="707.2425" y1="607" x2="717.6375" y2="607" stroke="#1f77b4" stroke-width="1.5"/><circle cx="712.9125000000001" cy="607" r="2.5" fill="#1f77b4"/>
+<line x1="698.7375000000001" y1="612" x2="716.22" y2="612" stroke="#d95f02" stroke-width="1.5"/><circle cx="708.1896000000002" cy="612" r="2.5" fill="#d95f02"/>
+<text x="4" y="627" fill="#222">RAH [2]</text>
+<line x1="716.22" y1="621" x2="720.0000000000001" y2="621" stroke="#1f77b4" stroke-width="1.5"/><circle cx="718.3473000000001" cy="621" r="2.5" fill="#1f77b4"/>
+<line x1="716.6946000000002" y1="626" x2="720.0000000000001" y2="626" stroke="#d95f02" stroke-width="1.5"/><circle cx="718.8198000000002" cy="626" r="2.5" fill="#d95f02"/>
+<text x="4" y="641" fill="#222">AVRT [1]</text>
+<line x1="706.7742000000001" y1="635" x2="715.2750000000002" y2="635" stroke="#1f77b4" stroke-width="1.5"/><circle cx="711.0246000000001" cy="635" r="2.5" fill="#1f77b4"/>
+<line x1="705.3567" y1="640" x2="713.5047000000001" y2="640" stroke="#d95f02" stroke-width="1.5"/><circle cx="709.6092000000002" cy="640" r="2.5" fill="#d95f02"/>
+<circle cx="560" cy="638" r="3" fill="#1f77b4"/><text x="567" y="641">ft_fold0</text><circle cx="630" cy="638" r="3" fill="#d95f02"/><text x="637" y="641">3-model ensemble</text>
+</svg>

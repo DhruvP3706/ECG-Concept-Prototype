@@ -1,0 +1,1 @@
+[14:52:06] annotated validation records: SR 733, AFIB 178; after exclusions: SR 691, AFIB 169; exclusion reasons {'SR': {'APB': 22, 'VPB': 3, 'SA': 13, 'AF': 5, 'AT': 1, 'ERV': 5}, 'AFIB': {'VPB': 9}}

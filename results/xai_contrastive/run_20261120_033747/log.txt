@@ -1,0 +1,9 @@
+[03:37:51] 160 pairs, 157 unique records; competitors chosen from outputs only; flagged (no non-positive competitor): 0; margins M(x)>0 in 0.956 of pairs, min -0.89
+[03:38:13] contrastive IG in 23s; completeness rel err median 0.0432, abs median 0.1897
+[03:38:28] convergence (24 pairs): median rel err 32/64/256 = 0.0753/0.0351/0.0061; IG(M) vs IG(c)-IG(k) max abs diff over 6 pairs 1.78e-08
+[03:38:32]   perturbation tests: pair 0/160 (2s)
+[03:40:05]   perturbation tests: pair 40/160 (95s)
+[03:41:38]   perturbation tests: pair 80/160 (189s)
+[03:43:12]   perturbation tests: pair 120/160 (282s)
+[03:44:43] model hash unchanged
+[03:44:45] results saved; sha256 7c34e3ca32c40415

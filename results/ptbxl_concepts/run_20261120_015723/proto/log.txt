@@ -1,0 +1,7 @@
+[02:01:02] train 16289 val 2034; fully-accepted train 15914 val 1998; accepted per concept train [15914, 15914, 15914, 15914] val [1998, 1998, 1998, 1998]; reason flags ['DETECTOR_DISAGREEMENT', 'FLAT_LEAD', 'LOW_LEAD_SUPPORT']
+[02:01:15] seed 42 done (10s); epochs {'concept_predictor': 20, 'C2_concept_only': 45, 'D_prototype': 29, 'CTRL_mask_only': 27, 'CTRL_shuffled_concepts': 25}; tau 0.1472
+[02:01:26] seed 43 done (21s); epochs {'concept_predictor': 22, 'C2_concept_only': 68, 'D_prototype': 21, 'CTRL_mask_only': 23, 'CTRL_shuffled_concepts': 36}; tau 0.1637
+[02:01:35] seed 44 done (31s); epochs {'concept_predictor': 23, 'C2_concept_only': 45, 'D_prototype': 20, 'CTRL_mask_only': 20, 'CTRL_shuffled_concepts': 27}; tau 0.1575
+[02:01:45] reproducibility (seed-42 rerun) max |prob diff|: {'C2_concept_only': 0.0, 'D_prototype': 0.0, 'CTRL_mask_only': 0.0, 'CTRL_shuffled_concepts': 0.0}
+[02:05:15] bootstrap 5000 replicates in 208s; replicates with an undefined class value: 0 (AUROC), 0 (AP)
+[02:05:15] done in 250s

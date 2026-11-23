@@ -1,0 +1,14 @@
+[03:07:47] selected 160 (record, class) pairs, classes ['SB', 'AF', 'TWC', 'ST', 'SR', 'AFIB', 'STTC', 'TWO']; predicted positives in validation [1715, 1003, 848, 755, 746, 712, 586, 412]; incorrect (model positive, label absent): 40; seed 2026
+[03:07:51] preprocessing/model check: recomputed logit vs cached Step 4.4 logit: max abs diff 2.38e-06
+[03:08:15] IG (64 steps) for 160 pairs in 23s; completeness rel err median 0.0330, max 14.3311
+[03:08:29] convergence on 24 pairs: median completeness rel err 32/64/256 = 0.0547/0.0326/0.0052; median Pearson 64 vs 256 = 0.9972; median top-8-window overlap 7.5/8
+[03:08:31] perturbation tests: pair 0/160 (2s)
+[03:09:08] perturbation tests: pair 20/160 (39s)
+[03:09:46] perturbation tests: pair 40/160 (77s)
+[03:10:23] perturbation tests: pair 60/160 (114s)
+[03:11:00] perturbation tests: pair 80/160 (151s)
+[03:11:39] perturbation tests: pair 100/160 (189s)
+[03:12:18] perturbation tests: pair 120/160 (228s)
+[03:12:55] perturbation tests: pair 140/160 (266s)
+[03:13:30] perturbation tests done in 301s; model hash unchanged
+[03:13:34] saved. results sha256 4b5dd1a52f705528

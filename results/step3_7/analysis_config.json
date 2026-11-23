@@ -1,0 +1,448 @@
+{
+ "declaration": {
+  "declared_before_computing_cohort_metrics": true,
+  "declared_at": "2026-11-03 02:01:27",
+  "cohorts": {
+   "A_all_test": {
+    "n": 4447,
+    "n_excluded": 0,
+    "excluded_ids": [],
+    "purpose": "historical comparability (Step 3.5 table)"
+   },
+   "B_exclude_cross_boundary": {
+    "n": 4430,
+    "n_excluded": 17,
+    "excluded_ids": [
+     "JS00563",
+     "JS00641",
+     "JS01424",
+     "JS05678",
+     "JS06264",
+     "JS06532",
+     "JS07991",
+     "JS08755",
+     "JS10086",
+     "JS10320",
+     "JS10624",
+     "JS17689",
+     "JS18466",
+     "JS36678",
+     "JS40496",
+     "JS40711",
+     "JS42011"
+    ],
+    "purpose": "main leakage-screened cohort for the existing-backbone study"
+   },
+   "C_exclude_any_duplicate": {
+    "n": 4424,
+    "n_excluded": 23,
+    "excluded_ids": [
+     "JS00563",
+     "JS00641",
+     "JS01424",
+     "JS05678",
+     "JS06264",
+     "JS06370",
+     "JS06532",
+     "JS07991",
+     "JS08755",
+     "JS10086",
+     "JS10320",
+     "JS10618",
+     "JS10620",
+     "JS10622",
+     "JS10624",
+     "JS10633",
+     "JS17689",
+     "JS18466",
+     "JS18476",
+     "JS36678",
+     "JS40496",
+     "JS40711",
+     "JS42011"
+    ],
+    "purpose": "stricter sensitivity cohort"
+   }
+  },
+  "cohort_rule": "B: test records with a duplicate partner in folds 0-8; C: test records in ANY exact-duplicate pair (cross-boundary, within-test, or partner outside the experiment set). Same cohort for every model.",
+  "models": {
+   "ft_fold0": [
+    "lightv2_ft_fold0",
+    "original_file (VERIFIED)"
+   ],
+   "p1_fold0": [
+    "lightv2_p1_fold0",
+    "original_file (VERIFIED)"
+   ],
+   "p1_fold1": [
+    "lightv2_p1_fold1",
+    "regenerated_val (original file UNVERIFIED/stale, not used)"
+   ],
+   "p1_fold2": [
+    "lightv2_p1_fold2",
+    "regenerated_val (no original file)"
+   ],
+   "ensemble3": [
+    "mean prob of ft_fold0, p1_fold1, p1_fold2",
+    "ensemble_cv_regenerated"
+   ]
+  },
+  "predictions": "Step 3.5 single clean pass (evaluation_predictions.npz, probs__<model>__clean, thr__<model>__<name>); rows matched by record ID",
+  "metrics": [
+   "macro/weighted/micro AUROC",
+   "macro/micro AUPRC",
+   "macro-F1 (all 45, undefined->0)",
+   "macro-F1 (evaluable classes)",
+   "micro-F1",
+   "common-evaluable-class macro AUROC/AUPRC/F1"
+  ],
+  "paired_bootstrap": {
+   "B": 1000,
+   "seed": 20261013,
+   "resamples_shared_across_models_within_cohort": true,
+   "metrics": [
+    "macro_auroc",
+    "macro_f1_valid",
+    "micro_f1"
+   ],
+   "ci": "percentile 95%"
+  },
+  "reproduction_tolerance": 1e-08,
+  "notes": "Subset-vs-full differences are descriptive (cohort composition changes); no CI by subtracting independent CIs; not patient-level CIs.",
+  "declaration_sha256": "85d98cc3bd257e1767fce108efc5992f95083d89bd89e69fe2b69e16c046be72"
+ },
+ "input_fingerprints_sha256": {
+  "results\\step3_6\\duplicate_leakage_report.md": "bd87b58ca2685f2dda91a8e45ad5cd6533f0e801815c06d0f7863b68b9676cc8",
+  "results\\step3_6\\duplicate_pair_summary.csv": "fa33276ac316dd6385deb2e6ab313edac3a58356ed14a26fc5bdd1498eaccef4",
+  "results\\step3_6\\duplicate_summary.json": "6e7cef53166ddb45c581f46c93116d8c7ad865207b3d96d76ab2afc7fe688901",
+  "results\\step3_6\\exposure_counts.json": "9747fa21f371a31bdc13c0ff6b063332f9d349c38c5a266e82d93ce81c402b2b",
+  "results\\step3_5\\evaluation_report.md": "6cdd14bed65145a717bcda3de6a8f4f51b9e30d75c7b6667e1c3a6965b103cb0",
+  "results\\step3_5\\evaluation_config.json": "dd14c3c9cd981b0c84be8d43705dcc9c6b15c3c1fa013a40e19caf339d417f35",
+  "results\\step3_5\\threshold_audit.md": "7e524b15f91606d937fe641e56eb521cce4407d0ef544064abbb38b2be18cd9e",
+  "results\\step3_5\\aggregate_metrics.csv": "13f7e4560eaf4979f3a6c3b09073ff5abded15e68a2dab7d1407957fab51779a",
+  "results\\step3_5\\evaluation_predictions.npz": "d6228092771ce847b24c7bd527565ec0e7bc84d4a1a9ec1563730ad2f3e3984e",
+  "results\\step3_5\\paired_bootstrap.json": "e229dcf5b92fedeb53cecea065cb4bb1a046fd4699a6e9b9243ca86746f17f82",
+  "results\\step3_5\\regenerated_thresholds.npz": "4b735c6d48d72b0fa49e72edf6240d4a1b845aaf9cc0a25fff93828fabc0e49e",
+  "scripts\\step3_6_duplicate_audit.py": "90b58033af3db5d04657321335397e8428df857a103e5a83f18de0f737fff7b9",
+  "scripts\\step3_6_exposure.py": "c7f696e65f1c2a9b0a5f2d7bf023884675838c84abd195c0736f0d0df44494fc",
+  "scripts\\step3_5_evaluate.py": "8bc58b8f379c812a04985ba92a2bf0ebfce6e58fe27e415e6124337b116de587",
+  "scripts\\step3_5_paired.py": "83d27c1b1ecd7c9ab8174d1f735514c48043e8f519852bbe8522f5aaddd36868",
+  "src\\ecg_concept\\metrics.py": "598a227806174c6f57e921123afdd991e02bb57342866956ce97249446d5f132",
+  "src\\ecg_concept\\labels.py": "31d1106b622346373f7a3d3b00d833e6ee79246822334f366995f49b740c48b9",
+  "C:\\Users\\lenovo\\HonsExAI\\LightECGNet_v2_FIXED_faster.ipynb": "686b60c0e1cc988a81927e4f97623e951ac8af5940ea83adab621d4540d6cd5d"
+ },
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4"
+ },
+ "verified_duplicate_totals_mine_vs_step3_6": {
+  "pairs": [
+   87,
+   87
+  ],
+  "unique_records": [
+   174,
+   174
+  ],
+  "cross_test_pairs": [
+   17,
+   17
+  ],
+  "test_records_in_cross_pairs": [
+   17,
+   17
+  ],
+  "test_records_in_any_pair": [
+   23,
+   23
+  ],
+  "both_test": [
+   1,
+   1
+  ],
+  "outside_test": [
+   50,
+   50
+  ],
+  "category4": [
+   19,
+   19
+  ]
+ },
+ "category4_membership_breakdown": {
+  "category4_total": 19,
+  "both_members_outside_experiment": [
+   [
+    "JS45461",
+    "JS45462"
+   ]
+  ],
+  "one_member_outside_experiment": 18,
+  "one_outside_with_in_set_member_in_test": 4,
+  "unresolved_membership_pairs": 0
+ },
+ "record_order_sha256": "2f9f2dbaeead7b635161cd3b6167dbed1cdf3b433680f4c911a09325d4606efa",
+ "test_ids_sha256": "13ee256395e9f6a6626f29dd01f28f69cebfc602860015f69d72748d2d6a1eb5",
+ "prospective_roles": {
+  "policy": "see evaluation_protocol.md",
+  "counts": {
+   "train": 35568,
+   "validation": 4437,
+   "test_reserved": 4447,
+   "excluded": 24
+  },
+  "exclusions_by_reason": {
+   "val_candidate_duplicate_in_backbone_training_folds": 7,
+   "nontest_partner_of_test_record": 17
+  },
+  "flags": {
+   "within_train_dup_groups": 43,
+   "label_conflict_pairs_in_experiment": 24
+  },
+  "class_support": {
+   "train": {
+    "1AVB": 900,
+    "2AVB": 55,
+    "2AVB1": 25,
+    "3AVB": 65,
+    "AF": 6453,
+    "AFIB": 1440,
+    "ALS": 1244,
+    "APB": 1026,
+    "AQW": 859,
+    "ARS": 687,
+    "AT": 236,
+    "AVB": 185,
+    "AVRT": 25,
+    "CCR": 134,
+    "CR": 64,
+    "ERV": 286,
+    "IVB": 624,
+    "JEB": 65,
+    "LFBBB": 194,
+    "LVH": 536,
+    "LVQRSAL": 826,
+    "MISW": 89,
+    "PRIE": 46,
+    "PWC": 104,
+    "QTIE": 308,
+    "RAH": 29,
+    "RBBB": 531,
+    "RVH": 91,
+    "SA": 2018,
+    "SB": 13117,
+    "SR": 6553,
+    "ST": 5818,
+    "STDD": 1342,
+    "STE": 612,
+    "STTC": 946,
+    "STTU": 143,
+    "SVT": 586,
+    "TWC": 5587,
+    "TWO": 2309,
+    "UW": 108,
+    "VEB": 42,
+    "VFW": 94,
+    "VPB": 247,
+    "VPE": 9,
+    "WPW": 63
+   },
+   "validation": {
+    "1AVB": 112,
+    "2AVB": 6,
+    "2AVB1": 4,
+    "3AVB": 8,
+    "AF": 809,
+    "AFIB": 178,
+    "ALS": 146,
+    "APB": 142,
+    "AQW": 97,
+    "ARS": 84,
+    "AT": 32,
+    "AVB": 29,
+    "AVRT": 0,
+    "CCR": 18,
+    "CR": 3,
+    "ERV": 35,
+    "IVB": 74,
+    "JEB": 3,
+    "LFBBB": 30,
+    "LVH": 61,
+    "LVQRSAL": 116,
+    "MISW": 16,
+    "PRIE": 3,
+    "PWC": 19,
+    "QTIE": 37,
+    "RAH": 5,
+    "RBBB": 62,
+    "RVH": 14,
+    "SA": 273,
+    "SB": 1715,
+    "SR": 733,
+    "ST": 743,
+    "STDD": 161,
+    "STE": 94,
+    "STTC": 103,
+    "STTU": 15,
+    "SVT": 58,
+    "TWC": 731,
+    "TWO": 304,
+    "UW": 10,
+    "VEB": 9,
+    "VFW": 11,
+    "VPB": 23,
+    "VPE": 3,
+    "WPW": 3
+   },
+   "test_reserved": {
+    "1AVB": 128,
+    "2AVB": 5,
+    "2AVB1": 2,
+    "3AVB": 3,
+    "AF": 795,
+    "AFIB": 158,
+    "ALS": 154,
+    "APB": 144,
+    "AQW": 106,
+    "ARS": 82,
+    "AT": 29,
+    "AVB": 30,
+    "AVRT": 1,
+    "CCR": 10,
+    "CR": 9,
+    "ERV": 45,
+    "IVB": 73,
+    "JEB": 7,
+    "LFBBB": 16,
+    "LVH": 50,
+    "LVQRSAL": 101,
+    "MISW": 18,
+    "PRIE": 3,
+    "PWC": 19,
+    "QTIE": 49,
+    "RAH": 2,
+    "RBBB": 55,
+    "RVH": 5,
+    "SA": 259,
+    "SB": 1725,
+    "SR": 831,
+    "ST": 691,
+    "STDD": 165,
+    "STE": 95,
+    "STTC": 109,
+    "STTU": 18,
+    "SVT": 76,
+    "TWC": 719,
+    "TWO": 264,
+    "UW": 18,
+    "VEB": 5,
+    "VFW": 11,
+    "VPB": 23,
+    "VPE": 0,
+    "WPW": 6
+   },
+   "excluded": {
+    "1AVB": 0,
+    "2AVB": 0,
+    "2AVB1": 0,
+    "3AVB": 0,
+    "AF": 3,
+    "AFIB": 4,
+    "ALS": 1,
+    "APB": 0,
+    "AQW": 1,
+    "ARS": 0,
+    "AT": 0,
+    "AVB": 0,
+    "AVRT": 0,
+    "CCR": 0,
+    "CR": 0,
+    "ERV": 0,
+    "IVB": 0,
+    "JEB": 0,
+    "LFBBB": 0,
+    "LVH": 0,
+    "LVQRSAL": 0,
+    "MISW": 0,
+    "PRIE": 0,
+    "PWC": 0,
+    "QTIE": 0,
+    "RAH": 0,
+    "RBBB": 1,
+    "RVH": 0,
+    "SA": 0,
+    "SB": 2,
+    "SR": 8,
+    "ST": 3,
+    "STDD": 0,
+    "STE": 0,
+    "STTC": 0,
+    "STTU": 0,
+    "SVT": 4,
+    "TWC": 6,
+    "TWO": 0,
+    "UW": 0,
+    "VEB": 0,
+    "VFW": 0,
+    "VPB": 1,
+    "VPE": 0,
+    "WPW": 0
+   }
+  },
+  "original_fold_sizes": [
+   4448,
+   4448,
+   4448,
+   4448,
+   4448,
+   4448,
+   4447,
+   4447,
+   4447,
+   4447
+  ]
+ },
+ "completed": {
+  "reproduction": {
+   "headline_vs_aggregate_metrics_csv": {
+    "tolerance": 5.1e-07,
+    "max_abs_diff": 4.95839892145078e-07,
+    "note": "declared tolerance was 1e-8 but aggregate_metrics.csv stores 6 decimals, so 5.1e-7 is the achievable check; paired bootstrap was checked at 1e-8"
+   },
+   "paired_bootstrap_vs_step3_5": {
+    "tolerance": 1e-08,
+    "max_abs_diff": 0.0
+   }
+  },
+  "checks": [
+   "ensemble == mean(ft_fold0,p1_fold1,p1_fold2) (<1e-7)",
+   "original thresholds == models/pretrained files for ft_fold0,p1_fold0",
+   "regenerated thresholds == regenerated_thresholds.npz",
+   "p1_fold1 stale file not used",
+   "cohort sizes == declared",
+   "rows matched by record ID"
+  ],
+  "evaluable_classes": {
+   "A_all_test": 44,
+   "B_exclude_cross_boundary": 44,
+   "C_exclude_any_duplicate": 44
+  },
+  "unevaluable_classes": {
+   "A_all_test": [
+    "VPE"
+   ],
+   "B_exclude_cross_boundary": [
+    "VPE"
+   ],
+   "C_exclude_any_duplicate": [
+    "VPE"
+   ]
+  },
+  "common_evaluable_classes": 44,
+  "software": {
+   "python": "3.14.6",
+   "numpy": "2.5.4"
+  },
+  "command": "python -I scripts/step3_7_manifests.py ; python -I scripts/step3_7_sensitivity.py"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "seed": 20261120,
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "exp8_run": "results\\xai_atrial_activity\\run_20261120_152906",
+ "exp9_run_region_bank_readonly": "results\\xai_atrial_content\\run_20261120_154832",
+ "offsets": [
+  -45,
+  -30,
+  -15,
+  10
+ ],
+ "patch_widths": {
+  "40": [
+   25,
+   15
+  ],
+  "50": [
+   30,
+   20
+  ],
+  "30": [
+   18,
+   12
+  ]
+ },
+ "n_donors": {
+  "AF": 5,
+  "RND": 3
+ },
+ "usage_lambda": 0.05,
+ "usage_cap": 3,
+ "scale_compat": [
+  0.1,
+  5.0
+ ],
+ "rr_target_cv_factorial": 0.03,
+ "bootstrap": "record-level B=5000 seed 20261120",
+ "records_beats_sha256": "c916f5733baaeb0bc3a4803c3a28a03b35e6f8a6ab3cb070209f6ee0dd46405a",
+ "donors_sha256": "992211513f503e050558f63eeb52aefd2d9af5fff1c48130c8314349dc14affa",
+ "audit_sha256": "69eadd786dd41648e881a28040b26d23454776f7c5f46406e70e64e59736d47c",
+ "exp9_bank_dev160_sha256": "e3d8a25f3bb3836bc0ec998704a1837859f84623e0a3def302cc20869f806259",
+ "code_sha256": {
+  "src/ecg_concept/pwave_ops.py": "8f088e17d32ddf2f515e7ee759614c45ea9a0327b75155b37df5ca0140a0595d",
+  "scripts/pwave_core.py": "cf2044d134290af32d408d6bd8176b61e380c8878db56d62ab77d3ac4c3fe965",
+  "scripts/xai_pwave_transplant.py": "e3dc5085d36428dd7ecd0611be4ec00139ffcbdeeacf7fa33b193171d9a2ba05",
+  "src/ecg_concept/atrial_content.py": "04dd67bac60d027b2e68999cf319bd1ac4ae783b164366f6f95bd8375fd469a2",
+  "src/ecg_concept/atrial_ops.py": "490a2c856d0147123e31e7f864f2ff4feff824b5925266fdf7c0012840f8457c",
+  "scripts/atrial_core.py": "55a2347aaa89ccd6440589288aa9023cc8aa519f4a78f2cb947f3c65dfe0fb44"
+ }
+}

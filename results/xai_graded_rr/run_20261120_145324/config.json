@@ -1,0 +1,24 @@
+{
+ "extractor_params_sha256": "4f5e41ea05c53bd39bf0267039047a30a668652c2229b83e9ba0b11dfb00403c",
+ "seed": 20261120,
+ "acceptance": {
+  "post": 0.8,
+  "pre": 0.8,
+  "junction": 5.0,
+  "p999": 1.5,
+  "min_rr": 100
+ },
+ "rigid": {
+  "rigid_post": 150,
+  "rigid_pre": 50
+ },
+ "patterns": [
+  "iid_a",
+  "iid_b",
+  "smooth",
+  "perm_orig"
+ ],
+ "margin": 0.01,
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "manifest_sha256": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7"
+}

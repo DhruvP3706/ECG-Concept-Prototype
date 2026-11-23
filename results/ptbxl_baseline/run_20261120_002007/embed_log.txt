@@ -1,0 +1,21 @@
+[00:20:08] device cuda; eligible train 16289, validation 2034; backbone state hash 37b081d7bd7ee6e8
+[00:20:37] chunk 0: 1000/18323 done, 29s elapsed, non-finite rows so far 0
+[00:21:07] chunk 1: 2000/18323 done, 59s elapsed, non-finite rows so far 0
+[00:21:38] chunk 2: 3000/18323 done, 90s elapsed, non-finite rows so far 0
+[00:22:10] chunk 3: 4000/18323 done, 122s elapsed, non-finite rows so far 0
+[00:22:39] chunk 4: 5000/18323 done, 151s elapsed, non-finite rows so far 0
+[00:23:07] chunk 5: 6000/18323 done, 179s elapsed, non-finite rows so far 0
+[00:23:35] chunk 6: 7000/18323 done, 207s elapsed, non-finite rows so far 0
+[00:24:03] chunk 7: 8000/18323 done, 235s elapsed, non-finite rows so far 0
+[00:24:30] chunk 8: 9000/18323 done, 263s elapsed, non-finite rows so far 0
+[00:24:59] chunk 9: 10000/18323 done, 291s elapsed, non-finite rows so far 0
+[00:25:27] chunk 10: 11000/18323 done, 319s elapsed, non-finite rows so far 0
+[00:25:55] chunk 11: 12000/18323 done, 347s elapsed, non-finite rows so far 0
+[00:26:23] chunk 12: 13000/18323 done, 375s elapsed, non-finite rows so far 0
+[00:26:51] chunk 13: 14000/18323 done, 404s elapsed, non-finite rows so far 0
+[00:27:19] chunk 14: 15000/18323 done, 432s elapsed, non-finite rows so far 0
+[00:27:43] chunk 15: 16000/18323 done, 455s elapsed, non-finite rows so far 0
+[00:28:04] chunk 16: 17000/18323 done, 476s elapsed, non-finite rows so far 0
+[00:28:26] chunk 17: 18000/18323 done, 498s elapsed, non-finite rows so far 0
+[00:28:34] chunk 18: 18323/18323 done, 506s elapsed, non-finite rows so far 0
+[00:28:34] done in 506s; backbone unchanged; non-finite rows 0

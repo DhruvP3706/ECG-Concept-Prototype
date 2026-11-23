@@ -1,0 +1,56 @@
+{
+ "eligible_units_per_stratum": {
+  "S03_AFIB": 1279,
+  "S09_SB": 11138,
+  "S04_AF_flutter": 6368,
+  "S11_SR": 5873,
+  "S10_ST": 4931,
+  "S07_conduction_wide_QRS": 1163,
+  "S06_ectopy": 1008,
+  "S01_timestamp_block": 811,
+  "S05_SVT_AT": 733,
+  "S99_other": 159,
+  "S08_SA": 1868,
+  "S02_age_missing": 189,
+  "S12_LVQRSAL": 5
+ },
+ "shortfalls": {
+  "DEV-S:S12_LVQRSAL": 5,
+  "LOCK-S:S12_LVQRSAL": 10
+ },
+ "seed": 20261111,
+ "quota_per_stratum": 10,
+ "set_unit_counts": {
+  "LOCK-R": 100,
+  "DEV-S": 120,
+  "LOCK-S": 120
+ },
+ "set_record_counts": {
+  "LOCK-R": 100,
+  "DEV-S": 121,
+  "LOCK-S": 120
+ },
+ "lists_sha256": "836b91deed5aa7c424ef51d5a3242ae69c871361809a9eda779f19304640e34f",
+ "manifest_sha256": "4347a4aa1c7d4860c81b66d9ae8e45212e94c7e23b46a9b9a32202df3185d790",
+ "rules": {
+  "unit": "duplicate group if within-train pair else record",
+  "key": "sha256(seed|unit_id) ascending",
+  "draw_order": "LOCK-R (SRS 100 over all train units) -> DEV-S -> LOCK-S",
+  "stratum_priority": [
+   "S01_timestamp_block",
+   "S02_age_missing",
+   "S03_AFIB",
+   "S04_AF_flutter",
+   "S05_SVT_AT",
+   "S06_ectopy",
+   "S07_conduction_wide_QRS",
+   "S08_SA",
+   "S09_SB",
+   "S10_ST",
+   "S11_SR",
+   "S12_LVQRSAL"
+  ],
+  "shortfall": "fill with next units by hash order from any stratum, selection='fallback'",
+  "metrics_member": "lowest record ID in the unit; partner is processed only for identical-output checks"
+ }
+}

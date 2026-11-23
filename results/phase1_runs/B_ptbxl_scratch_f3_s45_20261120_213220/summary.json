@@ -1,0 +1,7 @@
+{
+ "best_epoch": 17,
+ "best_inner_val_macro_auroc": 0.932970695108521,
+ "run_dir": "C:\\Users\\lenovo\\Desktop\\ECG-Concept-Prototype\\results\\phase1_runs\\B_ptbxl_scratch_f3_s45_20261120_213220",
+ "best_ckpt_sha256": "630ba8573149cf430953b48d1bcb6632a473ab0e410b05af61e4865c2751b277",
+ "fold10_waveform_reads_allowed": 0
+}

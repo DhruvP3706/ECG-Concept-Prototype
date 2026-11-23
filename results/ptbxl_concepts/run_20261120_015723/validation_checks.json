@@ -1,0 +1,83 @@
+{
+ "criteria": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true
+ },
+ "all_pass": true,
+ "results": {
+  "read_ok_all": true,
+  "n_read_failures": 0,
+  "train_rate_accepted_frac": 0.9769783289336362,
+  "train_irr_accepted_frac": 0.9769783289336362,
+  "train_accepted_rate_in_30_250_frac": 0.9999371622470781,
+  "train_uncertain_frac": 0.023021671066363804,
+  "rhythm_statement_medians_train": {
+   "SBRAD": {
+    "n": 466,
+    "median_rate": 48.825854452452916,
+    "median_rr_cv": 0.029920708921115095
+   },
+   "SR": {
+    "n": 12484,
+    "median_rate": 70.32423736294038,
+    "median_rr_cv": 0.022276710447671565
+   },
+   "STACH": {
+    "n": 602,
+    "median_rate": 107.92794230233078,
+    "median_rr_cv": 0.011970847180654871
+   },
+   "AFIB": {
+    "n": 1091,
+    "median_rate": 86.38830435264148,
+    "median_rr_cv": 0.19938971743093015
+   }
+  },
+  "coverage": {
+   "train": {
+    "rate": {
+     "ACCEPTED": 0.9769783289336362,
+     "UNCERTAIN": 0.023021671066363804,
+     "UNAVAILABLE": 0.0
+    },
+    "irregularity": {
+     "ACCEPTED": 0.9769783289336362,
+     "UNCERTAIN": 0.023021671066363804,
+     "UNAVAILABLE": 0.0
+    }
+   },
+   "val": {
+    "rate": {
+     "ACCEPTED": 0.9823008849557522,
+     "UNCERTAIN": 0.017699115044247787,
+     "UNAVAILABLE": 0.0
+    },
+    "irregularity": {
+     "ACCEPTED": 0.9823008849557522,
+     "UNCERTAIN": 0.017699115044247787,
+     "UNAVAILABLE": 0.0
+    }
+   }
+  },
+  "reason_counts_all_eligible": {
+   "DETECTOR_DISAGREEMENT": 403,
+   "LOW_LEAD_SUPPORT": 14,
+   "FLAT_LEAD": 1
+  },
+  "accepted_rate_train_percentiles_1_50_99": [
+   46.8,
+   71.2,
+   127.1
+  ],
+  "accepted_rr_cv_train_percentiles_1_50_99": [
+   0.0035,
+   0.0251,
+   0.3281
+  ]
+ },
+ "concepts_csv_sha256": "4cc2e0a60bcce761a3d6095512b8206b80f1895f8e49855a34ca6afb7ca59874",
+ "seconds": 205
+}

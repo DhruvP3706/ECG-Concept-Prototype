@@ -1,0 +1,566 @@
+{
+ "tests": {
+  "run": 20,
+  "failures": 0,
+  "errors": 0
+ },
+ "determinism": {
+  "determinism_rerun_records": 20,
+  "identical": true
+ },
+ "duplicate_pairs_read": 43,
+ "duplicate_pairs_identical_outputs_and_raw_array": 43,
+ "read_failures": 0,
+ "structural_failures": 0,
+ "sets": {
+  "DEV-S": {
+   "units": 120,
+   "rate_state": {
+    "UNCERTAIN": 2,
+    "ACCEPTED": 116,
+    "UNAVAILABLE": 2
+   },
+   "irr_state": {
+    "UNCERTAIN": 2,
+    "ACCEPTED": 116,
+    "UNAVAILABLE": 2
+   },
+   "reasons": {
+    "DETECTOR_DISAGREEMENT": 2,
+    "FLAT_LEAD": 5,
+    "INSUFFICIENT_USABLE_LEADS": 2,
+    "CLIPPING_SUSPECT": 1
+   },
+   "runtime_s_per_record": [
+    0.05,
+    0.062,
+    0.069,
+    0.076,
+    0.082
+   ],
+   "n_beats_cons": [
+    8.0,
+    10.0,
+    13.0,
+    18.0,
+    27.1
+   ],
+   "rate_mean_bpm_cons_all": [
+    52.776,
+    59.587,
+    78.689,
+    112.049,
+    163.397
+   ],
+   "accepted_rate_mean_bpm": [
+    52.672,
+    59.818,
+    79.404,
+    112.455,
+    164.59
+   ],
+   "accepted_rr_cv": [
+    0.005,
+    0.011,
+    0.03,
+    0.122,
+    0.219
+   ],
+   "accepted_rr_nrmssd": [
+    0.005,
+    0.013,
+    0.04,
+    0.186,
+    0.314
+   ],
+   "accepted_rr_mad_succ": [
+    0.003,
+    0.008,
+    0.025,
+    0.083,
+    0.215
+   ],
+   "agreement": {
+    "n_with_detections": 118,
+    "dice_q": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "perfect_agreement_frac": 0.9833333333333333,
+    "abs_rate_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.022
+    ],
+    "median_abs_dt_ms_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "abs_nrmssd_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.003
+    ]
+   }
+  },
+  "LOCK-S": {
+   "units": 120,
+   "rate_state": {
+    "ACCEPTED": 119,
+    "UNCERTAIN": 1
+   },
+   "irr_state": {
+    "ACCEPTED": 119,
+    "UNCERTAIN": 1
+   },
+   "reasons": {
+    "DETECTOR_DISAGREEMENT": 1,
+    "FLAT_LEAD": 1
+   },
+   "runtime_s_per_record": [
+    0.063,
+    0.069,
+    0.072,
+    0.075,
+    0.079
+   ],
+   "n_beats_cons": [
+    8.0,
+    9.0,
+    13.0,
+    17.0,
+    27.0
+   ],
+   "rate_mean_bpm_cons_all": [
+    51.303,
+    58.008,
+    77.423,
+    106.171,
+    165.082
+   ],
+   "accepted_rate_mean_bpm": [
+    51.261,
+    57.977,
+    77.775,
+    106.218,
+    165.138
+   ],
+   "accepted_rr_cv": [
+    0.004,
+    0.014,
+    0.031,
+    0.148,
+    0.244
+   ],
+   "accepted_rr_nrmssd": [
+    0.005,
+    0.014,
+    0.035,
+    0.186,
+    0.392
+   ],
+   "accepted_rr_mad_succ": [
+    0.003,
+    0.01,
+    0.024,
+    0.087,
+    0.304
+   ],
+   "agreement": {
+    "n_with_detections": 120,
+    "dice_q": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "perfect_agreement_frac": 0.9916666666666667,
+    "abs_rate_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "median_abs_dt_ms_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "abs_nrmssd_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "LOCK-R": {
+   "units": 100,
+   "rate_state": {
+    "ACCEPTED": 98,
+    "UNCERTAIN": 2
+   },
+   "irr_state": {
+    "ACCEPTED": 98,
+    "UNCERTAIN": 2
+   },
+   "reasons": {
+    "FLAT_LEAD": 2,
+    "DETECTOR_DISAGREEMENT": 2
+   },
+   "runtime_s_per_record": [
+    0.054,
+    0.063,
+    0.069,
+    0.072,
+    0.076
+   ],
+   "n_beats_cons": [
+    8.0,
+    9.0,
+    11.0,
+    15.25,
+    22.0
+   ],
+   "rate_mean_bpm_cons_all": [
+    51.88,
+    56.017,
+    65.742,
+    94.998,
+    134.804
+   ],
+   "accepted_rate_mean_bpm": [
+    51.821,
+    56.558,
+    65.996,
+    97.994,
+    135.41
+   ],
+   "accepted_rr_cv": [
+    0.007,
+    0.016,
+    0.033,
+    0.125,
+    0.263
+   ],
+   "accepted_rr_nrmssd": [
+    0.008,
+    0.021,
+    0.038,
+    0.174,
+    0.363
+   ],
+   "accepted_rr_mad_succ": [
+    0.004,
+    0.014,
+    0.028,
+    0.077,
+    0.269
+   ],
+   "agreement": {
+    "n_with_detections": 100,
+    "dice_q": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "perfect_agreement_frac": 0.98,
+    "abs_rate_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "median_abs_dt_ms_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "abs_nrmssd_diff_q": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "coverage": {
+  "age_missing|age_missing=False": {
+   "UNCERTAIN": 5,
+   "irr_UNCERTAIN": 5,
+   "n": 320,
+   "ACCEPTED": 313,
+   "irr_ACCEPTED": 313,
+   "UNAVAILABLE": 2,
+   "irr_UNAVAILABLE": 2
+  },
+  "age_missing|age_missing=True": {
+   "ACCEPTED": 20,
+   "irr_ACCEPTED": 20,
+   "n": 20
+  },
+  "id_block|JS08344-09373": {
+   "UNCERTAIN": 1,
+   "irr_UNCERTAIN": 1,
+   "n": 23,
+   "ACCEPTED": 22,
+   "irr_ACCEPTED": 22
+  },
+  "id_block|other": {
+   "ACCEPTED": 311,
+   "irr_ACCEPTED": 311,
+   "n": 317,
+   "UNCERTAIN": 4,
+   "irr_UNCERTAIN": 4,
+   "UNAVAILABLE": 2,
+   "irr_UNAVAILABLE": 2
+  },
+  "stratum|DEV-S:S01_timestamp_block": {
+   "UNCERTAIN": 1,
+   "irr_UNCERTAIN": 1,
+   "n": 10,
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9
+  },
+  "stratum|DEV-S:S02_age_missing": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S03_AFIB": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S04_AF_flutter": {
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9,
+   "n": 10,
+   "UNCERTAIN": 1,
+   "irr_UNCERTAIN": 1
+  },
+  "stratum|DEV-S:S05_SVT_AT": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S06_ectopy": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S07_conduction_wide_QRS": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S08_SA": {
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9,
+   "n": 10,
+   "UNAVAILABLE": 1,
+   "irr_UNAVAILABLE": 1
+  },
+  "stratum|DEV-S:S09_SB": {
+   "ACCEPTED": 15,
+   "irr_ACCEPTED": 15,
+   "n": 15
+  },
+  "stratum|DEV-S:S10_ST": {
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9,
+   "n": 10,
+   "UNAVAILABLE": 1,
+   "irr_UNAVAILABLE": 1
+  },
+  "stratum|DEV-S:S11_SR": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|DEV-S:S12_LVQRSAL": {
+   "ACCEPTED": 5,
+   "irr_ACCEPTED": 5,
+   "n": 5
+  },
+  "stratum|LOCK-R:S01_timestamp_block": {
+   "ACCEPTED": 3,
+   "irr_ACCEPTED": 3,
+   "n": 3
+  },
+  "stratum|LOCK-R:S03_AFIB": {
+   "ACCEPTED": 3,
+   "irr_ACCEPTED": 3,
+   "n": 3
+  },
+  "stratum|LOCK-R:S04_AF_flutter": {
+   "ACCEPTED": 20,
+   "irr_ACCEPTED": 20,
+   "n": 20
+  },
+  "stratum|LOCK-R:S05_SVT_AT": {
+   "ACCEPTED": 3,
+   "irr_ACCEPTED": 3,
+   "n": 3
+  },
+  "stratum|LOCK-R:S06_ectopy": {
+   "ACCEPTED": 5,
+   "irr_ACCEPTED": 5,
+   "n": 5
+  },
+  "stratum|LOCK-R:S07_conduction_wide_QRS": {
+   "ACCEPTED": 1,
+   "irr_ACCEPTED": 1,
+   "n": 1
+  },
+  "stratum|LOCK-R:S08_SA": {
+   "ACCEPTED": 7,
+   "irr_ACCEPTED": 7,
+   "n": 7
+  },
+  "stratum|LOCK-R:S09_SB": {
+   "ACCEPTED": 32,
+   "irr_ACCEPTED": 32,
+   "n": 34,
+   "UNCERTAIN": 2,
+   "irr_UNCERTAIN": 2
+  },
+  "stratum|LOCK-R:S10_ST": {
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9,
+   "n": 9
+  },
+  "stratum|LOCK-R:S11_SR": {
+   "ACCEPTED": 15,
+   "irr_ACCEPTED": 15,
+   "n": 15
+  },
+  "stratum|LOCK-S:S01_timestamp_block": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S02_age_missing": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S03_AFIB": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S04_AF_flutter": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S05_SVT_AT": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S06_ectopy": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S07_conduction_wide_QRS": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S08_SA": {
+   "ACCEPTED": 9,
+   "irr_ACCEPTED": 9,
+   "n": 10,
+   "UNCERTAIN": 1,
+   "irr_UNCERTAIN": 1
+  },
+  "stratum|LOCK-S:S09_SB": {
+   "ACCEPTED": 18,
+   "irr_ACCEPTED": 18,
+   "n": 18
+  },
+  "stratum|LOCK-S:S10_ST": {
+   "ACCEPTED": 10,
+   "irr_ACCEPTED": 10,
+   "n": 10
+  },
+  "stratum|LOCK-S:S11_SR": {
+   "ACCEPTED": 12,
+   "irr_ACCEPTED": 12,
+   "n": 12
+  },
+  "ts_flag|ts=False": {
+   "ACCEPTED": 311,
+   "irr_ACCEPTED": 311,
+   "n": 317,
+   "UNCERTAIN": 4,
+   "irr_UNCERTAIN": 4,
+   "UNAVAILABLE": 2,
+   "irr_UNAVAILABLE": 2
+  },
+  "ts_flag|ts=True": {
+   "UNCERTAIN": 1,
+   "irr_UNCERTAIN": 1,
+   "n": 23,
+   "ACCEPTED": 22,
+   "irr_ACCEPTED": 22
+  }
+ },
+ "failure_examples": {
+  "DETECTOR_DISAGREEMENT": [
+   "JS08409",
+   "JS17843",
+   "JS34615",
+   "JS30940",
+   "JS29612"
+  ],
+  "FLAT_LEAD": [
+   "JS12431",
+   "JS10847",
+   "JS35773",
+   "JS35959",
+   "JS11245"
+  ],
+  "INSUFFICIENT_USABLE_LEADS": [
+   "JS35773",
+   "JS11245"
+  ],
+  "CLIPPING_SUSPECT": [
+   "JS40452"
+  ]
+ },
+ "accepted_values_with_unavailable_state": 0,
+ "engineering_checks": {
+  "unit_tests_pass": true,
+  "no_read_failures": true,
+  "determinism_identical": true,
+  "duplicate_identity_all": true,
+  "no_value_with_unavailable_state": true
+ },
+ "verdict": "ENGINEERING READY"
+}

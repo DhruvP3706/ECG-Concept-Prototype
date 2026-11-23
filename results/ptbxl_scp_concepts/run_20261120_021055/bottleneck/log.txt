@@ -1,0 +1,13 @@
+[02:12:30] vocabulary 17: ['ABQRS', 'INVT', 'LOWT', 'LPR', 'LVOLT', 'NT_', 'PAC', 'PVC', 'QWAVE', 'STD_', 'VCLVH', 'AFIB', 'SARRH', 'SBRAD', 'SR', 'STACH', 'SVARR']; reduced 9: ['LVOLT', 'PAC', 'PVC', 'AFIB', 'SARRH', 'SBRAD', 'SR', 'STACH', 'SVARR']
+[02:12:42] main seed 42 done (11s) epochs {'concept_predictor': 13, 'linear': 19, 'proto': 70, 'shuffled': 24, 'annotation_pattern': 13} tau 6.903
+[02:12:51] main seed 43 done (21s) epochs {'concept_predictor': 13, 'linear': 20, 'proto': 50, 'shuffled': 30, 'annotation_pattern': 12} tau 6.294
+[02:12:59] main seed 44 done (29s) epochs {'concept_predictor': 13, 'linear': 15, 'proto': 63, 'shuffled': 13, 'annotation_pattern': 12} tau 6.702
+[02:13:13] P2 seed 42 done (43s) epochs {'concept_predictor': 13, 'linear': 30, 'proto': 100, 'shuffled': 24} tau 5.940
+[02:13:26] P2 seed 43 done (56s) epochs {'concept_predictor': 13, 'linear': 20, 'proto': 61, 'shuffled': 30} tau 6.222
+[02:13:36] P2 seed 44 done (66s) epochs {'concept_predictor': 13, 'linear': 29, 'proto': 47, 'shuffled': 18} tau 5.840
+[02:13:45] reduced seed 42 done (74s) epochs {'concept_predictor': 13, 'linear': 20, 'proto': 68, 'shuffled': 17} tau 1.203
+[02:13:53] reduced seed 43 done (83s) epochs {'concept_predictor': 14, 'linear': 27, 'proto': 63, 'shuffled': 31} tau 1.132
+[02:14:03] reduced seed 44 done (92s) epochs {'concept_predictor': 13, 'linear': 23, 'proto': 100, 'shuffled': 14} tau 1.291
+[02:14:14] reproducibility (main, seed 42 rerun) max abs diff: {'linear': 0.0, 'proto': 0.0, 'shuffled': 0.0, 'annotation_pattern': 0.0, 'concept_probs': 0.0}
+[02:22:01] bootstrap 5000 replicates in 466s; undefined-class replicates: AUROC 0, AP 0
+[02:22:01] done in 571s

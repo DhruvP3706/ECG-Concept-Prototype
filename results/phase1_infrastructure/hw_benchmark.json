@@ -1,0 +1,235 @@
+{
+ "device": "NVIDIA GeForce GTX 1650",
+ "total_memory_gb": 4.294639616,
+ "torch": "2.12.0+cu126",
+ "cuda": "12.6",
+ "synthetic_data_only": true,
+ "model": "LightECGNet default (== V2 architecture, random init, throw-away)",
+ "train_step": {
+  "fp32": {
+   "16": {
+    "ok": true,
+    "sec_per_step": 0.056672632694244385,
+    "records_per_s": 282.3232173864572,
+    "peak_allocated_gb": 0.547391488,
+    "peak_reserved_gb": 0.574619648
+   },
+   "32": {
+    "ok": true,
+    "sec_per_step": 0.10002058744430542,
+    "records_per_s": 319.9341337384026,
+    "peak_allocated_gb": 1.073596928,
+    "peak_reserved_gb": 1.182793728
+   },
+   "48": {
+    "ok": true,
+    "sec_per_step": 0.15248507261276245,
+    "records_per_s": 314.78491092630776,
+    "peak_allocated_gb": 1.589971968,
+    "peak_reserved_gb": 1.765801984
+   },
+   "64": {
+    "ok": true,
+    "sec_per_step": 0.2015487551689148,
+    "records_per_s": 317.5410334157739,
+    "peak_allocated_gb": 2.115736576,
+    "peak_reserved_gb": 2.344615936
+   },
+   "96": {
+    "ok": true,
+    "sec_per_step": 0.3125099539756775,
+    "records_per_s": 307.1902151554239,
+    "peak_allocated_gb": 3.112167424,
+    "peak_reserved_gb": 3.474980864
+   },
+   "128": {
+    "ok": true,
+    "sec_per_step": 1.8614489436149597,
+    "records_per_s": 68.76363729397929,
+    "peak_allocated_gb": 4.140685824,
+    "peak_reserved_gb": 4.620025856
+   },
+   "192": {
+    "ok": true,
+    "sec_per_step": 6.373948037624359,
+    "records_per_s": 30.122617703604707,
+    "peak_allocated_gb": 6.215648256,
+    "peak_reserved_gb": 6.822035456
+   },
+   "256": {
+    "ok": false,
+    "error": "CUDA OOM"
+   }
+  },
+  "fp16": {
+   "16": {
+    "ok": true,
+    "sec_per_step": 0.09685015678405762,
+    "records_per_s": 165.2036561559159,
+    "peak_allocated_gb": 0.298975232,
+    "peak_reserved_gb": 0.322961408
+   },
+   "32": {
+    "ok": true,
+    "sec_per_step": 0.16600912809371948,
+    "records_per_s": 192.76048472427726,
+    "peak_allocated_gb": 0.571684352,
+    "peak_reserved_gb": 0.61865984
+   },
+   "48": {
+    "ok": true,
+    "sec_per_step": 0.24185711145401,
+    "records_per_s": 198.46429038795236,
+    "peak_allocated_gb": 0.832254976,
+    "peak_reserved_gb": 0.968884224
+   },
+   "64": {
+    "ok": true,
+    "sec_per_step": 0.311127245426178,
+    "records_per_s": 205.70361786327535,
+    "peak_allocated_gb": 1.120737792,
+    "peak_reserved_gb": 1.176502272
+   },
+   "96": {
+    "ok": true,
+    "sec_per_step": 0.46129244565963745,
+    "records_per_s": 208.11093028571545,
+    "peak_allocated_gb": 1.659664384,
+    "peak_reserved_gb": 1.746927616
+   },
+   "128": {
+    "ok": true,
+    "sec_per_step": 0.6089296340942383,
+    "records_per_s": 210.20491175535506,
+    "peak_allocated_gb": 2.210294272,
+    "peak_reserved_gb": 2.382364672
+   },
+   "192": {
+    "ok": true,
+    "sec_per_step": 0.915241539478302,
+    "records_per_s": 209.7806881770709,
+    "peak_allocated_gb": 3.260864,
+    "peak_reserved_gb": 3.527409664
+   },
+   "256": {
+    "ok": true,
+    "sec_per_step": 3.059898853302002,
+    "records_per_s": 83.66289615218652,
+    "peak_allocated_gb": 4.338433536,
+    "peak_reserved_gb": 4.693426176
+   }
+  },
+  "bf16": {
+   "16": {
+    "ok": true,
+    "sec_per_step": 0.09966808557510376,
+    "records_per_s": 160.5328316248573,
+    "peak_allocated_gb": 0.298973696,
+    "peak_reserved_gb": 0.322961408
+   },
+   "32": {
+    "ok": true,
+    "sec_per_step": 0.19687926769256592,
+    "records_per_s": 162.53615921595744,
+    "peak_allocated_gb": 0.572174336,
+    "peak_reserved_gb": 0.595591168
+   },
+   "48": {
+    "ok": true,
+    "sec_per_step": 0.2934781312942505,
+    "records_per_s": 163.55562776796367,
+    "peak_allocated_gb": 0.83225344,
+    "peak_reserved_gb": 1.019215872
+   },
+   "64": {
+    "ok": true,
+    "sec_per_step": 0.38896387815475464,
+    "records_per_s": 164.53970045654654,
+    "peak_allocated_gb": 1.122210816,
+    "peak_reserved_gb": 1.23731968
+   },
+   "96": {
+    "ok": true,
+    "sec_per_step": 0.5844206809997559,
+    "records_per_s": 164.26523413883106,
+    "peak_allocated_gb": 1.66176,
+    "peak_reserved_gb": 1.874853888
+   },
+   "128": {
+    "ok": true,
+    "sec_per_step": 0.7828697562217712,
+    "records_per_s": 163.50101531287177,
+    "peak_allocated_gb": 2.214224896,
+    "peak_reserved_gb": 2.466250752
+   },
+   "192": {
+    "ok": true,
+    "sec_per_step": 1.2138778567314148,
+    "records_per_s": 158.17077388411602,
+    "peak_allocated_gb": 3.260862464,
+    "peak_reserved_gb": 3.653238784
+   },
+   "256": {
+    "ok": true,
+    "sec_per_step": 5.218786060810089,
+    "records_per_s": 49.05355326258809,
+    "peak_allocated_gb": 4.338432,
+    "peak_reserved_gb": 4.863295488
+   }
+  }
+ },
+ "dual_head_fp32_bs64": {
+  "ok": true,
+  "sec_per_step": 0.2026943564414978,
+  "records_per_s": 315.74633415347137,
+  "peak_allocated_gb": 2.117860352,
+  "peak_reserved_gb": 2.346713088
+ },
+ "dual_head_fp16_bs64": {
+  "ok": true,
+  "sec_per_step": 0.31160879135131836,
+  "records_per_s": 205.38573293281775,
+  "peak_allocated_gb": 1.122861568,
+  "peak_reserved_gb": 1.178599424
+ },
+ "accumulation_effective_256": {
+  "fp32_32x8": {
+   "sec_per_effective_step": 0.8001646995544434,
+   "records_per_s": 319.9341337384026,
+   "peak_allocated_gb": 1.073596928
+  },
+  "fp32_64x4": {
+   "sec_per_effective_step": 0.8061950206756592,
+   "records_per_s": 317.5410334157739,
+   "peak_allocated_gb": 2.115736576
+  },
+  "fp16_32x8": {
+   "sec_per_effective_step": 1.3280730247497559,
+   "records_per_s": 192.76048472427726,
+   "peak_allocated_gb": 0.571684352
+  },
+  "fp16_64x4": {
+   "sec_per_effective_step": 1.244508981704712,
+   "records_per_s": 205.70361786327535,
+   "peak_allocated_gb": 1.120737792
+  }
+ },
+ "bn_statistics": {
+  "logit_abs_diff_256_vs_4x64": {
+   "mean": 0.012597617693245411,
+   "max": 0.07194399833679199
+  },
+  "logit_abs_diff_256_vs_8x32": {
+   "mean": 0.01863200217485428,
+   "max": 0.11558008193969727
+  },
+  "logit_std_reference": 0.7449528574943542,
+  "first_bn_variance_relative_diff_4x64": 6.093497972869955e-08,
+  "note": "synthetic ECG-like data; real data will differ, but the effect is real: micro-batch BN statistics are not the large-batch statistics"
+ },
+ "cpu_augmentation_256_batch_sec": 0.21329474449157715,
+ "inference_records_per_s_bs128": {
+  "fp32": 1152.7791276624434,
+  "fp16": 682.1571513993175
+ }
+}

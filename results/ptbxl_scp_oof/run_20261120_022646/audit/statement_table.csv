@@ -1,0 +1,32 @@
+code,description,flags,diagnostic_class,decision,reason,train_pos,train_known_neg_P1,train_unknown_P1,val_pos,val_known_neg_P1
+ABQRS,abnormal QRS,form,,KEPT,train positives >= 10,2384,2892,11013,277,376
+HVOLT,high QRS voltage,form,,KEPT,train positives >= 10,41,5235,11013,6,647
+INVT,inverted T-waves,form,,KEPT,train positives >= 10,233,5043,11013,30,623
+LOWT,low amplitude T-waves,form,,KEPT,train positives >= 10,341,4935,11013,43,610
+LPR,prolonged PR interval,form,,KEPT,train positives >= 10,268,5008,11013,34,619
+LVOLT,low QRS voltages in the frontal and horizontal leads,form,,KEPT,train positives >= 10,134,5142,11013,18,635
+NT_,non-specific T-wave changes,form,,KEPT,train positives >= 10,327,4949,11013,40,613
+PAC,atrial premature complex,form,,KEPT,train positives >= 10,307,4969,11013,37,616
+PRC(S),premature complex(es),form,,EXCLUDED,train positives 7 < 10,7,5269,11013,1,652
+PVC,ventricular premature complex,form,,KEPT,train positives >= 10,847,4429,11013,108,545
+QWAVE,Q waves present,form,,KEPT,train positives >= 10,406,4870,11013,51,602
+STD_,non-specific ST depression,form,,KEPT,train positives >= 10,778,4498,11013,99,554
+STE_,non-specific ST elevation,form,,KEPT,train positives >= 10,20,5256,11013,3,650
+TAB_,T-wave abnormality,form,,KEPT,train positives >= 10,26,5250,11013,4,649
+VCLVH,voltage criteria (QRS) for left ventricular hypertrophy,form,,KEPT,train positives >= 10,546,4730,11013,66,587
+AFIB,atrial fibrillation,rhythm,,KEPT,train positives >= 10,1117,14600,572,140,1818
+AFLT,atrial flutter,rhythm,,KEPT,train positives >= 10,13,15704,572,2,1956
+BIGU,"bigeminal pattern (unknown origin, SV or Ventricular)",rhythm,,KEPT,train positives >= 10,50,15667,572,8,1950
+PACE,normal functioning artificial pacemaker,rhythm,,EXCLUDED,train positives 5 < 10,5,15712,572,2,1956
+PSVT,paroxysmal supraventricular tachycardia,rhythm,,EXCLUDED,train positives 2 < 10,2,15715,572,1,1957
+SARRH,sinus arrhythmia,rhythm,,KEPT,train positives >= 10,584,15133,572,72,1886
+SBRAD,sinus bradycardia,rhythm,,KEPT,train positives >= 10,488,15229,572,63,1895
+SR,sinus rhythm,rhythm,,KEPT,train positives >= 10,12762,2955,572,1584,374
+STACH,sinus tachycardia,rhythm,,KEPT,train positives >= 10,618,15099,572,79,1879
+SVARR,supraventricular arrhythmia,rhythm,,KEPT,train positives >= 10,116,15601,572,13,1945
+SVTAC,supraventricular tachycardia,rhythm,,EXCLUDED,train positives 9 < 10,9,15708,572,1,1957
+TRIGU,"trigeminal pattern (unknown origin, SV or Ventricular)",rhythm,,KEPT,train positives >= 10,14,15703,572,2,1956
+DIG,digitalis-effect,form+diagnostic,STTC,EXCLUDED,also a diagnostic-category statement (label-overlap rule),,,,,
+LNGQT,long QT-interval,form+diagnostic,STTC,EXCLUDED,also a diagnostic-category statement (label-overlap rule),,,,,
+NDT,non-diagnostic T abnormalities,form+diagnostic,STTC,EXCLUDED,also a diagnostic-category statement (label-overlap rule),,,,,
+NST_,non-specific ST changes,form+diagnostic,STTC,EXCLUDED,also a diagnostic-category statement (label-overlap rule),,,,,

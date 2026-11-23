@@ -1,0 +1,79 @@
+{
+ "any_cross_pair": {
+  "test_records": 17,
+  "exposed_per_checkpoint": {
+   "ft_fold0": 13,
+   "p1_fold0": 13,
+   "p1_fold1": 17,
+   "p1_fold2": 16
+  },
+  "exposed_to_any_ensemble_member": 17,
+  "class_counts_of_test_records": {
+   "SR": 6,
+   "TWC": 5,
+   "AFIB": 3,
+   "SVT": 3,
+   "ST": 2,
+   "STTC": 2,
+   "AF": 2,
+   "PWC": 1,
+   "AQW": 1,
+   "SB": 1
+  }
+ },
+ "identical_labels": {
+  "test_records": 12,
+  "exposed_per_checkpoint": {
+   "ft_fold0": 8,
+   "p1_fold0": 8,
+   "p1_fold1": 12,
+   "p1_fold2": 11
+  },
+  "exposed_to_any_ensemble_member": 12,
+  "class_counts_of_test_records": {
+   "SR": 6,
+   "SVT": 3,
+   "TWC": 2,
+   "AFIB": 1,
+   "ST": 1,
+   "SB": 1
+  }
+ },
+ "shares_>=1_label": {
+  "test_records": 16,
+  "exposed_per_checkpoint": {
+   "ft_fold0": 12,
+   "p1_fold0": 12,
+   "p1_fold1": 16,
+   "p1_fold2": 15
+  },
+  "exposed_to_any_ensemble_member": 16,
+  "class_counts_of_test_records": {
+   "SR": 6,
+   "TWC": 5,
+   "SVT": 3,
+   "ST": 2,
+   "AFIB": 2,
+   "AF": 2,
+   "PWC": 1,
+   "STTC": 1,
+   "AQW": 1,
+   "SB": 1
+  }
+ },
+ "outside_test_pairs": {
+  "pairs": 50,
+  "same_fold": 6,
+  "different_fold": 44,
+  "straddling_validation_fold_of": {
+   "ft_fold0": 7,
+   "p1_fold0": 7,
+   "p1_fold1": 12,
+   "p1_fold2": 7
+  }
+ },
+ "age0_in_pairs": {
+  "pairs_with_age_0_on_one_side": 55,
+  "of_cross_pairs": 10
+ }
+}

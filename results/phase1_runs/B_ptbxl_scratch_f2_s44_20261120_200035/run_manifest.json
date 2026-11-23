@@ -1,0 +1,110 @@
+{
+ "created": "2026-11-20T20:00:35",
+ "config": {
+  "name": "B_ptbxl_scratch",
+  "status": "READY_AFTER_CACHE (run once per inner fold 0,1,2,3)",
+  "dataset": "ptbxl",
+  "cache_dir": "data/processed/ptbxl_train_v1",
+  "num_classes": 5,
+  "arch": {
+   "block_variant": "v2",
+   "la_bias": true,
+   "la_relu_after_fc2": false,
+   "stem_proj_bn": true,
+   "post_add_relu": true,
+   "head_dropout": 0.4,
+   "pool_fusion": "concat"
+  },
+  "train": {
+   "lr": 0.001,
+   "lr_min": 1e-05,
+   "warmup_epochs": 5,
+   "weight_decay": 0.0001,
+   "epochs": 120,
+   "patience": 15,
+   "eval_every": 1,
+   "physical_batch": 64,
+   "accumulation": 4,
+   "precision": "fp32",
+   "grad_clip": 1.0
+  },
+  "loss": {
+   "pos_weight_cap": 50.0
+  },
+  "augment": {
+   "enabled": true,
+   "mixup_alpha": 0.2,
+   "params": {
+    "p": 0.5,
+    "noise_sigma": 0.02,
+    "max_shift": 250,
+    "scale": [
+     0.8,
+     1.2
+    ],
+    "p_lead_drop": 0.3,
+    "max_drop": 3
+   }
+  },
+  "sampler": null,
+  "seed": 42,
+  "init": {
+   "type": "scratch"
+  },
+  "protocol": "PROTOCOL_PHASE1.md section 4 (B): patient-grouped inner CV over folds 1-8; fold 9 and fold 10 never loaded",
+  "deviations_from_paper": [
+   "batch 256 realised as 64x4 gradient accumulation (BatchNorm statistics differ from true batch 256; measured logit effect in results/phase1_infrastructure/hw_benchmark.json)",
+   "FP32 instead of the paper's BFloat16 (bf16 is emulated on the GTX 1650)",
+   "augmentation details not given by the paper are fixed in data_v3.py (circular roll, 1-3 leads dropped)",
+   "TCN kernel sizes / block dropouts are the recovered V2 values, not paper-confirmed",
+   "5-class head 512->256->5 replaces 45-class head",
+   "paper recipe values reused without any search; PTB-XL-specific tuning is a separate, budgeted step"
+  ]
+ },
+ "config_sha256": "93ccc8997ea5f367ba88fd441dca29c71bb1f83e05836e61f1905d8ae843cf72",
+ "seeds": [
+  44
+ ],
+ "code_sha256": {
+  "scripts/train_v3.py": "014b9d7911ddea13ff37ebbd9b7f6b081bbe446efd381df47831b20b1eca8755",
+  "src/ecg_concept/lightecgnet_paper.py": "c6938d826f3a05e80890b67393282932ad1b60ad7f485481ec28f618c36051ca",
+  "src/ecg_concept/losses_v3.py": "831a5cbdbc7be07776c008d7cfbb6ec459f1ad91ff2c5f2462f37be9c79a748a",
+  "src/ecg_concept/data_v3.py": "8e078d56a920b176bd8ff9a29eb079c63497b1d0a7bcee8e8d36b3ec109e0d27",
+  "src/ecg_concept/eval_metrics.py": "5c472a810de9a05074d9ce5b786b40843ec0400952ee191918d17a0a7dc9ba30",
+  "src/ecg_concept/provenance.py": "1560fbe2d230c9ca38b6104cdaa729c8ab6680833ae11714b29b958f6d506496",
+  "src/ecg_concept/ptbxl_guard.py": "331e8741dfd6d5f6d1a40fecbd1291fd2afebbc0a8de0c3afeb7798d874d26ab"
+ },
+ "reference_files_verified": {
+  "models/pretrained/lightv2_ft_fold0.pt": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+  "models/pretrained/lightv2_ft_fold0_thresh.npy": "e722ca9490881952d4ad45868294d65591dc1ced8076d5b71ff278a36ca512e8",
+  "models/pretrained/lightv2_p1_fold0.pt": "042876f5cd9a8293267df91cc0d393e28296d5423e3d0f81f37e2d6d0b5251b6",
+  "models/pretrained/lightv2_p1_fold0_thresh.npy": "63a0d206e4296dcaba4f0c7e92509b3330e0a78952cba5c720c7ff1a01839ea2",
+  "models/pretrained/lightv2_p1_fold1.pt": "7e7559c095577c64997d3e1a8a67871642e0cda238f55bb28e1eb5007860da7b",
+  "models/pretrained/lightv2_p1_fold1_thresh.npy": "2ce391a6661646a79148d5676822581d0d7b7438e730afc5c3f95e3c458c44d7",
+  "models/pretrained/lightv2_p1_fold2.pt": "6e1ee03f3ef16578d0b39bb5355d8e06b25772e4c0793bd04843d2d07a54d434",
+  "src/ecg_concept/lightecgnetv2.py": "8d19c931c77f21c3816c8d7ebd84b7d29d7309988162fa6f4c6b801e6185838a",
+  "src/ecg_concept/preprocessing.py": "4b6a6a54b573b2ef95ddb418e14bb80d1aca287ad25e62b0e9e52acb12070d66",
+  "src/ecg_concept/labels.py": "31d1106b622346373f7a3d3b00d833e6ee79246822334f366995f49b740c48b9",
+  "src/ecg_concept/inference.py": "8f3a5d9fd663cfa8fa2d1c87942a8498bca3992fa9a56dc2f92c3987658328b4",
+  "benchmarks/ptbxl_v1/config.json": "3c59a5c4604beb070167af70b792ad287935c545cff4d7228707e203860f98c1",
+  "benchmarks/ptbxl_v1/manifest_train_val.csv": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+  "benchmarks/ptbxl_v1/manifest_test_reserved.csv": "cd5b4d7fd82650ede43932caa26440d5ddc36f74086652f8a48ca1cf784270ac",
+  "results/step3_7/prospective_role_manifest.csv": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+  "results/step3_7/duplicate_group_manifest.csv": "f87673255cf4614acebd3f6039ade07915393ff3ab4c098f1cdc33aee5fe3825"
+ },
+ "environment": {
+  "python": "3.14.6",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "torch": "2.12.0+cu126",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce GTX 1650"
+ },
+ "inner_fold": 2,
+ "n_train": 12246,
+ "n_val": 4043,
+ "cache_dir": "data/processed/ptbxl_train_v1",
+ "init_weights_sha256": "9396a08ca2dc61481bcf0cfce708594e5111726f745aaca360727a12b0519014",
+ "seed_policy": "seed = config.seed + inner_fold; python/numpy/torch(cpu+cuda) seeded and cudnn deterministic BEFORE model construction; torch+numpy re-seeded after construction (approved order) so dropout/augmentation streams are unchanged; augmentation and batch order use RandomState(seed); no DataLoader workers",
+ "cache_manifest_sha256": "b303c06ccfa48b0cff8540e046017207794a819c3835ec45ee16806082edd678",
+ "x_cache_sha256_from_manifest": "54c2422d1b29c8d14df1d196783e2c01c6866155794ed17feb26c82199119ca5"
+}

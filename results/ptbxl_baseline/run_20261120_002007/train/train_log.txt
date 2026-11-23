@@ -1,0 +1,22 @@
+[00:28:47] train 16289 val 2034; train positives [7542, 3307, 4062, 3900, 1820]; val positives [942, 412, 510, 495, 216]; pos_weight [1.159999966621399, 3.9260001182556152, 3.009999990463257, 3.177000045776367, 7.949999809265137]
+[00:28:47] record 12722 (constant-zero V5) present: True; role train; finite in all variants: True
+[00:28:53] A_exact linear seed 42: best epoch 23/33, val loss 0.5359, macro-AUROC 0.9195, macro-AP 0.7802, tuned macro-F1 0.7303
+[00:28:56] A_exact linear seed 43: best epoch 21/31, val loss 0.5342, macro-AUROC 0.9203, macro-AP 0.7770, tuned macro-F1 0.7245
+[00:28:59] A_exact linear seed 44: best epoch 23/33, val loss 0.5352, macro-AUROC 0.9198, macro-AP 0.7786, tuned macro-F1 0.7290
+[00:29:03] A_exact mlp seed 42: best epoch 4/14, val loss 0.5170, macro-AUROC 0.9245, macro-AP 0.7889, tuned macro-F1 0.7368
+[00:29:06] A_exact mlp seed 43: best epoch 5/15, val loss 0.5183, macro-AUROC 0.9250, macro-AP 0.7896, tuned macro-F1 0.7400
+[00:29:10] A_exact mlp seed 44: best epoch 8/18, val loss 0.5196, macro-AUROC 0.9254, macro-AP 0.7894, tuned macro-F1 0.7339
+[00:29:13] B_float linear seed 42: best epoch 23/33, val loss 0.5358, macro-AUROC 0.9195, macro-AP 0.7803, tuned macro-F1 0.7303
+[00:29:15] B_float linear seed 43: best epoch 21/31, val loss 0.5342, macro-AUROC 0.9202, macro-AP 0.7770, tuned macro-F1 0.7248
+[00:29:18] B_float linear seed 44: best epoch 23/33, val loss 0.5352, macro-AUROC 0.9198, macro-AP 0.7787, tuned macro-F1 0.7289
+[00:29:22] B_float mlp seed 42: best epoch 8/18, val loss 0.5157, macro-AUROC 0.9262, macro-AP 0.7928, tuned macro-F1 0.7361
+[00:29:25] B_float mlp seed 43: best epoch 5/15, val loss 0.5172, macro-AUROC 0.9252, macro-AP 0.7899, tuned macro-F1 0.7401
+[00:29:29] B_float mlp seed 44: best epoch 8/18, val loss 0.5186, macro-AUROC 0.9256, macro-AP 0.7904, tuned macro-F1 0.7351
+[00:29:31] C_scaled linear seed 42: best epoch 23/33, val loss 0.5360, macro-AUROC 0.9194, macro-AP 0.7798, tuned macro-F1 0.7286
+[00:29:34] C_scaled linear seed 43: best epoch 21/31, val loss 0.5344, macro-AUROC 0.9201, macro-AP 0.7764, tuned macro-F1 0.7244
+[00:29:37] C_scaled linear seed 44: best epoch 23/33, val loss 0.5352, macro-AUROC 0.9198, macro-AP 0.7780, tuned macro-F1 0.7309
+[00:29:42] C_scaled mlp seed 42: best epoch 8/18, val loss 0.5164, macro-AUROC 0.9259, macro-AP 0.7918, tuned macro-F1 0.7354
+[00:29:45] C_scaled mlp seed 43: best epoch 5/15, val loss 0.5203, macro-AUROC 0.9245, macro-AP 0.7889, tuned macro-F1 0.7381
+[00:29:50] C_scaled mlp seed 44: best epoch 8/18, val loss 0.5190, macro-AUROC 0.9254, macro-AP 0.7880, tuned macro-F1 0.7345
+[00:29:50] mean linear validation macro-AUROC by variant: {'A_exact': 0.9198586041285699, 'B_float': 0.9198765653714744, 'C_scaled': 0.9197507078691015}; best B_float; SELECTED A_exact (rule: keep A_exact unless best exceeds it by >= 0.002)
+[00:29:50] done in 63s

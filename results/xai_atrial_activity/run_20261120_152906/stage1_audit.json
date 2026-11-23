@@ -1,0 +1,127 @@
+{
+ "definition": "pre-QRS average over beats with RR >= 460 samples (920 ms), segment [r-220, r-41], endpoints joined by a straight line; SNR = |peak of average| / mean standard error",
+ "groups": {
+  "SR": {
+   "II": {
+    "records_with_>=4_long_RR_beats": 125,
+    "of": 677,
+    "snr_median": 21.066333771072376,
+    "share_snr_gt_4": 0.976,
+    "peak_lag_median_samples": -31.5,
+    "band_4_9Hz_rms_in_TP_median_counts": 32.32556383720557
+   },
+   "V1": {
+    "records_with_>=4_long_RR_beats": 125,
+    "of": 677,
+    "snr_median": 13.85724814017065,
+    "share_snr_gt_4": 0.936,
+    "peak_lag_median_samples": -36.0,
+    "band_4_9Hz_rms_in_TP_median_counts": 21.066239501047026
+   }
+  },
+  "AFIB": {
+   "II": {
+    "records_with_>=4_long_RR_beats": 29,
+    "of": 169,
+    "snr_median": 2.430853306526307,
+    "share_snr_gt_4": 0.034482758620689655,
+    "peak_lag_median_samples": -126.0,
+    "band_4_9Hz_rms_in_TP_median_counts": 20.12985557441187
+   },
+   "V1": {
+    "records_with_>=4_long_RR_beats": 29,
+    "of": 169,
+    "snr_median": 2.118374226301182,
+    "share_snr_gt_4": 0.0,
+    "peak_lag_median_samples": null,
+    "band_4_9Hz_rms_in_TP_median_counts": 28.563825336194657
+   }
+  }
+ },
+ "SR_pooled_energy_window_II": {
+  "n_records": 122,
+  "5pct_to_95pct_samples_before_R": [
+   142,
+   56
+  ],
+  "quartiles_samples_before_R": [
+   87,
+   75,
+   66
+  ]
+ },
+ "SR_pooled_energy_window_V1": {
+  "n_records": 117,
+  "5pct_to_95pct_samples_before_R": [
+   164,
+   59
+  ],
+  "quartiles_samples_before_R": [
+   92,
+   80,
+   71
+  ]
+ },
+ "eligibility_a1=120": {
+  "SR": {
+   "share_beats_eligible": 0.8628930154040939,
+   "records_with_>=4_eligible_beats": 0.8892171344165436
+  },
+  "AFIB": {
+   "share_beats_eligible": 0.4470585989345035,
+   "records_with_>=4_eligible_beats": 0.6686390532544378
+  }
+ },
+ "eligibility_a1=160": {
+  "SR": {
+   "share_beats_eligible": 0.6512928971570036,
+   "records_with_>=4_eligible_beats": 0.6883308714918759
+  },
+  "AFIB": {
+   "share_beats_eligible": 0.3199553435168142,
+   "records_with_>=4_eligible_beats": 0.4556213017751479
+  }
+ },
+ "eligibility_a1=200": {
+  "SR": {
+   "share_beats_eligible": 0.4107969824365688,
+   "records_with_>=4_eligible_beats": 0.44165435745937964
+  },
+  "AFIB": {
+   "share_beats_eligible": 0.22777244062394372,
+   "records_with_>=4_eligible_beats": 0.30177514792899407
+  }
+ },
+ "fwave_calibration": {
+  "AFIB_median_region_deviation_rms_per_lead_counts": [
+   20.72,
+   24.24,
+   26.21,
+   19.13,
+   20.95,
+   23.01,
+   32.44,
+   26.53,
+   25.03,
+   20.88,
+   19.95,
+   20.28
+  ],
+  "SR_median_region_deviation_rms_per_lead_counts": [
+   32.98,
+   44.08,
+   32.91,
+   35.96,
+   24.53,
+   35.39,
+   27.52,
+   29.19,
+   30.01,
+   29.88,
+   30.14,
+   30.13
+  ],
+  "n_AFIB_records_used": 77
+ },
+ "verdict": "SR: a coherent pre-QRS atrial deflection is recoverable (high SNR); chosen atrial region = [r-160, r-51] (samples). AFIB: no phase-locked atrial wave (low SNR), the region is positional only. Eligibility rule: previous R peak >= 220 samples before the region start (RR >= 380 for the 160-sample region)."
+}

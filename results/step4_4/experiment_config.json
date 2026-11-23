@@ -1,0 +1,142 @@
+{
+ "declared_before_fitting": true,
+ "declared_at": "2026-11-11 12:45:32",
+ "hyperparameters": {
+  "scaling": {
+   "embedding": "per-dimension standardization, mean/std fitted on TRAIN embedding-eligible records only (std floor 1e-6)",
+   "concepts": "per-concept standardization of ACCEPTED train targets only (std floor 1e-6); predictions inverse-transformed for error reporting",
+   "mask_features": "standardization fitted on train"
+  },
+  "optimizer": {
+   "name": "AdamW",
+   "weight_decay": 0.0001,
+   "batch_size": 256,
+   "max_epochs": 100,
+   "early_stopping_patience": 10,
+   "device": "cpu float32"
+  },
+  "models": {
+   "A_orig_head": "frozen ft_fold0 45-way head, sigmoid, threshold 0.5 (historical validation exposure: fold 0 was its validation fold)",
+   "B_embedding_linear": {
+    "arch": "Linear(512,45)",
+    "loss": "BCE",
+    "lr": 0.001,
+    "selection": "validation BCE"
+   },
+   "C_concept_predictor": {
+    "arch": "Linear(512,128)-ReLU-Linear(128,4)",
+    "loss": "masked per-concept standardized MSE (equal concept weights)",
+    "lr": 0.001,
+    "selection": "validation masked MSE; frozen afterwards"
+   },
+   "C2_concept_only": {
+    "arch": "Linear(4,45) on frozen PREDICTED standardized concepts",
+    "loss": "BCE",
+    "lr": 0.01,
+    "selection": "validation BCE"
+   },
+   "D_prototype": {
+    "K": 16,
+    "init": "deterministic k-means (farthest-point init) in predicted standardized concept space on train records with all 4 targets accepted; prototype = nearest actual training record to each centre (anchored, NOT learned)",
+    "similarity": "exp(-squared_distance / tau)",
+    "tau_rule": "median over ALL train embedding-eligible records of the squared distance to the nearest prototype, floor 1e-6",
+    "head": "Linear(16,45) on similarities only (signed weights allowed)",
+    "loss": "BCE",
+    "lr": 0.01,
+    "selection": "validation BCE",
+    "concept_predictor_updated_by_diagnosis_loss": false
+   },
+   "CTRL_mask_only": {
+    "arch": "Linear(19,45)",
+    "features": "acceptance states, quality-lead counts, reason flags (no values, no beat counts)",
+    "lr": 0.01,
+    "role": "control only; never feeds a proposed model"
+   },
+   "CTRL_extracted_target": {
+    "arch": "Linear(4,45) on standardized EXTRACTED accepted targets",
+    "population": "fully accepted subset",
+    "lr": 0.01,
+    "role": "auxiliary baseline (not an oracle)"
+   }
+  },
+  "threshold": 0.5,
+  "threshold_optimisation": "none",
+  "calibration": "none",
+  "seeds": [
+   42,
+   43,
+   44
+  ],
+  "concept_targets": [
+   "accepted_rate_mean_bpm",
+   "accepted_rr_cv",
+   "accepted_rr_nrmssd",
+   "accepted_rr_mad_succ"
+  ],
+  "diagnostics_not_inputs": [
+   "rate_median_bpm_cons",
+   "n_beats_cons",
+   "n_rr_cons",
+   "detector timing diagnostics"
+  ],
+  "selection_note": "validation data are used for early stopping/selection in every trained model, so validation metrics are mildly optimistic and equally so across models"
+ },
+ "populations": {
+  "train_embedding_eligible": 35568,
+  "validation_embedding_eligible": 4437,
+  "train_records": 35568,
+  "validation_records": 4437,
+  "train_accepted_per_concept": {
+   "accepted_rate_mean_bpm": 34343,
+   "accepted_rr_cv": 34341,
+   "accepted_rr_nrmssd": 34341,
+   "accepted_rr_mad_succ": 34341
+  },
+  "validation_accepted_per_concept": {
+   "accepted_rate_mean_bpm": 4288,
+   "accepted_rr_cv": 4288,
+   "accepted_rr_nrmssd": 4288,
+   "accepted_rr_mad_succ": 4288
+  },
+  "train_fully_accepted": 34341,
+  "validation_fully_accepted": 4288
+ },
+ "cache": {
+  "merged_sha256": "950b2a12986137fbc0bbbeda79b9ac94e97f39392dc7a64acf250117860ea9c1",
+  "fingerprints": {
+   "extractor_sources": {
+    "src/ecg_concept/beat_detection.py": "eee2c017a57d42b18a3b2dbee4c51880fad4cd3f7960e18f7389b208fa0158b5",
+    "src/ecg_concept/rr_concepts.py": "acbcfc67ad67108e7495684f82e99c20899f40329754b3ccefc2c7285fc807dd",
+    "src/ecg_concept/preprocessing.py": "4b6a6a54b573b2ef95ddb418e14bb80d1aca287ad25e62b0e9e52acb12070d66",
+    "scripts/step4_3_pilot.py": "da9fbe583238995e3220650394ac5c6542b6cf11cb7f32f8225f0acf6cd203bd",
+    "tests/test_rr_concepts.py": "25a9939421c79f84a776ede7f4b03ccc0029352bb7843d8e1f184a2f6da2db55"
+   },
+   "extractor_params": "4f5e41ea05c53bd39bf0267039047a30a668652c2229b83e9ba0b11dfb00403c",
+   "role_manifest": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+   "original_fold_manifest": "5fc86602f95a1668ad66d6a27747e42430e9603327382a9673a7c1b4cc9595f1",
+   "backbone_ckpt": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72"
+  },
+  "backbone_check": {
+   "backbone_state_sha256_before": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+   "backbone_state_sha256_after": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+   "unchanged": true,
+   "ckpt_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+   "device": "cuda",
+   "preprocessing": "ecg_concept.preprocessing.load_ecg(quantize_int16=True)"
+  }
+ },
+ "code_sha256": {
+  "src/ecg_concept/concept_proto.py": "07f7b8b821c9ad5691d1e1bfb76aaabdaff4036729c342b8705970160e95f94c",
+  "src/ecg_concept/metrics.py": "598a227806174c6f57e921123afdd991e02bb57342866956ce97249446d5f132",
+  "scripts/step4_4_train.py": "d2914eee5246caeab80a0da883c9a27cc0c42e37d4f0a8ca4e1f379b19dce0f4",
+  "scripts/step4_4_cache.py": "c13ad72c9d2ded1aca417f6f276446915b28f625ed35903f5e896f8296d5e7d0",
+  "tests/test_step4_4.py": "49d69d97a9bc9d169f00f67a010dc103d58f6dff2e18d6c0fa2f31a9a66c3822"
+ },
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4",
+  "torch": "2.12.0+cu126"
+ },
+ "claims": "concept targets are automatically derived 10-second RR statistics (Step 4.3), not expert-validated; validation only; no test data",
+ "config_sha256": "1e02d1ffcfa2fe4c8f2c7351c116aac21fd6500a1e974dd51ddcf62689c8587e"
+}

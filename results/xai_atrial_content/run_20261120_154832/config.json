@@ -1,0 +1,41 @@
+{
+ "seed": 20261120,
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "exp8_run": "results\\xai_atrial_activity\\run_20261120_152906",
+ "region_convention": "r-160..r-51, eligibility: region start >=220 samples after previous R, >=4 eligible beats (Experiment 8)",
+ "n_donors": {
+  "AF": 5,
+  "SR": 3,
+  "RND": 3
+ },
+ "usage_lambda": 0.02,
+ "usage_cap": {
+  "AF": 53,
+  "SR": 6
+ },
+ "scale_compat": [
+  0.25,
+  4.0
+ ],
+ "shuffle_blocks": 5,
+ "sham": "common-phase amplitude-spectrum surrogate of the real modification, per-lead per-region RMS matched, ends zero",
+ "rms_min": 2.0,
+ "diff_ratio_max": 1.0,
+ "sham_ratio": [
+  0.8,
+  1.25
+ ],
+ "timing_tol": 2,
+ "factorial_cv": 0.2,
+ "bootstrap": "record-level B=5000 seed 20261120",
+ "records_beats_sha256": "c916f5733baaeb0bc3a4803c3a28a03b35e6f8a6ab3cb070209f6ee0dd46405a",
+ "donors_sha256": "c366ba425c11ba12eb42f2ef595f60fb1c22827b1fe186965f76502988a52b4e",
+ "audit_sha256": "27b079b52718f5d045bafb0cba018c00246e474121cf68ed5fdd010ceb0f45c3",
+ "code_sha256": {
+  "src/ecg_concept/atrial_content.py": "04dd67bac60d027b2e68999cf319bd1ac4ae783b164366f6f95bd8375fd469a2",
+  "scripts/content_core.py": "841a19994cb2d4fdc3ba4b4b6e41df0f37c04b0eb1cfba51499259ce00e8f6f4",
+  "scripts/xai_atrial_content.py": "97ef99cc3686213366c36b79562afc9bc2ff05eb0965463a8a3d62fcc62ba02d",
+  "src/ecg_concept/atrial_ops.py": "490a2c856d0147123e31e7f864f2ff4feff824b5925266fdf7c0012840f8457c",
+  "scripts/atrial_core.py": "55a2347aaa89ccd6440589288aa9023cc8aa519f4a78f2cb947f3c65dfe0fb44"
+ }
+}

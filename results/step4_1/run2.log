@@ -1,0 +1,100 @@
+{
+ "n_train_records": 35568,
+ "n_headers_parsed": 35567,
+ "parse_failures": [
+  [
+   "JS01052",
+   "AssertionError('record line')"
+  ]
+ ],
+ "duplicate_ids": 0,
+ "join_coverage": "35568/35568 train IDs resolved to a .hea via original_fold_manifest dataset_rel_path",
+ "record_line": {
+  "n_signals": {
+   "12": 35567
+  },
+  "fs": {
+   "500": 35567
+  },
+  "n_samples": {
+   "5000": 35567
+  }
+ },
+ "base_time_date": {
+  "present": 811,
+  "absent": 34756,
+  "years": {
+   "2021": 811
+  },
+  "id_range_with_timestamp": [
+   "JS08344",
+   "JS09373"
+  ],
+  "note": "WFDB base time/date on the record line; meaning (acquisition vs export time) undocumented"
+ },
+ "lead_order": {
+  "I|II|III|aVR|aVL|aVF|V1|V2|V3|V4|V5|V6": 35567
+ },
+ "signal_line_variants_(format,gain,adc_res,adc_zero,block)": {
+  "16+24|1000/mV|16|0|0": 426804
+ },
+ "comment_keys": {
+  "Age": 35567,
+  "Sex": 35567,
+  "Dx": 35567,
+  "Rx": 35567,
+  "Hx": 35567,
+  "Sx": 35567
+ },
+ "age": {
+  "n_total": 35567,
+  "kinds": {
+   "numeric": 35526,
+   "literal_NaN": 41
+  },
+  "numeric_n": 35526,
+  "zero": 171,
+  "negative": 0,
+  "min": 0.0,
+  "max": 89.0,
+  "mean": 58.230338343748244,
+  "median": 61.0,
+  "n_at_max": 726,
+  "n_ge_90": 0,
+  "integer_valued": true
+ },
+ "sex": {
+  "Male": 19958,
+  "Female": 15591,
+  "Unknown": 18
+ },
+ "Rx": {
+  "Unknown": 35567
+ },
+ "Hx": {
+  "Unknown": 35567
+ },
+ "Sx": {
+  "Unknown": 35567
+ },
+ "n_dx_codes_per_record": {
+  "1": 17330,
+  "2": 9350,
+  "3": 4738,
+  "4": 2314,
+  "5": 1155,
+  "6": 468,
+  "7": 141,
+  "8": 53,
+  "9": 10,
+  "10": 6,
+  "11": 1,
+  "12": 1
+ },
+ "train_dup_pairs_conflicts": {
+  "pairs": 43,
+  "age_differs": 26,
+  "sex_differs": 1,
+  "labels_differ": 14
+ }
+}

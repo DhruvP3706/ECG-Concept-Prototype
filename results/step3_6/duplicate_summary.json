@@ -1,0 +1,74 @@
+{
+ "n_mat_files": 45152,
+ "n_records_in_experiment_set": 44476,
+ "test_fold_size": 4447,
+ "n_distinct_file_hashes": 45065,
+ "exact_group_sizes": [
+  2
+ ],
+ "exact": {
+  "pairs": 87,
+  "unique_records": 174,
+  "1_both_test": 1,
+  "2_cross_test_boundary": 17,
+  "3_both_outside_test": 50,
+  "4_not_in_experiment_set": 19,
+  "test_records_in_cross_pairs": 17,
+  "test_records_in_any_pair": 23,
+  "labels_equal": 44,
+  "labels_differ": 24,
+  "demographics_equal": 30,
+  "id_gap_min_median_max": [
+   1,
+   30905,
+   41919
+  ],
+  "test_records_with_duplicate_in_checkpoint_training_folds": {
+   "ft_fold0": 13,
+   "p1_fold0": 13,
+   "p1_fold1": 17,
+   "p1_fold2": 16
+  },
+  "classes_of_cross_pair_test_records": {
+   "SR": 6,
+   "TWC": 5,
+   "AFIB": 3,
+   "SVT": 3,
+   "STTC": 2,
+   "AF": 2,
+   "ST": 2,
+   "PWC": 1,
+   "SB": 1,
+   "AQW": 1
+  },
+  "cross_pairs_other_fold_distribution": {
+   "0": 4,
+   "2": 1,
+   "3": 2,
+   "4": 2,
+   "5": 1,
+   "6": 2,
+   "7": 3,
+   "8": 2
+  }
+ },
+ "partial": {
+  "pairs": 0,
+  "unique_records": 0,
+  "test_records_in_cross_pairs": 0,
+  "test_records_in_any_pair": 0,
+  "labels_equal": 0,
+  "labels_differ": 0,
+  "demographics_equal": 0,
+  "id_gap_min_median_max": null,
+  "test_records_with_duplicate_in_checkpoint_training_folds": {
+   "ft_fold0": 0,
+   "p1_fold0": 0,
+   "p1_fold1": 0,
+   "p1_fold2": 0
+  },
+  "classes_of_cross_pair_test_records": {},
+  "cross_pairs_other_fold_distribution": {}
+ },
+ "partial_records_not_in_exact": 0
+}

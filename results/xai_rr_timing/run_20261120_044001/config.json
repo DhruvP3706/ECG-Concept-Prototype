@@ -1,0 +1,25 @@
+{
+ "previous_runs": [
+  "results\\xai_ig\\run_20261120_030747",
+  "results\\xai_beats\\run_20261120_042530"
+ ],
+ "seed": 20261120,
+ "half_width": 40,
+ "rigid_regions_samples": {
+  "rigid_post": 150,
+  "rigid_pre": 50
+ },
+ "acceptance": {
+  "post": 0.8,
+  "pre": 0.8,
+  "junction": 5.0,
+  "p999": 1.5,
+  "min_rr": 100
+ },
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "beats_json_sha256": "bad061bd222bd574856a987f76b6db013f02069a9bb1fa3a8ab243355054f18d",
+ "code_sha256": {
+  "src/ecg_concept/rr_warp.py": "441462e239082ac95b5cc2ebf8643240c3baf660523eb09c1fa67c074da32810",
+  "scripts/xai_rr_timing.py": "08397f4e14d4ca831c049e786a230d79bdf8926fa199e36dd4518ffb6ebc185f"
+ }
+}

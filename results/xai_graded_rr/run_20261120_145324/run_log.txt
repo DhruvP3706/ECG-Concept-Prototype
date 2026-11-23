@@ -1,0 +1,11 @@
+[14:57:41] records 0/846 (28s); items 13
+[14:57:58] records 100/846 (44s); items 1681
+[14:58:11] records 200/846 (57s); items 3305
+[14:58:26] records 300/846 (72s); items 4925
+[14:58:39] records 400/846 (85s); items 6649
+[14:58:54] records 500/846 (100s); items 8397
+[14:59:06] records 600/846 (113s); items 10129
+[14:59:21] records 700/846 (127s); items 11885
+[14:59:27] records 800/846 (134s); items 13633
+[15:00:04] 14438 items, 13415 model evaluations in 170s; 'orig' reproduces stored logits (max abs diff 0.0e+00); model hash unchanged
+[15:00:04] saved items.csv, logits.npy, all_beat_sequences.json, example_signals.npz

@@ -1,0 +1,3670 @@
+{
+ "step": "4.1 metadata inventory",
+ "restriction": "record-level inspection limited to role==train (35,568); no .mat opened; validation/test/excluded IDs never read",
+ "inspected_sources": {
+  "role_manifest": "results/step3_7/prospective_role_manifest.csv",
+  "train_headers": "WFDBRecords/**/<id>.hea for train IDs only",
+  "dataset_docs": [
+   "ConditionNames_SNOMED-CT.csv",
+   "LICENSE.txt",
+   "RECORDS (name list only)"
+  ],
+  "dataset_file_types_in_tree": {
+   ".hea": 45152,
+   ".mat": 45152,
+   "RECORDS": 453,
+   ".txt": 2,
+   ".csv": 1
+  }
+ },
+ "join_rules": {
+  "headers": "record_id equals file stem; path from original_fold_manifest.csv (Step 3.7)",
+  "labels": "role manifest `labels` column (acronyms)"
+ },
+ "input_sha256": {
+  "results\\step3_7\\prospective_role_manifest.csv": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+  "results\\step3_7\\original_fold_manifest.csv": "5fc86602f95a1668ad66d6a27747e42430e9603327382a9673a7c1b4cc9595f1",
+  "data\\raw\\a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0\\ConditionNames_SNOMED-CT.csv": "05d6fa23acdcbb466b378310ccfad22ea6cef4d3abfa83e8f660c77016be028d",
+  "data\\raw\\a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0\\LICENSE.txt": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2",
+  "results\\step3_7\\analysis_config.json": "ab4262e912410be249c099c428f8f65353a7265aa881ae12c51583ff0da5f221",
+  "results\\step3_7\\evaluation_protocol.md": "f9c8a42d7a411bb594d67dccb39f654728d25ac872eebdccaa35a310b7c306da"
+ },
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4"
+ },
+ "command": ".venv\\Scripts\\python.exe -I scripts\\step4_1_metadata_inventory.py",
+ "summary": {
+  "n_train_records": 35568,
+  "n_headers_parsed": 34756,
+  "parse_failures": [
+   [
+    "JS01052",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08344",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08345",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08346",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08349",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08350",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08352",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08353",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08354",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08355",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08356",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08357",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08358",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08359",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08362",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08363",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08364",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08365",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08366",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08367",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08369",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08371",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08372",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08373",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08374",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08375",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08376",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08377",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08379",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08382",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08383",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08384",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08385",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08386",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08387",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08388",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08389",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08390",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08391",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08392",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08393",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08394",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08396",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08397",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08398",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08399",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08400",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08401",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08403",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08405",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08406",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08408",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08409",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08410",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08411",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08412",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08413",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08416",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08418",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08419",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08421",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08422",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08423",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08424",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08425",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08426",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08428",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08430",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08431",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08432",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08433",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08434",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08435",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08436",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08437",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08439",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08440",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08441",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08442",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08443",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08444",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08445",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08446",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08447",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08448",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08449",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08450",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08451",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08453",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08454",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08456",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08457",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08458",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08461",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08462",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08463",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08464",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08465",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08466",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08467",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08468",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08469",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08471",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08472",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08473",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08474",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08476",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08477",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08478",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08479",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08481",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08482",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08483",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08484",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08485",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08486",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08487",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08488",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08489",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08491",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08492",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08493",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08494",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08496",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08498",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08499",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08501",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08503",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08504",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08507",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08508",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08509",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08510",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08513",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08514",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08515",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08516",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08517",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08518",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08519",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08520",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08522",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08523",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08524",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08526",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08527",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08529",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08530",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08532",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08533",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08534",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08535",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08536",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08537",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08538",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08539",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08541",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08542",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08543",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08545",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08547",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08548",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08549",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08550",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08551",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08553",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08554",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08556",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08557",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08558",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08560",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08562",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08564",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08565",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08566",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08567",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08568",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08569",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08570",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08571",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08572",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08573",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08574",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08575",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08576",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08577",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08578",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08579",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08580",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08581",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08582",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08583",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08584",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08585",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08586",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08588",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08589",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08590",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08594",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08595",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08596",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08597",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08600",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08604",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08605",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08607",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08608",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08609",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08610",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08611",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08614",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08615",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08616",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08617",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08619",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08620",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08621",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08622",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08623",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08624",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08626",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08627",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08628",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08631",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08632",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08634",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08635",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08636",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08637",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08638",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08639",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08640",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08642",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08643",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08644",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08645",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08646",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08647",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08648",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08649",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08651",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08652",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08653",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08654",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08655",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08656",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08657",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08658",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08659",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08660",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08661",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08662",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08663",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08665",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08666",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08668",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08669",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08670",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08672",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08674",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08675",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08676",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08678",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08679",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08680",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08683",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08686",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08687",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08688",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08691",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08693",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08694",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08695",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08697",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08698",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08699",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08700",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08701",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08702",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08703",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08704",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08705",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08706",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08708",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08709",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08710",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08711",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08712",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08713",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08715",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08716",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08717",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08718",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08719",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08720",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08721",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08722",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08723",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08726",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08727",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08728",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08731",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08734",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08735",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08736",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08737",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08738",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08739",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08740",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08742",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08743",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08744",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08745",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08746",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08747",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08748",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08749",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08751",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08752",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08753",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08754",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08756",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08757",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08758",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08759",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08760",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08761",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08762",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08763",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08767",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08771",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08772",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08774",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08776",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08777",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08778",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08779",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08781",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08782",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08783",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08784",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08785",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08788",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08790",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08791",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08792",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08794",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08795",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08797",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08799",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08800",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08801",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08802",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08803",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08804",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08805",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08806",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08807",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08808",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08809",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08811",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08812",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08813",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08814",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08815",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08816",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08817",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08818",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08819",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08820",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08822",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08823",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08824",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08825",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08826",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08828",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08829",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08830",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08831",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08835",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08836",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08837",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08838",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08839",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08840",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08841",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08842",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08843",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08844",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08845",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08846",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08847",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08848",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08849",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08850",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08852",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08853",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08854",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08855",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08856",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08857",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08858",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08859",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08860",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08863",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08864",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08865",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08866",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08867",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08868",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08869",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08871",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08873",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08874",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08875",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08876",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08878",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08880",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08881",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08882",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08883",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08884",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08885",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08887",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08888",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08891",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08892",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08893",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08895",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08897",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08898",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08900",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08901",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08902",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08903",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08904",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08905",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08906",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08909",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08911",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08912",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08913",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08914",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08915",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08916",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08919",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08920",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08921",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08922",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08923",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08924",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08925",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08927",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08933",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08934",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08935",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08936",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08937",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08940",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08941",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08942",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08943",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08944",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08945",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08946",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08947",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08948",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08950",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08951",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08952",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08953",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08954",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08955",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08956",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08959",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08960",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08961",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08962",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08964",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08965",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08966",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08968",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08969",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08971",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08972",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08973",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08974",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08975",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08976",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08977",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08978",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08979",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08980",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08981",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08982",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08983",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08984",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08985",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08986",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08987",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08988",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08989",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08990",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08991",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08992",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08993",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08994",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08995",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08996",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08997",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS08998",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09000",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09001",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09002",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09004",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09005",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09006",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09007",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09008",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09011",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09012",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09013",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09014",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09015",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09016",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09017",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09018",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09019",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09020",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09022",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09023",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09024",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09025",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09027",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09030",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09032",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09033",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09034",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09036",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09037",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09039",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09040",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09041",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09042",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09043",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09045",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09047",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09048",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09049",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09050",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09051",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09052",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09053",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09054",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09055",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09057",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09058",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09059",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09060",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09061",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09062",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09063",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09064",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09065",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09067",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09068",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09072",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09073",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09074",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09075",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09078",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09079",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09080",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09083",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09084",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09085",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09087",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09089",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09090",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09092",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09093",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09094",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09095",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09096",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09097",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09098",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09100",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09101",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09102",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09103",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09104",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09105",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09106",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09107",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09108",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09109",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09111",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09112",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09113",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09114",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09115",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09116",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09117",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09118",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09120",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09121",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09122",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09123",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09124",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09125",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09126",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09127",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09128",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09129",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09131",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09133",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09134",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09136",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09137",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09138",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09139",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09140",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09141",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09142",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09143",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09144",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09145",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09150",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09153",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09154",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09157",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09160",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09161",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09162",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09163",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09164",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09165",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09166",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09167",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09169",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09170",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09171",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09172",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09173",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09175",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09176",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09177",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09179",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09180",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09181",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09182",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09183",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09184",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09185",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09186",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09188",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09189",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09190",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09191",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09192",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09193",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09194",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09195",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09196",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09197",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09198",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09199",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09200",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09201",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09202",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09203",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09204",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09205",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09206",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09207",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09208",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09210",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09211",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09213",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09214",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09215",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09216",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09217",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09219",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09220",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09221",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09222",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09223",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09224",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09225",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09226",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09228",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09229",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09230",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09231",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09232",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09233",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09234",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09235",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09236",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09237",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09238",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09241",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09242",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09243",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09244",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09246",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09247",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09248",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09249",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09250",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09251",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09252",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09253",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09254",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09255",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09256",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09257",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09258",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09259",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09260",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09261",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09262",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09263",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09265",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09266",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09267",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09268",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09269",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09270",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09271",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09272",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09273",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09277",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09278",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09281",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09282",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09283",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09284",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09285",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09286",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09287",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09288",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09289",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09290",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09291",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09292",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09293",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09296",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09297",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09300",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09301",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09302",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09303",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09304",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09305",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09306",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09307",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09308",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09309",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09310",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09311",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09313",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09315",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09316",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09317",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09319",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09320",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09321",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09322",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09323",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09326",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09327",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09328",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09329",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09330",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09331",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09332",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09334",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09335",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09336",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09337",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09338",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09339",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09340",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09341",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09342",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09343",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09345",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09346",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09347",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09348",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09349",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09350",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09351",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09352",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09353",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09354",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09356",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09358",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09359",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09360",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09361",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09362",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09363",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09364",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09365",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09366",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09369",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09371",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09372",
+    "AssertionError('record line')"
+   ],
+   [
+    "JS09373",
+    "AssertionError('record line')"
+   ]
+  ],
+  "duplicate_ids": 0,
+  "join_coverage": "35568/35568 train IDs resolved to a .hea via original_fold_manifest dataset_rel_path",
+  "record_line": {
+   "n_signals": {
+    "12": 34756
+   },
+   "fs": {
+    "500": 34756
+   },
+   "n_samples": {
+    "5000": 34756
+   }
+  },
+  "lead_order": {
+   "I|II|III|aVR|aVL|aVF|V1|V2|V3|V4|V5|V6": 34756
+  },
+  "signal_line_variants_(format,gain,adc_res,adc_zero,block)": {
+   "16+24|1000/mV|16|0|0": 417072
+  },
+  "comment_keys": {
+   "Age": 34756,
+   "Sex": 34756,
+   "Dx": 34756,
+   "Rx": 34756,
+   "Hx": 34756,
+   "Sx": 34756
+  },
+  "age": {
+   "n_total": 34756,
+   "kinds": {
+    "numeric": 34715,
+    "literal_NaN": 41
+   },
+   "numeric_n": 34715,
+   "zero": 171,
+   "negative": 0,
+   "min": 0.0,
+   "max": 89.0,
+   "mean": 58.170646694512456,
+   "median": 61.0,
+   "n_at_max": 711,
+   "n_ge_90": 0,
+   "integer_valued": true
+  },
+  "sex": {
+   "Male": 19519,
+   "Female": 15219,
+   "Unknown": 18
+  },
+  "Rx": {
+   "Unknown": 34756
+  },
+  "Hx": {
+   "Unknown": 34756
+  },
+  "Sx": {
+   "Unknown": 34756
+  },
+  "n_dx_codes_per_record": {
+   "1": 16943,
+   "2": 9113,
+   "3": 4625,
+   "4": 2271,
+   "5": 1137,
+   "6": 457,
+   "7": 139,
+   "8": 53,
+   "9": 10,
+   "10": 6,
+   "11": 1,
+   "12": 1
+  },
+  "train_diagnostic_label_support": {
+   "SB": 13117,
+   "SR": 6553,
+   "AF": 6453,
+   "ST": 5818,
+   "TWC": 5587,
+   "TWO": 2309,
+   "SA": 2018,
+   "AFIB": 1440,
+   "STDD": 1342,
+   "ALS": 1244,
+   "APB": 1026,
+   "STTC": 946,
+   "1AVB": 900,
+   "AQW": 859,
+   "LVQRSAL": 826,
+   "ARS": 687,
+   "IVB": 624,
+   "STE": 612,
+   "SVT": 586,
+   "LVH": 536,
+   "RBBB": 531,
+   "QTIE": 308,
+   "ERV": 286,
+   "VPB": 247,
+   "AT": 236,
+   "LFBBB": 194,
+   "AVB": 185,
+   "STTU": 143,
+   "CCR": 134,
+   "UW": 108,
+   "PWC": 104,
+   "VFW": 94,
+   "RVH": 91,
+   "MISW": 89,
+   "JEB": 65,
+   "3AVB": 65,
+   "CR": 64,
+   "WPW": 63,
+   "2AVB": 55,
+   "PRIE": 46,
+   "VEB": 42,
+   "RAH": 29,
+   "2AVB1": 25,
+   "AVRT": 25,
+   "VPE": 9
+  },
+  "train_dup_pairs_conflicts": {
+   "pairs": 43,
+   "age_differs": 26,
+   "sex_differs": 1,
+   "labels_differ": 14
+  },
+  "label_dictionary_entries": {
+   "1AVB": [
+    "1 degree atrioventricular block",
+    "270492004"
+   ],
+   "2AVB": [
+    "2 degree atrioventricular block",
+    "195042002"
+   ],
+   "2AVB1": [
+    "2 degree atrioventricular block(Type one)",
+    "54016002"
+   ],
+   "2AVB2": [
+    "2 degree atrioventricular block(Type two)",
+    "28189009"
+   ],
+   "3AVB": [
+    "3 degree atrioventricular block",
+    "27885002"
+   ],
+   "ABI": [
+    "atrial bigeminy",
+    "251173003"
+   ],
+   "ALS": [
+    "Axis left shift",
+    "39732003"
+   ],
+   "APB": [
+    "atrial\u00a0premature\u00a0beats",
+    "284470004"
+   ],
+   "AQW": [
+    "abnormal Q wave",
+    "164917005"
+   ],
+   "ARS": [
+    "Axis right shift",
+    "47665007"
+   ],
+   "AVB": [
+    "atrioventricular block",
+    "233917008"
+   ],
+   "CCR": [
+    "countercolockwise rotation",
+    "251199005"
+   ],
+   "CR": [
+    "colockwise rotation",
+    "251198002"
+   ],
+   "ERV": [
+    "Early repolarization of the ventricles",
+    "428417006"
+   ],
+   "FQRS": [
+    "fQRS Wave",
+    "164942001"
+   ],
+   "IDC": [
+    "Interior differences conduction",
+    "698252002"
+   ],
+   "IVB": [
+    "Intraventricular block",
+    "698252002"
+   ],
+   "JEB": [
+    "junctional escape beat",
+    "426995002"
+   ],
+   "JPT": [
+    "junctional premature beat",
+    "251164006"
+   ],
+   "LBBB": [
+    "left bundle branch block",
+    "164909002"
+   ],
+   "LBBBB": [
+    "left back bundle branch block",
+    "164909002"
+   ],
+   "LFBBB": [
+    "left front bundle branch block",
+    "164909002"
+   ],
+   "LVH": [
+    "left ventricle hypertrophy",
+    "164873001"
+   ],
+   "LVQRSAL": [
+    "lower voltage QRS in all lead",
+    "251146004"
+   ],
+   "LVQRSCL": [
+    "lower voltage QRS in chest lead",
+    "251148003"
+   ],
+   "LVQRSLL": [
+    "lower voltage QRS in limb lead",
+    "251147008"
+   ],
+   "MI": [
+    "myocardial infarction",
+    "164865005"
+   ],
+   "MIBW": [
+    "myocardial infraction in back wall",
+    "164865005"
+   ],
+   "MIFW": [
+    "Myocardial infgraction in the front wall",
+    "164865005"
+   ],
+   "MILW": [
+    "Myocardial infraction in the lower wall",
+    "164865005"
+   ],
+   "MISW": [
+    "Myocardial infraction in the side wall",
+    "164865005"
+   ],
+   "PRIE": [
+    "PR interval extension",
+    "164947007"
+   ],
+   "PWC": [
+    "P wave Change",
+    "164912004"
+   ],
+   "QTIE": [
+    "QT interval extension",
+    "111975006"
+   ],
+   "RAH": [
+    "right atrial hypertrophy",
+    "446358003"
+   ],
+   "RBBB": [
+    "right bundle branch block",
+    "59118001"
+   ],
+   "RVH": [
+    "right ventricle hypertrophy",
+    "89792004"
+   ],
+   "STDD": [
+    "ST drop down",
+    "429622005"
+   ],
+   "STE": [
+    "ST extension",
+    "164930006"
+   ],
+   "STTC": [
+    "ST-T Change",
+    "428750005"
+   ],
+   "STTU": [
+    "ST tilt up",
+    "164931005"
+   ],
+   "TWC": [
+    "T wave Change",
+    "164934002"
+   ],
+   "TWO": [
+    "T wave opposite",
+    "59931005"
+   ],
+   "UW": [
+    "U wave",
+    "164937009"
+   ],
+   "VB": [
+    "ventricular bigeminy",
+    "11157007"
+   ],
+   "VEB": [
+    "ventricular escape beat",
+    "75532003"
+   ],
+   "VFW": [
+    "ventricular fusion wave",
+    "13640000"
+   ],
+   "VPB": [
+    "ventricular premature beat",
+    "17338001"
+   ],
+   "VPE": [
+    "ventricular preexcitation",
+    "195060002"
+   ],
+   "VET": [
+    "ventricular escape trigeminy",
+    "251180001"
+   ],
+   "WAVN": [
+    "Wandering in the atrioventricalualr node",
+    "195101003"
+   ],
+   "WPW": [
+    "WPW",
+    "74390002"
+   ],
+   "SB": [
+    "Sinus Bradycardia",
+    "426177001"
+   ],
+   "SR": [
+    "Sinus Rhythm",
+    "426783006"
+   ],
+   "AFIB": [
+    "Atrial Fibrillation",
+    "164889003"
+   ],
+   "ST": [
+    "Sinus Tachycardia",
+    "427084000"
+   ],
+   "AF": [
+    "Atrial Flutter",
+    "164890007"
+   ],
+   "SA": [
+    "Sinus Irregularity",
+    "427393009"
+   ],
+   "SVT": [
+    "Supraventricular Tachycardia",
+    "426761007"
+   ],
+   "AT": [
+    "Atrial Tachycardia",
+    "713422000"
+   ],
+   "AVNRT": [
+    "Atrioventricular  Node Reentrant Tachycardia",
+    "233896004"
+   ],
+   "AVRT": [
+    "Atrioventricular Reentrant Tachycardia",
+    "233897008"
+   ],
+   "SAAWR": [
+    "Sinus Atrium to Atrial Wandering Rhythm",
+    "195101003"
+   ]
+  }
+ }
+}

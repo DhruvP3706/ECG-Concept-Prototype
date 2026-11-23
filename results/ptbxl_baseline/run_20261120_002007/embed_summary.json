@@ -1,0 +1,9 @@
+{
+ "seconds": 506,
+ "backbone_state_hash_before": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+ "backbone_state_hash_after": "37b081d7bd7ee6e8f486d3dc373effbd184c069b2223d5b29859ee224ba20c76",
+ "unchanged": true,
+ "non_finite_rows": 0,
+ "n_records": 18323,
+ "fold10_waveforms_read": 0
+}

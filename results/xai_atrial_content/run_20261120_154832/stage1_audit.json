@@ -1,0 +1,57 @@
+{
+ "recipient_pools": {
+  "SR": 466,
+  "AFIB": 77
+ },
+ "donor_pool_sources": "validation role only (same population as Experiment 8); donors are other records than the recipient; AFIB donors never overlap with SR recipients",
+ "exp8_flat_accepted": {
+  "SR": 461,
+  "AFIB": 75
+ },
+ "donor_usage_AF": {
+  "n_donors": 77,
+  "min": 17,
+  "median": 35.0,
+  "max": 51,
+  "cap": 53,
+  "donors_used": 77
+ },
+ "donor_usage_SR": {
+  "n_donors": 466,
+  "min": 0,
+  "median": 3.0,
+  "max": 6,
+  "cap": 6,
+  "donors_used": 464
+ },
+ "matched_AF_donor_distance": {
+  "median": 0.2838527966187722,
+  "p5": 0.120119590878183,
+  "p95": 0.5182647066701722
+ },
+ "SR_recipient_vs_first_AF_donor_region_rms_ratio": {
+  "median": 0.848040142292768,
+  "p5": 0.6572412966614269,
+  "p95": 1.0551176009401664
+ },
+ "mean_band_energy_fractions_[0-4,4-9,9-20,20-250]Hz": {
+  "SR_recipient_deviation": [
+   0.497,
+   0.259,
+   0.126,
+   0.118
+  ],
+  "AFIB_donor_deviation": [
+   0.533,
+   0.205,
+   0.107,
+   0.155
+  ]
+ },
+ "raw_substitution_median_end_step_counts_100_SR_recipients": {
+  "median": 75.02083333333334,
+  "p90": 134.78333333333336,
+  "note": "mean over leads of |donor first sample - recipient first sample|; deviation-based substitution has exactly 0 by construction"
+ },
+ "verdict": "Substitution of donor DEVIATIONS (x - line through region ends) onto the recipient's own baseline line is feasible and defensible: region length identical, region end values unchanged (no step), QRS/RR/non-target samples untouched, per-lead scales comparable (see ratio). Raw-sample substitution changes the baseline and creates boundary steps and is run only as a documented variant. The donor window is positional (r-160..r-51), not a verified fibrillatory-wave segment; donor segments are called 'AFIB-donor atrial-region content'. Time reversal / shuffling are not physiologically realistic signals."
+}

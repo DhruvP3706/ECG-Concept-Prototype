@@ -1,0 +1,337 @@
+{
+ "criteria": {
+  "A1_no_diagnostic_statement_kept": true,
+  "A2_support_ok": true,
+  "A3_no_near_duplicate_pair": true,
+  "A4_no_near_copy_of_superclass": true,
+  "A5_presence_only": true,
+  "A6_min_positives_in_every_internal_training_partition": true,
+  "A7_previous_17_is_subset": true
+ },
+ "all_pass": true,
+ "n_vocabulary": 23,
+ "vocabulary": [
+  "ABQRS",
+  "HVOLT",
+  "INVT",
+  "LOWT",
+  "LPR",
+  "LVOLT",
+  "NT_",
+  "PAC",
+  "PVC",
+  "QWAVE",
+  "STD_",
+  "STE_",
+  "TAB_",
+  "VCLVH",
+  "AFIB",
+  "AFLT",
+  "BIGU",
+  "SARRH",
+  "SBRAD",
+  "SR",
+  "STACH",
+  "SVARR",
+  "TRIGU"
+ ],
+ "policy_stats": {
+  "P1_train": {
+   "known_fraction": 0.5747196694488412,
+   "unknown_fraction_form": 0.6761004358769722,
+   "unknown_fraction_rhythm": 0.035115722266560255,
+   "records_with_any_form_statement": 0.3238995641230278,
+   "records_with_any_rhythm_statement": 0.9648842777334398
+  },
+  "P1_val": {
+   "known_fraction": 0.572100380488222,
+   "unknown_fraction_form": 0.6789577187807276,
+   "unknown_fraction_rhythm": 0.03736479842674533,
+   "records_with_any_form_statement": 0.32104228121927236,
+   "records_with_any_rhythm_statement": 0.9626352015732547
+  }
+ },
+ "flags": {
+  "near_duplicate_pairs_phi>=0.9": [],
+  "near_copy_of_superclass": [],
+  "top_pairs_by_phi": [
+   {
+    "a": "AFIB",
+    "b": "SR",
+    "n_both": 0,
+    "phi": -0.5161332167765452
+   },
+   {
+    "a": "SR",
+    "b": "STACH",
+    "n_both": 0,
+    "phi": -0.3777483034880065
+   },
+   {
+    "a": "SARRH",
+    "b": "SR",
+    "n_both": 1,
+    "phi": -0.3660107809695036
+   },
+   {
+    "a": "LOWT",
+    "b": "STD_",
+    "n_both": 196,
+    "phi": 0.36135499042903657
+   },
+   {
+    "a": "SBRAD",
+    "b": "SR",
+    "n_both": 0,
+    "phi": -0.3342906770054651
+   },
+   {
+    "a": "INVT",
+    "b": "STD_",
+    "n_both": 124,
+    "phi": 0.273635186431671
+   },
+   {
+    "a": "SR",
+    "b": "SVARR",
+    "n_both": 0,
+    "phi": -0.16109807154604935
+   },
+   {
+    "a": "PVC",
+    "b": "SR",
+    "n_both": 438,
+    "phi": -0.1514544053984687
+   }
+  ],
+  "top_concept_superclass_by_jaccard": [
+   {
+    "concept": "SR",
+    "superclass": "NORM",
+    "n_both": 6510,
+    "n_concept": 12762,
+    "n_superclass": 7542,
+    "P_super_given_concept": 0.5101081335213916,
+    "P_concept_given_super": 0.8631662688941926,
+    "jaccard": 0.47194432361896477,
+    "phi": 0.1796655815743986,
+    "semantic_watch": false
+   },
+   {
+    "concept": "ABQRS",
+    "superclass": "MI",
+    "n_both": 1820,
+    "n_concept": 2384,
+    "n_superclass": 3307,
+    "P_super_given_concept": 0.7634228187919463,
+    "P_concept_given_super": 0.5503477472029029,
+    "jaccard": 0.4701627486437613,
+    "phi": 0.5768649071107157,
+    "semantic_watch": false
+   },
+   {
+    "concept": "SR",
+    "superclass": "CD",
+    "n_both": 2882,
+    "n_concept": 12762,
+    "n_superclass": 3900,
+    "P_super_given_concept": 0.2258266729352766,
+    "P_concept_given_super": 0.7389743589743589,
+    "jaccard": 0.20914368650217707,
+    "phi": -0.06061752819442665,
+    "semantic_watch": false
+   },
+   {
+    "concept": "SR",
+    "superclass": "STTC",
+    "n_both": 2695,
+    "n_concept": 12762,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.21117379721046858,
+    "P_concept_given_super": 0.6634662727720335,
+    "jaccard": 0.19074244461745346,
+    "phi": -0.16793830418719408,
+    "semantic_watch": false
+   },
+   {
+    "concept": "SR",
+    "superclass": "MI",
+    "n_both": 2386,
+    "n_concept": 12762,
+    "n_superclass": 3307,
+    "P_super_given_concept": 0.18696129133364675,
+    "P_concept_given_super": 0.721499848805564,
+    "jaccard": 0.1743769641160564,
+    "phi": -0.07594265391444467,
+    "semantic_watch": false
+   },
+   {
+    "concept": "AFIB",
+    "superclass": "STTC",
+    "n_both": 728,
+    "n_concept": 1117,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.6517457475380484,
+    "P_concept_given_super": 0.1792220580994584,
+    "jaccard": 0.1635587508425073,
+    "phi": 0.252348468858309,
+    "semantic_watch": false
+   },
+   {
+    "concept": "VCLVH",
+    "superclass": "HYP",
+    "n_both": 323,
+    "n_concept": 546,
+    "n_superclass": 1820,
+    "P_super_given_concept": 0.5915750915750916,
+    "P_concept_given_super": 0.17747252747252748,
+    "jaccard": 0.15810083210964268,
+    "phi": 0.2836556462360347,
+    "semantic_watch": true
+   },
+   {
+    "concept": "STD_",
+    "superclass": "STTC",
+    "n_both": 605,
+    "n_concept": 778,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.7776349614395887,
+    "P_concept_given_super": 0.14894140817331364,
+    "jaccard": 0.14285714285714285,
+    "phi": 0.2734548333412224,
+    "semantic_watch": true
+   }
+  ],
+  "semantic_watch_rows": [
+   {
+    "concept": "HVOLT",
+    "superclass": "HYP",
+    "n_both": 11,
+    "n_concept": 41,
+    "n_superclass": 1820,
+    "P_super_given_concept": 0.2682926829268293,
+    "P_concept_given_super": 0.006043956043956044,
+    "jaccard": 0.005945945945945946,
+    "phi": 0.024964023638166178,
+    "semantic_watch": true
+   },
+   {
+    "concept": "INVT",
+    "superclass": "STTC",
+    "n_both": 155,
+    "n_concept": 233,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.6652360515021459,
+    "P_concept_given_super": 0.038158542589857215,
+    "jaccard": 0.03743961352657005,
+    "phi": 0.1157914476343949,
+    "semantic_watch": true
+   },
+   {
+    "concept": "LOWT",
+    "superclass": "STTC",
+    "n_both": 292,
+    "n_concept": 341,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.8563049853372434,
+    "P_concept_given_super": 0.07188577055637617,
+    "jaccard": 0.07102894672828995,
+    "phi": 0.20513049382754114,
+    "semantic_watch": true
+   },
+   {
+    "concept": "LPR",
+    "superclass": "CD",
+    "n_both": 151,
+    "n_concept": 268,
+    "n_superclass": 3900,
+    "P_super_given_concept": 0.5634328358208955,
+    "P_concept_given_super": 0.038717948717948716,
+    "jaccard": 0.03759024147373662,
+    "phi": 0.09820228321984688,
+    "semantic_watch": true
+   },
+   {
+    "concept": "NT_",
+    "superclass": "STTC",
+    "n_both": 193,
+    "n_concept": 327,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.5902140672782875,
+    "P_concept_given_super": 0.04751354012801576,
+    "jaccard": 0.045996186844613915,
+    "phi": 0.11275856121411654,
+    "semantic_watch": true
+   },
+   {
+    "concept": "QWAVE",
+    "superclass": "MI",
+    "n_both": 280,
+    "n_concept": 406,
+    "n_superclass": 3307,
+    "P_super_given_concept": 0.6896551724137931,
+    "P_concept_given_super": 0.084668884185062,
+    "jaccard": 0.08156131663268279,
+    "phi": 0.1934222236758599,
+    "semantic_watch": true
+   },
+   {
+    "concept": "STD_",
+    "superclass": "STTC",
+    "n_both": 605,
+    "n_concept": 778,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.7776349614395887,
+    "P_concept_given_super": 0.14894140817331364,
+    "jaccard": 0.14285714285714285,
+    "phi": 0.2734548333412224,
+    "semantic_watch": true
+   },
+   {
+    "concept": "STE_",
+    "superclass": "STTC",
+    "n_both": 7,
+    "n_concept": 20,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.35,
+    "P_concept_given_super": 0.0017232890201870998,
+    "jaccard": 0.0017177914110429449,
+    "phi": 0.008154988457132055,
+    "semantic_watch": true
+   },
+   {
+    "concept": "TAB_",
+    "superclass": "STTC",
+    "n_both": 6,
+    "n_concept": 26,
+    "n_superclass": 4062,
+    "P_super_given_concept": 0.23076923076923078,
+    "P_concept_given_super": 0.0014771048744460858,
+    "jaccard": 0.0014698677119059284,
+    "phi": -0.0017190917489078822,
+    "semantic_watch": true
+   },
+   {
+    "concept": "VCLVH",
+    "superclass": "HYP",
+    "n_both": 323,
+    "n_concept": 546,
+    "n_superclass": 1820,
+    "P_super_given_concept": 0.5915750915750916,
+    "P_concept_given_super": 0.17747252747252748,
+    "jaccard": 0.15810083210964268,
+    "phi": 0.2836556462360347,
+    "semantic_watch": true
+   }
+  ]
+ },
+ "inputs": {
+  "scp_statements_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+  "ptbxl_database_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+  "manifest_sha256": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+  "scp_concepts_py_sha256": "3fcae566ffc3383e5503e0bf5a549147423b59f58aba95d6928d02b7b50df5ac",
+  "audit_script_sha256": "c9d5230bd3161cd8b98cfb25ddf4f976719fe022d375143801625097be70e9e1"
+ },
+ "vocabulary_file_sha256": "4c321e971edad2c58bccdd7d2fdda3e7a5b561ddfee44bc909223ca590d22821",
+ "fold10_records_used": 0
+}

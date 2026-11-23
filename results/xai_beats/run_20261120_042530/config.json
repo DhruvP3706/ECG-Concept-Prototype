@@ -1,0 +1,12 @@
+{
+ "previous_run": "results\\xai_ig\\run_20261120_030747",
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "extractor_params_sha256": "4f5e41ea05c53bd39bf0267039047a30a668652c2229b83e9ba0b11dfb00403c",
+ "ig_source": "Experiment 1 attributions.npz (not recomputed)",
+ "code_sha256": {
+  "scripts/xai_beat_attribution.py": "8f38dd4d491b08e05173bb8df8034555ba0628be6dc048130c372f120bd33eca",
+  "src/ecg_concept/beat_regions.py": "84f86242e7360d0fbb94019700ac2b1133917667049b0c599c7627532628bfc8",
+  "src/ecg_concept/rr_concepts.py": "acbcfc67ad67108e7495684f82e99c20899f40329754b3ccefc2c7285fc807dd",
+  "src/ecg_concept/beat_detection.py": "eee2c017a57d42b18a3b2dbee4c51880fad4cd3f7960e18f7389b208fa0158b5"
+ }
+}

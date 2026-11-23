@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\ECG-Concept-Prototype\src\ecg_concept\concept_proto.py:142: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:839.)
+  tot += float(l) * len(ix)
+2026-11-11 12:47:15 seed 42 trained in 87s; epochs: {'B_embedding_linear': 97, 'C_concept_predictor': 39, 'C2_concept_only': 72, 'D_prototype': 100, 'CTRL_mask_only': 39, 'CTRL_extracted_target': 63} tau 0.1224
+2026-11-11 12:48:41 seed 43 trained in 173s; epochs: {'B_embedding_linear': 99, 'C_concept_predictor': 34, 'C2_concept_only': 88, 'D_prototype': 100, 'CTRL_mask_only': 49, 'CTRL_extracted_target': 72} tau 0.1234
+2026-11-11 12:50:07 seed 44 trained in 259s; epochs: {'B_embedding_linear': 96, 'C_concept_predictor': 37, 'C2_concept_only': 76, 'D_prototype': 100, 'CTRL_mask_only': 55, 'CTRL_extracted_target': 50} tau 0.1185
+2026-11-11 12:51:31 reproducibility (seed 42 re-run) max abs prob diff: {'B_embedding_linear': 0.0, 'C2_concept_only': 0.0, 'D_prototype': 0.0, 'CTRL_mask_only': 0.0, 'CTRL_extracted_target': 0.0, 'concept_Zhat_max_abs_diff': 0.0}
+2026-11-11 12:51:47 engineering checks {'backbone_state_unchanged_during_embedding': True, 'backbone_ckpt_sha256_matches_declared': True, 'no_train_val_id_overlap': True, 'no_train_val_dup_group_overlap': True, 'no_test_or_excluded_records_in_caches': True, 'roles_only_train_validation': True, 'embedding_scaler_fit_on_train_only': True, 'concept_scaler_fit_on_accepted_train_only': True, 'no_nan_in_predictions': True, 'cache_alignment_spot_check_300_ids': True, 'prototype_logits_identity_max_abs_diff': 7.62939453125e-06, 'prototype_head_inputs_similarities_only': True, 'concept_predictor_frozen_during_head_training': True, 'extraction_matches_frozen_config': True}
+2026-11-11 12:51:47 train stage finished in 360s

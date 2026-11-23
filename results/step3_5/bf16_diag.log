@@ -1,0 +1,56 @@
+14:30:34 path lookup 45152
+14:30:44 fold 0 0 / 4448
+14:33:45 fold 0 640 / 4448
+14:36:49 fold 0 1280 / 4448
+14:39:52 fold 0 1920 / 4448
+14:43:03 fold 0 2560 / 4448
+14:46:02 fold 0 3200 / 4448
+14:49:01 fold 0 3840 / 4448
+14:51:42 fold 1 0 / 4448
+14:53:01 fold 1 640 / 4448
+14:54:19 fold 1 1280 / 4448
+14:55:38 fold 1 1920 / 4448
+14:56:59 fold 1 2560 / 4448
+14:58:17 fold 1 3200 / 4448
+14:59:35 fold 1 3840 / 4448
+15:00:50 fold 2 0 / 4448
+15:02:09 fold 2 640 / 4448
+15:03:28 fold 2 1280 / 4448
+15:04:47 fold 2 1920 / 4448
+15:06:06 fold 2 2560 / 4448
+15:07:24 fold 2 3200 / 4448
+15:08:43 fold 2 3840 / 4448
+{
+ "lightv2_ft_fold0": {
+  "bf16_regenerated_val_macro_f1": 0.42144275431791817,
+  "notebook_recorded": 0.4211,
+  "abs_diff": 0.00034275431791819244,
+  "file_val_macro_f1_bf16": 0.42136001813999335,
+  "file_equal_classes_vs_bf16_regenerated": 42
+ },
+ "lightv2_p1_fold0": {
+  "bf16_regenerated_val_macro_f1": 0.45415821816999224,
+  "notebook_recorded": 0.4541,
+  "abs_diff": 5.8218169992241275e-05,
+  "file_val_macro_f1_bf16": 0.45415179834557445,
+  "file_equal_classes_vs_bf16_regenerated": 44
+ },
+ "lightv2_p1_fold1": {
+  "bf16_regenerated_val_macro_f1": 0.4320700060978977,
+  "notebook_recorded": 0.4321,
+  "abs_diff": 2.9993902102287695e-05,
+  "file_val_macro_f1_bf16": 0.38997888003816583,
+  "file_equal_classes_vs_bf16_regenerated": 9
+ },
+ "lightv2_p1_fold2": {
+  "bf16_regenerated_val_macro_f1": 0.4432307643672202,
+  "notebook_recorded": 0.4432,
+  "abs_diff": 3.076436722021514e-05
+ },
+ "ensemble_cv_bf16": {
+  "printed_exact_match": 37,
+  "printed_total": 40,
+  "unprinted_within_0.1": 4,
+  "unprinted_total": 5
+ }
+}

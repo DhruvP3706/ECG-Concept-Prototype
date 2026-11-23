@@ -1,0 +1,63 @@
+{
+ "analysis": "paired patient-level cluster bootstrap, fold 9 only",
+ "replicates": 5000,
+ "bootstrap_seed": 20261120,
+ "ci": "percentile 2.5/97.5",
+ "unit": "patient_id (all eligible records of a sampled patient included; same draws for all models)",
+ "statistic": "per replicate the metric is computed for each seed's model, then averaged over seeds 42/43/44; per-seed values in bootstrap_distributions.npz",
+ "invalid_handling": "AUROC/AP of a class is undefined (NaN) if the resample has no positive or no negative; macro = mean over defined classes (flagged); a replicate undefined for a metric is excluded from that metric's CI and counted",
+ "n_records": 2034,
+ "n_patients": 1830,
+ "n_positives": [
+  942,
+  412,
+  510,
+  495,
+  216
+ ],
+ "vocab": [
+  "NORM",
+  "MI",
+  "STTC",
+  "CD",
+  "HYP"
+ ],
+ "inputs": {
+  "baseline_run": "results\\ptbxl_baseline\\run_20261120_002007",
+  "finetune_run": "results\\ptbxl_finetune\\run_20261120_003238",
+  "manifest_sha256": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+  "pretrained_ckpt_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+  "head_checkpoints": {
+   "A_exact_linear_seed42.pt": "d84f823efd30df3b997cbd3b3e9fc025b3f9664a72300f04e18a06fb358cf94a",
+   "A_exact_linear_seed43.pt": "cac875431ae54214ea4127c8a63ae4c1964064cdd2574da7823d63721b3cb8fe",
+   "A_exact_linear_seed44.pt": "5427f64c975acd9055eb2748fd4166be4a0eb824951c4fbe9a9a6d541a043cc9",
+   "A_exact_mlp_seed42.pt": "ca5ccc76f6900789b466683d67fe4cb713e587e31f49778e5033a96f9036baf3",
+   "A_exact_mlp_seed43.pt": "a6054b1ad824c8e1989ea7faa7241fb9355a0a072ab349958fa8ef6f3af9bf62",
+   "A_exact_mlp_seed44.pt": "d4d2e4ce5c5875f78487954c654e787a604a549be4b36f7ef607f71d5b643158",
+   "B_float_linear_seed42.pt": "b3b1ade8923781fcf63e58c0a7bc2ccd6ddd8e6e533b7f465edb94e9f6c78cce",
+   "B_float_linear_seed43.pt": "6b7a4ea85267acc4ac380cab3aaa6cd47ed6fc17bea824382bbf4af6a2c8729a",
+   "B_float_linear_seed44.pt": "bab5842ebe7b53f4a5c3db40063cf28bdd9cdb895cfc119394281e2f8537b9a0",
+   "B_float_mlp_seed42.pt": "e7c286ef7b9022b238c86248353c76596727f09e226d753fa1300c5097a0d27c",
+   "B_float_mlp_seed43.pt": "6d2677bf02c3fe617ed0992f7244967807621f403e786ea1444cd137f5d8be59",
+   "B_float_mlp_seed44.pt": "0a5a727fd732a01d8246fc21e77b9852556d64834d3c46d0709f9656bb2aad9b",
+   "C_scaled_linear_seed42.pt": "cc9cf07c4d2d38378cbb82d4f47897c8cf48ef3098572d90de6c4712d4fb8c0c",
+   "C_scaled_linear_seed43.pt": "73445975c0d810be9a4b1202739fa95d0f57c3f7df4e284f0bae7463b7b25620",
+   "C_scaled_linear_seed44.pt": "99736a586f550cf96e69a54cc424c2a22165c13751c9260f2bb960f68962108f",
+   "C_scaled_mlp_seed42.pt": "411d9c56288435beef40bf7e442923e2591da20cee89f725776e7a76e11a700f",
+   "C_scaled_mlp_seed43.pt": "cd55ecd8420243a60d090cd6b1b8f3d39f5fe1f64f1f66039fc843f5b59dc14b",
+   "C_scaled_mlp_seed44.pt": "7ae814f1e8ac47924d66c4afc920ba021c3fa1b9020e73e72e2d0b690e1903a4"
+  },
+  "finetune_checkpoints": {
+   "42": "687f1013cb4593fc7ec75a7e082b95c4a20a91c656d45966b299f16a382d2cad",
+   "43": "115af14ba730441cdf97a815b47348bf1ac05a7d75f0cbcda304cd238697d958",
+   "44": "b574a861437d041573de7da4d4377e93ddb127b04a704082bd6ab0138eaa420a"
+  }
+ },
+ "invalid_replicates_any_class": {
+  "auroc": 0,
+  "ap": 0,
+  "hyp_auroc": 0
+ },
+ "fold10_waveforms_read": 0,
+ "script_sha256": "972ef9e4f733a39114473f74bafaf42a70e526cd5d1ee83d90f70c6e7fd5e059"
+}

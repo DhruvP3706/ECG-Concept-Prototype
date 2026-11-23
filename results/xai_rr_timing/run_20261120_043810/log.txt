@@ -1,0 +1,15 @@
+[04:38:10] built 0/154 records
+[04:38:15] built 30/154 records
+[04:38:19] built 60/154 records
+[04:38:24] built 90/154 records
+[04:38:28] built 120/154 records
+[04:38:32] built 150/154 records
+[04:38:37] orig: accepted 152/154 (informative 0), reasons {'junction': 2}
+[04:38:37] reg50: accepted 96/154 (informative 73), reasons {'post_corr': 30, 'pre_corr': 55, 'junction': 2}; CV 0.061->0.030, post-QRS corr median 0.973
+[04:38:37] reg0: accepted 79/154 (informative 68), reasons {'post_corr': 59, 'pre_corr': 70, 'junction': 2}; CV 0.036->0.001, post-QRS corr median 0.960
+[04:38:37] shuffle: accepted 76/154 (informative 73), reasons {'post_corr': 70, 'pre_corr': 73, 'junction': 1}; CV 0.039->0.039, post-QRS corr median 0.959
+[04:38:37] sham_smooth_B: accepted 80/154 (informative 70), reasons {'post_corr': 57, 'pre_corr': 68, 'junction': 3}; CV 0.047->0.055, post-QRS corr median 0.960
+[04:38:37] sham_noise_B: accepted 79/154 (informative 66), reasons {'post_corr': 59, 'pre_corr': 72, 'junction': 2}; CV 0.032->0.044, post-QRS corr median 0.954
+[04:38:37] sham_smooth_C: accepted 76/154 (informative 73), reasons {'post_corr': 64, 'pre_corr': 74, 'junction': 2}; CV 0.038->0.049, post-QRS corr median 0.961
+[04:38:37] sham_noise_C: accepted 69/154 (informative 59), reasons {'post_corr': 73, 'pre_corr': 79, 'junction': 3}; CV 0.031->0.050, post-QRS corr median 0.952
+[04:38:37] build done: c:\Users\lenovo\Desktop\ECG-Concept-Prototype\results\xai_rr_timing\run_20261120_043810

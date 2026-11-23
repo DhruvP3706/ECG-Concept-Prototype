@@ -1,0 +1,16 @@
+{
+ "previous_run": "results\\xai_ig\\run_20261120_030747",
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "thresholds_sha256": "e722ca9490881952d4ad45868294d65591dc1ced8076d5b71ff278a36ca512e8",
+ "ig": {
+  "baseline": "zero in normalised space",
+  "steps": 64,
+  "rule": "midpoint"
+ },
+ "pairs": "same 160 pairs as Experiment 1",
+ "competitor_rule": "Deterministic competitor rule (outputs only). Returns (k, flagged).",
+ "code_sha256": {
+  "scripts/xai_contrastive_ig.py": "8f2e485fe44328aa8e39ae14b481080f793d6f43a165d11cc871e6ac7809ca78",
+  "src/ecg_concept/attribution.py": "636065fc40a9f9e58a2c371d8e979869f5cdf8cc509214567e2c7ad18efc9f11"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "reproduction": {
+  "headline_vs_aggregate_metrics_csv": {
+   "tolerance": 5.1e-07,
+   "max_abs_diff": 4.95839892145078e-07,
+   "note": "declared tolerance was 1e-8 but aggregate_metrics.csv stores 6 decimals, so 5.1e-7 is the achievable check; paired bootstrap was checked at 1e-8"
+  },
+  "paired_bootstrap_vs_step3_5": {
+   "tolerance": 1e-08,
+   "max_abs_diff": 0.0
+  }
+ },
+ "checks": [
+  "ensemble == mean(ft_fold0,p1_fold1,p1_fold2) (<1e-7)",
+  "original thresholds == models/pretrained files for ft_fold0,p1_fold0",
+  "regenerated thresholds == regenerated_thresholds.npz",
+  "p1_fold1 stale file not used",
+  "cohort sizes == declared",
+  "rows matched by record ID"
+ ],
+ "evaluable_classes": {
+  "A_all_test": 44,
+  "B_exclude_cross_boundary": 44,
+  "C_exclude_any_duplicate": 44
+ },
+ "unevaluable_classes": {
+  "A_all_test": [
+   "VPE"
+  ],
+  "B_exclude_cross_boundary": [
+   "VPE"
+  ],
+  "C_exclude_any_duplicate": [
+   "VPE"
+  ]
+ },
+ "common_evaluable_classes": 44,
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4"
+ },
+ "command": "python -I scripts/step3_7_manifests.py ; python -I scripts/step3_7_sensitivity.py"
+}

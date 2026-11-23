@@ -1,0 +1,2 @@
+2026-11-11 12:08:44 header flags for 35568 train records in 58s
+2026-11-11 12:08:45 sampled {'LOCK-R': 100, 'DEV-S': 120, 'LOCK-S': 120} records {'LOCK-R': 100, 'DEV-S': 121, 'LOCK-S': 120} shortfalls {'DEV-S:S12_LVQRSAL': 5, 'LOCK-S:S12_LVQRSAL': 10} manifest sha256 4347a4aa1c7d4860

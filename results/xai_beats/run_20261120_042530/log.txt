@@ -1,0 +1,8 @@
+[04:25:42] extractor: 154/157 records with >= 3 consensus beats; usable pairs 157/160; states {'ACCEPTED': 153, 'UNCERTAIN': 1, 'UNAVAILABLE': 3}; RR percentiles(ms) [254.0, 295.0, 610.0, 1265.0, 1652.0]
+[04:26:31] attribution distribution done
+[04:26:35]   deletions: pair 0/160 (1s)
+[04:26:50]   deletions: pair 40/160 (17s)
+[04:27:05]   deletions: pair 80/160 (32s)
+[04:27:21]   deletions: pair 120/160 (48s)
+[04:27:37] model hash unchanged
+[04:27:37] saved; results sha256 04685799dbf0c328

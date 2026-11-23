@@ -1,0 +1,23 @@
+{
+ "previous_runs": [
+  "results\\xai_ig\\run_20261120_030747",
+  "results\\xai_contrastive\\run_20261120_033747"
+ ],
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "thresholds_sha256": "e722ca9490881952d4ad45868294d65591dc1ced8076d5b71ff278a36ca512e8",
+ "ig": {
+  "baseline": "zero",
+  "steps": 64,
+  "rule": "midpoint"
+ },
+ "rules": {
+  "A": "Deterministic competitor rule (outputs only). Returns (k, flagged).",
+  "B": "Rule B: highest pre-sigmoid logit among non-target classes (ties -> lowest index), regardless of thresholds.",
+  "C": "Rule C: the SECOND-highest-probability non-target class that is not predicted positive; None if fewer than two such classes."
+ },
+ "exp3_results_sha256": "7c34e3ca32c404153f8d2c0585f8f8512fb2400cf6e983884fb2f09c1b2c73af",
+ "code_sha256": {
+  "scripts/xai_competitor_robustness.py": "d9c9fd1c748b2b47f2a95c0971d98bb322d2628ff2013738acbe50ea645c6ceb",
+  "src/ecg_concept/attribution.py": "636065fc40a9f9e58a2c371d8e979869f5cdf8cc509214567e2c7ad18efc9f11"
+ }
+}

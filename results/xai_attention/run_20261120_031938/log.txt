@@ -1,0 +1,9 @@
+[03:19:38] 160 (record, class) pairs, 157 unique ECG records, classes [np.str_('AF'), np.str_('AFIB'), np.str_('SB'), np.str_('SR'), np.str_('ST'), np.str_('STTC'), np.str_('TWC'), np.str_('TWO')]; cluster bootstrap B=5000, seed 20261120
+[03:19:43] original logits reproduced (max abs diff 0.00e+00)
+[03:19:46] Part A: gate lead-means [0.524, 0.501, 0.462, 0.492, 0.45, 0.476, 0.501, 0.546, 0.483, 0.516, 0.564, 0.517]; between-record sd max 0.00e+00; max |mean of input| 3.20e-08; max |gate - gate(zero input)| 0.00e+00
+[03:20:24] Part B: IG on intervened model in 37s; completeness rel err median 0.0254; abs err median 0.1137
+[03:20:26]   perturbation tests (intervened model): pair 0/160 (2s)
+[03:21:41]   perturbation tests (intervened model): pair 40/160 (78s)
+[03:22:56]   perturbation tests (intervened model): pair 80/160 (153s)
+[03:24:11]   perturbation tests (intervened model): pair 120/160 (227s)
+[03:25:24] model hash unchanged; original logits identical after the intervention is disabled

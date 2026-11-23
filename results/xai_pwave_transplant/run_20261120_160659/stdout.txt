@@ -1,0 +1,8 @@
+[16:07:21] records 0/169 (9s); items 67
+[16:07:37] records 40/169 (25s); items 2747
+[16:07:47] records 80/169 (35s); items 5427
+[16:07:58] records 120/169 (46s); items 8107
+[16:08:06] records 160/169 (54s); items 10787
+[16:08:17] 11323 items, 4022 model evaluations in 64s; 'orig' reproduces stored logits (max abs diff 0.0e+00); checkpoint hash and weights unchanged
+[16:08:17] saved items.csv, logits.npy, example_signals.npz
+done

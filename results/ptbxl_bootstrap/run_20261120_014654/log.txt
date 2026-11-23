@@ -1,0 +1,29 @@
+[01:46:54] all 9 prediction checkpoints and the pretrained backbone match their recorded hashes
+[01:46:55] fold-9 eligible records 2034, patients 1830, positives [942, 412, 510, 495, 216]
+[01:47:03] frozen_linear seed 42: reproduced macro-AUROC 0.919489 vs recorded 0.919489 (diff +0.00e+00)
+[01:47:03] frozen_mlp seed 42: reproduced macro-AUROC 0.924524 vs recorded 0.924524 (diff +0.00e+00)
+[01:47:03] frozen_linear seed 43: reproduced macro-AUROC 0.920264 vs recorded 0.920264 (diff +0.00e+00)
+[01:47:03] frozen_mlp seed 43: reproduced macro-AUROC 0.924970 vs recorded 0.924970 (diff +0.00e+00)
+[01:47:03] frozen_linear seed 44: reproduced macro-AUROC 0.919822 vs recorded 0.919822 (diff +0.00e+00)
+[01:47:03] frozen_mlp seed 44: reproduced macro-AUROC 0.925378 vs recorded 0.925378 (diff +0.00e+00)
+[01:47:03] finetuned seed 42: reproduced macro-AUROC 0.923979 vs recorded 0.923979 (diff +0.00e+00)
+[01:47:03] finetuned seed 43: reproduced macro-AUROC 0.927735 vs recorded 0.927735 (diff +0.00e+00)
+[01:47:03] finetuned seed 44: reproduced macro-AUROC 0.924419 vs recorded 0.924419 (diff +0.00e+00)
+[01:47:04] replicate 0/5000 (0s)
+[01:47:15] replicate 500/5000 (11s)
+[01:47:25] replicate 1000/5000 (21s)
+[01:47:36] replicate 1500/5000 (32s)
+[01:47:46] replicate 2000/5000 (43s)
+[01:47:57] replicate 2500/5000 (53s)
+[01:48:08] replicate 3000/5000 (64s)
+[01:48:19] replicate 3500/5000 (75s)
+[01:48:29] replicate 4000/5000 (85s)
+[01:48:40] replicate 4500/5000 (96s)
+[01:48:50] bootstrap done in 106s
+[01:48:50] replicates with any undefined class value: {'auroc': 0, 'ap': 0, 'hyp_auroc': 0} of 5000
+[01:48:51] predictions.npz: b494b943afba16aee04f89b68494d8155d73ad1260b6e5dd3ef65fea68659b6f
+[01:48:51] bootstrap_patient_draws.npz: 84c926a987db934d40c8111a2750ba9260f4d48ccbf251406246fb2228e7faf1
+[01:48:51] bootstrap_distributions.npz: e01d06743bc887ab35d2fb112b40b76f804543f67365ca3b3dbd4f75047a76b1
+[01:48:51] summary.csv: 7f164bd8906312222d6a2973e547d6c3d043822577e774eabdf783789587d989
+[01:48:51] summary.json: c03dd8b6259dbd63d54a653dd935348a75154c343d57ea1aa3ec7a34191ba641
+[01:48:51] config.json: e8b550426a54b06a02dbcddc2e9704d5aa2deb46da44f99679da53fbb5bbf80d

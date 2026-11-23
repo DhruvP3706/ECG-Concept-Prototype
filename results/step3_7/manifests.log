@@ -1,0 +1,68 @@
+{
+ "verified": {
+  "pairs": [
+   87,
+   87
+  ],
+  "unique_records": [
+   174,
+   174
+  ],
+  "cross_test_pairs": [
+   17,
+   17
+  ],
+  "test_records_in_cross_pairs": [
+   17,
+   17
+  ],
+  "test_records_in_any_pair": [
+   23,
+   23
+  ],
+  "both_test": [
+   1,
+   1
+  ],
+  "outside_test": [
+   50,
+   50
+  ],
+  "category4": [
+   19,
+   19
+  ]
+ },
+ "category4": {
+  "category4_total": 19,
+  "both_members_outside_experiment": [
+   [
+    "JS45461",
+    "JS45462"
+   ]
+  ],
+  "one_member_outside_experiment": 18,
+  "one_outside_with_in_set_member_in_test": 4,
+  "unresolved_membership_pairs": 0
+ },
+ "cohort_sizes": {
+  "A_all_test": 4447,
+  "B_exclude_cross_boundary": 4430,
+  "C_exclude_any_duplicate": 4424
+ },
+ "roles": {
+  "train": 35568,
+  "validation": 4437,
+  "test_reserved": 4447,
+  "excluded": 24
+ },
+ "exclusions": {
+  "val_candidate_duplicate_in_backbone_training_folds": 7,
+  "nontest_partner_of_test_record": 17
+ },
+ "flags": {
+  "within_train_dup_groups": 43,
+  "label_conflict_pairs_in_experiment": 24
+ },
+ "python": "3.14.6"
+}

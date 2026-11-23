@@ -1,0 +1,96 @@
+{
+ "localisation_method": "template-based phase-locked pre-QRS deflection per SR record (lead-pooled energy peak of the mean region deviation); not an expert-validated P-wave delineation; no packages installed; no existing P-wave delineator in the repository (only R-peak detectors)",
+ "definitions": {
+  "template_snr_min": 5.0,
+  "beat_corr_min": 0.6,
+  "min_valid_beats": 4,
+  "donor_lag_range_samples_before_R": [
+   -88,
+   -72
+  ],
+  "patch_widths_(pre,post)": {
+   "40": [
+    25,
+    15
+   ],
+   "50": [
+    30,
+    20
+   ],
+   "30": [
+    18,
+    12
+   ]
+  },
+  "control_window_region_idx": [
+   5,
+   45
+  ]
+ },
+ "annotation_states_exp7": {
+  "AFIB": {
+   "ACCEPTED|": 166,
+   "UNCERTAIN|DETECTOR_DISAGREEMENT": 3
+  },
+  "SR": {
+   "ACCEPTED|": 660,
+   "UNCERTAIN|DETECTOR_DISAGREEMENT": 7,
+   "ACCEPTED|FLAT_LEAD": 7,
+   "UNAVAILABLE|FLAT_LEAD;INSUFFICIENT_USABLE_LEADS": 13,
+   "ACCEPTED|CLIPPING_SUSPECT": 3,
+   "UNAVAILABLE|FLAT_LEAD;INSUFFICIENT_BEATS;DETECTOR_DISAGREEMENT;LOW_LEAD_SUPPORT;LOW_USABLE_LEADS": 1
+  }
+ },
+ "SR_records_with_>=4_eligible_beats": 466,
+ "SR_donors_accepted": 222,
+ "SR_exclusion_reasons_(a record can have several)": {
+  "lag_outside_offset_feasible_range": 207,
+  "low_template_snr": 76,
+  "accepted": 222,
+  "too_few_beats_matching_template": 14
+ },
+ "beats_in_donor_bank": 2147,
+ "SR_template_snr_percentiles_5_25_50_75_95": [
+  3.27,
+  6.1,
+  8.83,
+  12.1,
+  19.95
+ ],
+ "SR_lag_percentiles_5_25_50_75_95": [
+  -94.75,
+  -83.0,
+  -76.0,
+  -70.0,
+  -64.0
+ ],
+ "AFIB_eligible_recipients": 77,
+ "AFIB_template_snr_percentiles_5_25_50_75_95_(same_localiser)": [
+  0.79,
+  1.07,
+  1.33,
+  1.64,
+  2.26
+ ],
+ "AFIB_share_snr>=5": 0.0,
+ "donor_usage": {
+  "n_donors": 222,
+  "used": 152,
+  "min": 0,
+  "median": 2.0,
+  "max": 3,
+  "cap": 3
+ },
+ "matched_distance_first_donor": {
+  "median": 0.4250602778951925,
+  "p5": 0.16679265109410316,
+  "p95": 0.8623177861125879
+ },
+ "selection_bias_heart_rate_mean_RR_samples": {
+  "AFIB_eligible_median": 402.72727272727275,
+  "AFIB_ineligible_median": 277.2389705882353,
+  "n_AFIB_ineligible": 92,
+  "SR_donors_median": 432.3727272727273
+ },
+ "verdict": "A phase-locked, template-consistent pre-QRS deflection can be localised in most SR records (high SNR, median lag 76 samples = 152 ms before R, 5-95% 64-95 samples). It is called 'P-wave-like'. Its alignment is relative to the R peak of the donor beat; PR-interval variability across beats is not modelled; ectopic beats are excluded only through the Experiment 7 annotation-based exclusions and the per-beat template correlation. AFIB records do not show such a deflection under the same localiser."
+}

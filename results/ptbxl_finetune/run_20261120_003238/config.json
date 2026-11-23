@@ -1,0 +1,42 @@
+{
+ "experiment": "ptbxl_finetune_end_to_end",
+ "init_checkpoint": {
+  "path": "models/pretrained/lightv2_ft_fold0.pt",
+  "sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72"
+ },
+ "frozen_baseline_run": "results\\ptbxl_baseline\\run_20261120_002007",
+ "preprocessing": "A_exact (existing preprocess(quantize_int16=True) on digital int16)",
+ "model": "LightECGNetV2 feature extractor (all layers trainable) -> pooled 512 -> new nn.Linear(512,5) (default PyTorch init, seeded); original 512-256-45 head unused and frozen",
+ "optimizer": {
+  "name": "AdamW",
+  "lr_backbone": 0.0001,
+  "lr_head": 0.001,
+  "weight_decay": 0.01,
+  "grad_clip": 5.0
+ },
+ "scheduler": "1 epoch linear warm-up from 10% to 100% of each group lr, then cosine to 0 at epoch 30",
+ "batch": 64,
+ "max_epochs": 30,
+ "early_stopping": "validation weighted-BCE loss, patience 5, best = lowest val loss; val macro-AUROC logged only",
+ "precision": "fp32",
+ "augmentation": "none",
+ "seeds": [
+  42,
+  43,
+  44
+ ],
+ "pos_weight_train_only": [
+  1.1597719192504883,
+  3.925612449645996,
+  3.0100934505462646,
+  3.176666736602783,
+  7.949999809265137
+ ],
+ "counts": {
+  "train": 16289,
+  "validation": 2034
+ },
+ "manifest_sha256": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+ "fold10_waveforms_read": 0,
+ "determinism": "cudnn.deterministic=True, benchmark=False; bitwise reproducibility on GPU not guaranteed"
+}

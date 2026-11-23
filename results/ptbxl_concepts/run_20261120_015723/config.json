@@ -1,0 +1,21 @@
+{
+ "stage": "ptbxl_rr_concept_extraction",
+ "extractor": "src/ecg_concept/rr_concepts.py (frozen Step 4.3 parameters)",
+ "extractor_params_sha256": "4f5e41ea05c53bd39bf0267039047a30a668652c2229b83e9ba0b11dfb00403c",
+ "extractor_code_sha256": {
+  "rr_concepts.py": "acbcfc67ad67108e7495684f82e99c20899f40329754b3ccefc2c7285fc807dd",
+  "beat_detection.py": "eee2c017a57d42b18a3b2dbee4c51880fad4cd3f7960e18f7389b208fa0158b5"
+ },
+ "signal": "digital int16 counts, model lead order, WFDB-free reader; no filtering/scaling before extraction",
+ "criteria_declared_before_extraction": {
+  "V1": "all records read and extract without exception",
+  "V2": "ACCEPTED fraction >= 0.90 (rate and irregularity), train",
+  "V3": ">= 99% of accepted rate in [30,250] bpm, train",
+  "V4": "UNCERTAIN fraction <= 0.10, train",
+  "V5": "median rate SBRAD < SR < STACH; median rr_cv AFIB > 2*SR (each >= 30 records, train, scp_codes presence)"
+ },
+ "baseline_run_for_order": "results\\ptbxl_baseline\\run_20261120_002007",
+ "manifest_sha256": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+ "n_records": 18323,
+ "fold10_waveforms_read": 0
+}

@@ -1,0 +1,10 @@
+2026-11-11 12:34:44   embed chunk 0: 500 records in 7s
+2026-11-11 12:35:36   embed chunk 10: 5500 records in 58s
+2026-11-11 12:36:28   embed chunk 20: 10500 records in 110s
+2026-11-11 12:37:21   embed chunk 30: 15500 records in 163s
+2026-11-11 12:38:09   embed chunk 40: 20500 records in 211s
+2026-11-11 12:38:57   embed chunk 50: 25500 records in 259s
+2026-11-11 12:39:47   embed chunk 60: 30500 records in 310s
+2026-11-11 12:40:33   embed chunk 70: 35500 records in 355s
+2026-11-11 12:41:16   embed chunk 80: 40005 records in 399s
+2026-11-11 12:41:16 embed finished in 399s; backbone state hash unchanged: True

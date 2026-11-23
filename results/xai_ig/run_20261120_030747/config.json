@@ -1,0 +1,1534 @@
+{
+ "selection_seed": 2026,
+ "classes": [
+  "SB",
+  "AF",
+  "TWC",
+  "ST",
+  "SR",
+  "AFIB",
+  "STTC",
+  "TWO"
+ ],
+ "pairs": [
+  {
+   "va_idx": 3823,
+   "record_id": "JS39056",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": false,
+   "logit_cached": 1.1141655445098877,
+   "pair": 0
+  },
+  {
+   "va_idx": 3364,
+   "record_id": "JS34300",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 5.157747268676758,
+   "pair": 1
+  },
+  {
+   "va_idx": 2228,
+   "record_id": "JS23071",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": false,
+   "logit_cached": 1.5231900215148926,
+   "pair": 2
+  },
+  {
+   "va_idx": 3017,
+   "record_id": "JS30857",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 8.338889122009277,
+   "pair": 3
+  },
+  {
+   "va_idx": 24,
+   "record_id": "JS00242",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 9.034342765808105,
+   "pair": 4
+  },
+  {
+   "va_idx": 2242,
+   "record_id": "JS23553",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 3.191805124282837,
+   "pair": 5
+  },
+  {
+   "va_idx": 2647,
+   "record_id": "JS27255",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 4.897312641143799,
+   "pair": 6
+  },
+  {
+   "va_idx": 3400,
+   "record_id": "JS34750",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": false,
+   "logit_cached": 1.3410944938659668,
+   "pair": 7
+  },
+  {
+   "va_idx": 3672,
+   "record_id": "JS37536",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": false,
+   "logit_cached": 2.308624267578125,
+   "pair": 8
+  },
+  {
+   "va_idx": 3058,
+   "record_id": "JS31232",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 6.883473873138428,
+   "pair": 9
+  },
+  {
+   "va_idx": 688,
+   "record_id": "JS07192",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 7.064732551574707,
+   "pair": 10
+  },
+  {
+   "va_idx": 2365,
+   "record_id": "JS24640",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 5.234118461608887,
+   "pair": 11
+  },
+  {
+   "va_idx": 2498,
+   "record_id": "JS25757",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 7.813274383544922,
+   "pair": 12
+  },
+  {
+   "va_idx": 2991,
+   "record_id": "JS30620",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 9.868224143981934,
+   "pair": 13
+  },
+  {
+   "va_idx": 2509,
+   "record_id": "JS25909",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 7.191158294677734,
+   "pair": 14
+  },
+  {
+   "va_idx": 3835,
+   "record_id": "JS39171",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": false,
+   "logit_cached": 2.996941328048706,
+   "pair": 15
+  },
+  {
+   "va_idx": 2181,
+   "record_id": "JS22575",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 8.073723793029785,
+   "pair": 16
+  },
+  {
+   "va_idx": 2174,
+   "record_id": "JS22498",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 5.940546035766602,
+   "pair": 17
+  },
+  {
+   "va_idx": 459,
+   "record_id": "JS04617",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 4.895428657531738,
+   "pair": 18
+  },
+  {
+   "va_idx": 3253,
+   "record_id": "JS33239",
+   "class_idx": 29,
+   "class": "SB",
+   "correct": true,
+   "logit_cached": 6.252758979797363,
+   "pair": 19
+  },
+  {
+   "va_idx": 1750,
+   "record_id": "JS18215",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.1996219158172607,
+   "pair": 20
+  },
+  {
+   "va_idx": 1446,
+   "record_id": "JS15264",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.9859299659729004,
+   "pair": 21
+  },
+  {
+   "va_idx": 319,
+   "record_id": "JS03211",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": false,
+   "logit_cached": 2.2513468265533447,
+   "pair": 22
+  },
+  {
+   "va_idx": 1210,
+   "record_id": "JS12857",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": false,
+   "logit_cached": 0.7626841068267822,
+   "pair": 23
+  },
+  {
+   "va_idx": 1359,
+   "record_id": "JS14393",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 3.0573391914367676,
+   "pair": 24
+  },
+  {
+   "va_idx": 1882,
+   "record_id": "JS19454",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.6758594512939453,
+   "pair": 25
+  },
+  {
+   "va_idx": 1470,
+   "record_id": "JS15547",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 2.3283255100250244,
+   "pair": 26
+  },
+  {
+   "va_idx": 1207,
+   "record_id": "JS12791",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.1855175495147705,
+   "pair": 27
+  },
+  {
+   "va_idx": 1515,
+   "record_id": "JS15926",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.5108642578125,
+   "pair": 28
+  },
+  {
+   "va_idx": 1431,
+   "record_id": "JS15075",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.3515276908874512,
+   "pair": 29
+  },
+  {
+   "va_idx": 1435,
+   "record_id": "JS15140",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.9579286575317383,
+   "pair": 30
+  },
+  {
+   "va_idx": 586,
+   "record_id": "JS06122",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": false,
+   "logit_cached": 2.1100549697875977,
+   "pair": 31
+  },
+  {
+   "va_idx": 374,
+   "record_id": "JS03788",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 2.1372828483581543,
+   "pair": 32
+  },
+  {
+   "va_idx": 1730,
+   "record_id": "JS17940",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 2.1160221099853516,
+   "pair": 33
+  },
+  {
+   "va_idx": 293,
+   "record_id": "JS02941",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": false,
+   "logit_cached": 1.6863951683044434,
+   "pair": 34
+  },
+  {
+   "va_idx": 1947,
+   "record_id": "JS20138",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": false,
+   "logit_cached": 0.3129662871360779,
+   "pair": 35
+  },
+  {
+   "va_idx": 1301,
+   "record_id": "JS13634",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 2.203129291534424,
+   "pair": 36
+  },
+  {
+   "va_idx": 1710,
+   "record_id": "JS17696",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.6051989793777466,
+   "pair": 37
+  },
+  {
+   "va_idx": 1704,
+   "record_id": "JS17657",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 2.4630849361419678,
+   "pair": 38
+  },
+  {
+   "va_idx": 1412,
+   "record_id": "JS14887",
+   "class_idx": 4,
+   "class": "AF",
+   "correct": true,
+   "logit_cached": 1.4497380256652832,
+   "pair": 39
+  },
+  {
+   "va_idx": 1323,
+   "record_id": "JS14029",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": false,
+   "logit_cached": 0.7103813886642456,
+   "pair": 40
+  },
+  {
+   "va_idx": 421,
+   "record_id": "JS04275",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.9127695560455322,
+   "pair": 41
+  },
+  {
+   "va_idx": 1469,
+   "record_id": "JS15537",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": false,
+   "logit_cached": 0.9413719177246094,
+   "pair": 42
+  },
+  {
+   "va_idx": 4244,
+   "record_id": "JS43550",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": false,
+   "logit_cached": 1.0530940294265747,
+   "pair": 43
+  },
+  {
+   "va_idx": 3292,
+   "record_id": "JS33590",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.1013896465301514,
+   "pair": 44
+  },
+  {
+   "va_idx": 1669,
+   "record_id": "JS17350",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.4357185363769531,
+   "pair": 45
+  },
+  {
+   "va_idx": 3715,
+   "record_id": "JS38009",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.043721079826355,
+   "pair": 46
+  },
+  {
+   "va_idx": 3308,
+   "record_id": "JS33741",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.4968035221099854,
+   "pair": 47
+  },
+  {
+   "va_idx": 2448,
+   "record_id": "JS25384",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": false,
+   "logit_cached": 1.2501031160354614,
+   "pair": 48
+  },
+  {
+   "va_idx": 1403,
+   "record_id": "JS14784",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.7248109579086304,
+   "pair": 49
+  },
+  {
+   "va_idx": 2161,
+   "record_id": "JS22375",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.0728511810302734,
+   "pair": 50
+  },
+  {
+   "va_idx": 4351,
+   "record_id": "JS44555",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 0.7696323394775391,
+   "pair": 51
+  },
+  {
+   "va_idx": 3249,
+   "record_id": "JS33123",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.0619332790374756,
+   "pair": 52
+  },
+  {
+   "va_idx": 68,
+   "record_id": "JS00688",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.523780345916748,
+   "pair": 53
+  },
+  {
+   "va_idx": 1629,
+   "record_id": "JS16892",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": false,
+   "logit_cached": 0.7114280462265015,
+   "pair": 54
+  },
+  {
+   "va_idx": 1899,
+   "record_id": "JS19617",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.329378604888916,
+   "pair": 55
+  },
+  {
+   "va_idx": 4067,
+   "record_id": "JS41773",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 0.7251783013343811,
+   "pair": 56
+  },
+  {
+   "va_idx": 3123,
+   "record_id": "JS31868",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 2.49233341217041,
+   "pair": 57
+  },
+  {
+   "va_idx": 1592,
+   "record_id": "JS16660",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.7239716053009033,
+   "pair": 58
+  },
+  {
+   "va_idx": 2507,
+   "record_id": "JS25879",
+   "class_idx": 37,
+   "class": "TWC",
+   "correct": true,
+   "logit_cached": 1.8697494268417358,
+   "pair": 59
+  },
+  {
+   "va_idx": 4305,
+   "record_id": "JS44127",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 6.914215564727783,
+   "pair": 60
+  },
+  {
+   "va_idx": 1072,
+   "record_id": "JS11439",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.237384796142578,
+   "pair": 61
+  },
+  {
+   "va_idx": 4037,
+   "record_id": "JS41530",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 6.534615993499756,
+   "pair": 62
+  },
+  {
+   "va_idx": 2257,
+   "record_id": "JS23684",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 5.298410892486572,
+   "pair": 63
+  },
+  {
+   "va_idx": 1942,
+   "record_id": "JS20105",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": false,
+   "logit_cached": 0.6145678758621216,
+   "pair": 64
+  },
+  {
+   "va_idx": 4096,
+   "record_id": "JS41992",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 5.617860794067383,
+   "pair": 65
+  },
+  {
+   "va_idx": 4247,
+   "record_id": "JS43566",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.840063571929932,
+   "pair": 66
+  },
+  {
+   "va_idx": 1162,
+   "record_id": "JS12346",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.621073246002197,
+   "pair": 67
+  },
+  {
+   "va_idx": 1053,
+   "record_id": "JS11284",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 3.1679930686950684,
+   "pair": 68
+  },
+  {
+   "va_idx": 946,
+   "record_id": "JS09990",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": false,
+   "logit_cached": 0.8679643869400024,
+   "pair": 69
+  },
+  {
+   "va_idx": 2215,
+   "record_id": "JS22895",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.117989540100098,
+   "pair": 70
+  },
+  {
+   "va_idx": 4069,
+   "record_id": "JS41800",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.927616596221924,
+   "pair": 71
+  },
+  {
+   "va_idx": 130,
+   "record_id": "JS01338",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 6.293124198913574,
+   "pair": 72
+  },
+  {
+   "va_idx": 4207,
+   "record_id": "JS43194",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.3819580078125,
+   "pair": 73
+  },
+  {
+   "va_idx": 1195,
+   "record_id": "JS12692",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": false,
+   "logit_cached": 2.18974232673645,
+   "pair": 74
+  },
+  {
+   "va_idx": 1833,
+   "record_id": "JS19031",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": false,
+   "logit_cached": 1.44711172580719,
+   "pair": 75
+  },
+  {
+   "va_idx": 522,
+   "record_id": "JS05406",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 6.145852088928223,
+   "pair": 76
+  },
+  {
+   "va_idx": 2164,
+   "record_id": "JS22451",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 7.152942180633545,
+   "pair": 77
+  },
+  {
+   "va_idx": 4426,
+   "record_id": "JS45252",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": true,
+   "logit_cached": 4.5528388023376465,
+   "pair": 78
+  },
+  {
+   "va_idx": 1231,
+   "record_id": "JS13026",
+   "class_idx": 31,
+   "class": "ST",
+   "correct": false,
+   "logit_cached": 1.2695316076278687,
+   "pair": 79
+  },
+  {
+   "va_idx": 321,
+   "record_id": "JS03239",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 6.386072635650635,
+   "pair": 80
+  },
+  {
+   "va_idx": 807,
+   "record_id": "JS08490",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 6.456928253173828,
+   "pair": 81
+  },
+  {
+   "va_idx": 3519,
+   "record_id": "JS35852",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": false,
+   "logit_cached": 2.150437116622925,
+   "pair": 82
+  },
+  {
+   "va_idx": 432,
+   "record_id": "JS04359",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 7.2328200340271,
+   "pair": 83
+  },
+  {
+   "va_idx": 3451,
+   "record_id": "JS35188",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": false,
+   "logit_cached": 2.3824808597564697,
+   "pair": 84
+  },
+  {
+   "va_idx": 3608,
+   "record_id": "JS36889",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 7.127962589263916,
+   "pair": 85
+  },
+  {
+   "va_idx": 3954,
+   "record_id": "JS40634",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 5.485540866851807,
+   "pair": 86
+  },
+  {
+   "va_idx": 192,
+   "record_id": "JS01896",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 6.673507213592529,
+   "pair": 87
+  },
+  {
+   "va_idx": 882,
+   "record_id": "JS09279",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 2.3275442123413086,
+   "pair": 88
+  },
+  {
+   "va_idx": 3892,
+   "record_id": "JS39774",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 1.4396271705627441,
+   "pair": 89
+  },
+  {
+   "va_idx": 3872,
+   "record_id": "JS39565",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 3.8095386028289795,
+   "pair": 90
+  },
+  {
+   "va_idx": 3909,
+   "record_id": "JS40076",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 3.471151828765869,
+   "pair": 91
+  },
+  {
+   "va_idx": 3473,
+   "record_id": "JS35419",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": false,
+   "logit_cached": 4.237695217132568,
+   "pair": 92
+  },
+  {
+   "va_idx": 3490,
+   "record_id": "JS35537",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": false,
+   "logit_cached": 1.7018873691558838,
+   "pair": 93
+  },
+  {
+   "va_idx": 3671,
+   "record_id": "JS37527",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 1.2071789503097534,
+   "pair": 94
+  },
+  {
+   "va_idx": 3819,
+   "record_id": "JS39006",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 4.17484188079834,
+   "pair": 95
+  },
+  {
+   "va_idx": 3571,
+   "record_id": "JS36479",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 6.291401386260986,
+   "pair": 96
+  },
+  {
+   "va_idx": 4009,
+   "record_id": "JS41305",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 5.731926441192627,
+   "pair": 97
+  },
+  {
+   "va_idx": 3486,
+   "record_id": "JS35522",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": false,
+   "logit_cached": 4.659773826599121,
+   "pair": 98
+  },
+  {
+   "va_idx": 4016,
+   "record_id": "JS41375",
+   "class_idx": 30,
+   "class": "SR",
+   "correct": true,
+   "logit_cached": 4.552361965179443,
+   "pair": 99
+  },
+  {
+   "va_idx": 372,
+   "record_id": "JS03778",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.5263381004333496,
+   "pair": 100
+  },
+  {
+   "va_idx": 293,
+   "record_id": "JS02941",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.1625633239746094,
+   "pair": 101
+  },
+  {
+   "va_idx": 152,
+   "record_id": "JS01554",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.896595001220703,
+   "pair": 102
+  },
+  {
+   "va_idx": 416,
+   "record_id": "JS04215",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 3.381340742111206,
+   "pair": 103
+  },
+  {
+   "va_idx": 1537,
+   "record_id": "JS16082",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": false,
+   "logit_cached": 3.18009090423584,
+   "pair": 104
+  },
+  {
+   "va_idx": 58,
+   "record_id": "JS00618",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.2235894203186035,
+   "pair": 105
+  },
+  {
+   "va_idx": 868,
+   "record_id": "JS09091",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.4615180492401123,
+   "pair": 106
+  },
+  {
+   "va_idx": 242,
+   "record_id": "JS02420",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.7607223987579346,
+   "pair": 107
+  },
+  {
+   "va_idx": 603,
+   "record_id": "JS06257",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 3.082277774810791,
+   "pair": 108
+  },
+  {
+   "va_idx": 1722,
+   "record_id": "JS17884",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": false,
+   "logit_cached": 3.4690096378326416,
+   "pair": 109
+  },
+  {
+   "va_idx": 638,
+   "record_id": "JS06684",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 3.84200119972229,
+   "pair": 110
+  },
+  {
+   "va_idx": 1490,
+   "record_id": "JS15698",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": false,
+   "logit_cached": 2.255943775177002,
+   "pair": 111
+  },
+  {
+   "va_idx": 783,
+   "record_id": "JS08162",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.9432437419891357,
+   "pair": 112
+  },
+  {
+   "va_idx": 1744,
+   "record_id": "JS18141",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": false,
+   "logit_cached": 2.8082563877105713,
+   "pair": 113
+  },
+  {
+   "va_idx": 775,
+   "record_id": "JS08041",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 3.072103261947632,
+   "pair": 114
+  },
+  {
+   "va_idx": 212,
+   "record_id": "JS02184",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 1.9444077014923096,
+   "pair": 115
+  },
+  {
+   "va_idx": 427,
+   "record_id": "JS04345",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 3.267357110977173,
+   "pair": 116
+  },
+  {
+   "va_idx": 731,
+   "record_id": "JS07596",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.9496161937713623,
+   "pair": 117
+  },
+  {
+   "va_idx": 3676,
+   "record_id": "JS37650",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": false,
+   "logit_cached": 1.9679250717163086,
+   "pair": 118
+  },
+  {
+   "va_idx": 698,
+   "record_id": "JS07242",
+   "class_idx": 5,
+   "class": "AFIB",
+   "correct": true,
+   "logit_cached": 2.0420284271240234,
+   "pair": 119
+  },
+  {
+   "va_idx": 47,
+   "record_id": "JS00470",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 2.024693489074707,
+   "pair": 120
+  },
+  {
+   "va_idx": 300,
+   "record_id": "JS03014",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.049560785293579,
+   "pair": 121
+  },
+  {
+   "va_idx": 4346,
+   "record_id": "JS44528",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": false,
+   "logit_cached": 1.9241503477096558,
+   "pair": 122
+  },
+  {
+   "va_idx": 319,
+   "record_id": "JS03211",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.5921809673309326,
+   "pair": 123
+  },
+  {
+   "va_idx": 823,
+   "record_id": "JS08633",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": false,
+   "logit_cached": 2.1799705028533936,
+   "pair": 124
+  },
+  {
+   "va_idx": 198,
+   "record_id": "JS01942",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.4945759773254395,
+   "pair": 125
+  },
+  {
+   "va_idx": 662,
+   "record_id": "JS06919",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 2.9472105503082275,
+   "pair": 126
+  },
+  {
+   "va_idx": 703,
+   "record_id": "JS07302",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.8525893688201904,
+   "pair": 127
+  },
+  {
+   "va_idx": 315,
+   "record_id": "JS03170",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 2.495317220687866,
+   "pair": 128
+  },
+  {
+   "va_idx": 678,
+   "record_id": "JS07102",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 4.132889747619629,
+   "pair": 129
+  },
+  {
+   "va_idx": 391,
+   "record_id": "JS03965",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 1.6208257675170898,
+   "pair": 130
+  },
+  {
+   "va_idx": 894,
+   "record_id": "JS09411",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.892636775970459,
+   "pair": 131
+  },
+  {
+   "va_idx": 255,
+   "record_id": "JS02574",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 2.295194387435913,
+   "pair": 132
+  },
+  {
+   "va_idx": 626,
+   "record_id": "JS06513",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.305150270462036,
+   "pair": 133
+  },
+  {
+   "va_idx": 787,
+   "record_id": "JS08204",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 2.8049116134643555,
+   "pair": 134
+  },
+  {
+   "va_idx": 320,
+   "record_id": "JS03229",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.830331802368164,
+   "pair": 135
+  },
+  {
+   "va_idx": 1597,
+   "record_id": "JS16693",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": false,
+   "logit_cached": 2.798656702041626,
+   "pair": 136
+  },
+  {
+   "va_idx": 741,
+   "record_id": "JS07736",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": false,
+   "logit_cached": 2.4799482822418213,
+   "pair": 137
+  },
+  {
+   "va_idx": 389,
+   "record_id": "JS03951",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": true,
+   "logit_cached": 3.891340970993042,
+   "pair": 138
+  },
+  {
+   "va_idx": 1734,
+   "record_id": "JS18024",
+   "class_idx": 34,
+   "class": "STTC",
+   "correct": false,
+   "logit_cached": 1.799098253250122,
+   "pair": 139
+  },
+  {
+   "va_idx": 1671,
+   "record_id": "JS17375",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": false,
+   "logit_cached": 2.870978355407715,
+   "pair": 140
+  },
+  {
+   "va_idx": 1464,
+   "record_id": "JS15445",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.6798083782196045,
+   "pair": 141
+  },
+  {
+   "va_idx": 3369,
+   "record_id": "JS34331",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 3.7810006141662598,
+   "pair": 142
+  },
+  {
+   "va_idx": 2413,
+   "record_id": "JS25073",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.3147120475769043,
+   "pair": 143
+  },
+  {
+   "va_idx": 1764,
+   "record_id": "JS18394",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 3.3929948806762695,
+   "pair": 144
+  },
+  {
+   "va_idx": 3047,
+   "record_id": "JS31117",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 4.046566486358643,
+   "pair": 145
+  },
+  {
+   "va_idx": 1553,
+   "record_id": "JS16283",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 3.3206522464752197,
+   "pair": 146
+  },
+  {
+   "va_idx": 1370,
+   "record_id": "JS14461",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": false,
+   "logit_cached": 3.4163925647735596,
+   "pair": 147
+  },
+  {
+   "va_idx": 3459,
+   "record_id": "JS35236",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.5199217796325684,
+   "pair": 148
+  },
+  {
+   "va_idx": 2584,
+   "record_id": "JS26668",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.4036290645599365,
+   "pair": 149
+  },
+  {
+   "va_idx": 1644,
+   "record_id": "JS17058",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.712984800338745,
+   "pair": 150
+  },
+  {
+   "va_idx": 1848,
+   "record_id": "JS19176",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.146327257156372,
+   "pair": 151
+  },
+  {
+   "va_idx": 170,
+   "record_id": "JS01719",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": false,
+   "logit_cached": 1.9194175004959106,
+   "pair": 152
+  },
+  {
+   "va_idx": 2230,
+   "record_id": "JS23199",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": false,
+   "logit_cached": 3.486605644226074,
+   "pair": 153
+  },
+  {
+   "va_idx": 4278,
+   "record_id": "JS43910",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.1178860664367676,
+   "pair": 154
+  },
+  {
+   "va_idx": 198,
+   "record_id": "JS01942",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.8868186473846436,
+   "pair": 155
+  },
+  {
+   "va_idx": 455,
+   "record_id": "JS04538",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": false,
+   "logit_cached": 2.59488582611084,
+   "pair": 156
+  },
+  {
+   "va_idx": 1373,
+   "record_id": "JS14483",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 1.9121804237365723,
+   "pair": 157
+  },
+  {
+   "va_idx": 1089,
+   "record_id": "JS11620",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.3588807582855225,
+   "pair": 158
+  },
+  {
+   "va_idx": 1423,
+   "record_id": "JS14957",
+   "class_idx": 38,
+   "class": "TWO",
+   "correct": true,
+   "logit_cached": 2.390242099761963,
+   "pair": 159
+  }
+ ],
+ "donor_record_ids": [
+  "JS37683",
+  "JS02270",
+  "JS23766",
+  "JS25041",
+  "JS09026",
+  "JS28195",
+  "JS27106",
+  "JS23899",
+  "JS27036",
+  "JS32852",
+  "JS38625",
+  "JS40295",
+  "JS44872",
+  "JS03523",
+  "JS01288",
+  "JS29164",
+  "JS33005",
+  "JS31635",
+  "JS39365",
+  "JS03462",
+  "JS20029",
+  "JS28499",
+  "JS25062",
+  "JS42381",
+  "JS06345",
+  "JS11443",
+  "JS16462",
+  "JS41448",
+  "JS24503",
+  "JS34936",
+  "JS09685",
+  "JS40384",
+  "JS32715",
+  "JS07108",
+  "JS34017",
+  "JS35971",
+  "JS40624",
+  "JS22116",
+  "JS03592",
+  "JS08714",
+  "JS27459",
+  "JS29143",
+  "JS36444",
+  "JS14255",
+  "JS15373",
+  "JS42811",
+  "JS40350",
+  "JS34247",
+  "JS04010",
+  "JS23946",
+  "JS37793",
+  "JS04042",
+  "JS40935",
+  "JS13913",
+  "JS05827",
+  "JS08918",
+  "JS35672",
+  "JS12016",
+  "JS43786",
+  "JS11685"
+ ],
+ "n_random_orders": 10,
+ "ig_steps": 64,
+ "window_samples": 125,
+ "population": "frozen role 'validation' (original fold 0); test_reserved and train never read",
+ "model": {
+  "checkpoint": "models/pretrained/lightv2_ft_fold0.pt",
+  "sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+  "thresholds_sha256": "e722ca9490881952d4ad45868294d65591dc1ced8076d5b71ff278a36ca512e8"
+ },
+ "caveat": "thresholds were selected on this same fold; its signals were not in the weights; explanations are of the model's predictions, not of ground truth",
+ "fold_manifest_sha256": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+ "cache_merged_sha256": "950b2a12986137fbc0bbbeda79b9ac94e97f39392dc7a64acf250117860ea9c1",
+ "code_sha256": {
+  "src/ecg_concept/attribution.py": "12a605116723f78387f3d5073c9b21f4d20959e6b1f6cbf017f32a1059b87e86",
+  "scripts/xai_ig_faithfulness.py": "dfe5c8b24572b940716127fbb51555e5aea8788c4fb56ac076c7c5fadacc48ee",
+  "src/ecg_concept/preprocessing.py": "4b6a6a54b573b2ef95ddb418e14bb80d1aca287ad25e62b0e9e52acb12070d66"
+ }
+}

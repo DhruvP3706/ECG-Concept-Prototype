@@ -1,0 +1,491 @@
+{
+ "step": "4.1 metadata inventory",
+ "restriction": "record-level inspection limited to role==train (35,568); no .mat opened; validation/test/excluded IDs never read",
+ "inspected_sources": {
+  "role_manifest": "results/step3_7/prospective_role_manifest.csv",
+  "train_headers": "WFDBRecords/**/<id>.hea for train IDs only",
+  "dataset_docs": [
+   "ConditionNames_SNOMED-CT.csv",
+   "LICENSE.txt",
+   "RECORDS (name list only)"
+  ],
+  "dataset_file_types_in_tree": {
+   ".hea": 45152,
+   ".mat": 45152,
+   "RECORDS": 453,
+   ".txt": 2,
+   ".csv": 1
+  }
+ },
+ "join_rules": {
+  "headers": "record_id equals file stem; path from original_fold_manifest.csv (Step 3.7)",
+  "labels": "role manifest `labels` column (acronyms)"
+ },
+ "input_sha256": {
+  "results\\step3_7\\prospective_role_manifest.csv": "8595e4d68f178f6e7005e78959c20a57a000fb0fc13ceab5d7ab29ba61e5b8d7",
+  "results\\step3_7\\original_fold_manifest.csv": "5fc86602f95a1668ad66d6a27747e42430e9603327382a9673a7c1b4cc9595f1",
+  "data\\raw\\a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0\\ConditionNames_SNOMED-CT.csv": "05d6fa23acdcbb466b378310ccfad22ea6cef4d3abfa83e8f660c77016be028d",
+  "data\\raw\\a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0\\LICENSE.txt": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2",
+  "results\\step3_7\\analysis_config.json": "ab4262e912410be249c099c428f8f65353a7265aa881ae12c51583ff0da5f221",
+  "results\\step3_7\\evaluation_protocol.md": "f9c8a42d7a411bb594d67dccb39f654728d25ac872eebdccaa35a310b7c306da"
+ },
+ "software": {
+  "python": "3.14.6",
+  "numpy": "2.5.4"
+ },
+ "command": ".venv\\Scripts\\python.exe -I scripts\\step4_1_metadata_inventory.py",
+ "summary": {
+  "n_train_records": 35568,
+  "n_headers_parsed": 35567,
+  "parse_failures": [
+   [
+    "JS01052",
+    "AssertionError('record line')"
+   ]
+  ],
+  "duplicate_ids": 0,
+  "join_coverage": "35568/35568 train IDs resolved to a .hea via original_fold_manifest dataset_rel_path",
+  "record_line": {
+   "n_signals": {
+    "12": 35567
+   },
+   "fs": {
+    "500": 35567
+   },
+   "n_samples": {
+    "5000": 35567
+   }
+  },
+  "base_time_date": {
+   "present": 811,
+   "absent": 34756,
+   "years": {
+    "2021": 811
+   },
+   "id_range_with_timestamp": [
+    "JS08344",
+    "JS09373"
+   ],
+   "note": "WFDB base time/date on the record line; meaning (acquisition vs export time) undocumented"
+  },
+  "lead_order": {
+   "I|II|III|aVR|aVL|aVF|V1|V2|V3|V4|V5|V6": 35567
+  },
+  "signal_line_variants_(format,gain,adc_res,adc_zero,block)": {
+   "16+24|1000/mV|16|0|0": 426804
+  },
+  "comment_keys": {
+   "Age": 35567,
+   "Sex": 35567,
+   "Dx": 35567,
+   "Rx": 35567,
+   "Hx": 35567,
+   "Sx": 35567
+  },
+  "age": {
+   "n_total": 35567,
+   "kinds": {
+    "numeric": 35526,
+    "literal_NaN": 41
+   },
+   "numeric_n": 35526,
+   "zero": 171,
+   "negative": 0,
+   "min": 0.0,
+   "max": 89.0,
+   "mean": 58.230338343748244,
+   "median": 61.0,
+   "n_at_max": 726,
+   "n_ge_90": 0,
+   "integer_valued": true
+  },
+  "sex": {
+   "Male": 19958,
+   "Female": 15591,
+   "Unknown": 18
+  },
+  "Rx": {
+   "Unknown": 35567
+  },
+  "Hx": {
+   "Unknown": 35567
+  },
+  "Sx": {
+   "Unknown": 35567
+  },
+  "n_dx_codes_per_record": {
+   "1": 17330,
+   "2": 9350,
+   "3": 4738,
+   "4": 2314,
+   "5": 1155,
+   "6": 468,
+   "7": 141,
+   "8": 53,
+   "9": 10,
+   "10": 6,
+   "11": 1,
+   "12": 1
+  },
+  "train_diagnostic_label_support": {
+   "SB": 13117,
+   "SR": 6553,
+   "AF": 6453,
+   "ST": 5818,
+   "TWC": 5587,
+   "TWO": 2309,
+   "SA": 2018,
+   "AFIB": 1440,
+   "STDD": 1342,
+   "ALS": 1244,
+   "APB": 1026,
+   "STTC": 946,
+   "1AVB": 900,
+   "AQW": 859,
+   "LVQRSAL": 826,
+   "ARS": 687,
+   "IVB": 624,
+   "STE": 612,
+   "SVT": 586,
+   "LVH": 536,
+   "RBBB": 531,
+   "QTIE": 308,
+   "ERV": 286,
+   "VPB": 247,
+   "AT": 236,
+   "LFBBB": 194,
+   "AVB": 185,
+   "STTU": 143,
+   "CCR": 134,
+   "UW": 108,
+   "PWC": 104,
+   "VFW": 94,
+   "RVH": 91,
+   "MISW": 89,
+   "JEB": 65,
+   "3AVB": 65,
+   "CR": 64,
+   "WPW": 63,
+   "2AVB": 55,
+   "PRIE": 46,
+   "VEB": 42,
+   "RAH": 29,
+   "2AVB1": 25,
+   "AVRT": 25,
+   "VPE": 9
+  },
+  "train_dup_pairs_conflicts": {
+   "pairs": 43,
+   "age_differs": 26,
+   "sex_differs": 1,
+   "labels_differ": 14
+  },
+  "label_dictionary_entries": {
+   "1AVB": [
+    "1 degree atrioventricular block",
+    "270492004"
+   ],
+   "2AVB": [
+    "2 degree atrioventricular block",
+    "195042002"
+   ],
+   "2AVB1": [
+    "2 degree atrioventricular block(Type one)",
+    "54016002"
+   ],
+   "2AVB2": [
+    "2 degree atrioventricular block(Type two)",
+    "28189009"
+   ],
+   "3AVB": [
+    "3 degree atrioventricular block",
+    "27885002"
+   ],
+   "ABI": [
+    "atrial bigeminy",
+    "251173003"
+   ],
+   "ALS": [
+    "Axis left shift",
+    "39732003"
+   ],
+   "APB": [
+    "atrial\u00a0premature\u00a0beats",
+    "284470004"
+   ],
+   "AQW": [
+    "abnormal Q wave",
+    "164917005"
+   ],
+   "ARS": [
+    "Axis right shift",
+    "47665007"
+   ],
+   "AVB": [
+    "atrioventricular block",
+    "233917008"
+   ],
+   "CCR": [
+    "countercolockwise rotation",
+    "251199005"
+   ],
+   "CR": [
+    "colockwise rotation",
+    "251198002"
+   ],
+   "ERV": [
+    "Early repolarization of the ventricles",
+    "428417006"
+   ],
+   "FQRS": [
+    "fQRS Wave",
+    "164942001"
+   ],
+   "IDC": [
+    "Interior differences conduction",
+    "698252002"
+   ],
+   "IVB": [
+    "Intraventricular block",
+    "698252002"
+   ],
+   "JEB": [
+    "junctional escape beat",
+    "426995002"
+   ],
+   "JPT": [
+    "junctional premature beat",
+    "251164006"
+   ],
+   "LBBB": [
+    "left bundle branch block",
+    "164909002"
+   ],
+   "LBBBB": [
+    "left back bundle branch block",
+    "164909002"
+   ],
+   "LFBBB": [
+    "left front bundle branch block",
+    "164909002"
+   ],
+   "LVH": [
+    "left ventricle hypertrophy",
+    "164873001"
+   ],
+   "LVQRSAL": [
+    "lower voltage QRS in all lead",
+    "251146004"
+   ],
+   "LVQRSCL": [
+    "lower voltage QRS in chest lead",
+    "251148003"
+   ],
+   "LVQRSLL": [
+    "lower voltage QRS in limb lead",
+    "251147008"
+   ],
+   "MI": [
+    "myocardial infarction",
+    "164865005"
+   ],
+   "MIBW": [
+    "myocardial infraction in back wall",
+    "164865005"
+   ],
+   "MIFW": [
+    "Myocardial infgraction in the front wall",
+    "164865005"
+   ],
+   "MILW": [
+    "Myocardial infraction in the lower wall",
+    "164865005"
+   ],
+   "MISW": [
+    "Myocardial infraction in the side wall",
+    "164865005"
+   ],
+   "PRIE": [
+    "PR interval extension",
+    "164947007"
+   ],
+   "PWC": [
+    "P wave Change",
+    "164912004"
+   ],
+   "QTIE": [
+    "QT interval extension",
+    "111975006"
+   ],
+   "RAH": [
+    "right atrial hypertrophy",
+    "446358003"
+   ],
+   "RBBB": [
+    "right bundle branch block",
+    "59118001"
+   ],
+   "RVH": [
+    "right ventricle hypertrophy",
+    "89792004"
+   ],
+   "STDD": [
+    "ST drop down",
+    "429622005"
+   ],
+   "STE": [
+    "ST extension",
+    "164930006"
+   ],
+   "STTC": [
+    "ST-T Change",
+    "428750005"
+   ],
+   "STTU": [
+    "ST tilt up",
+    "164931005"
+   ],
+   "TWC": [
+    "T wave Change",
+    "164934002"
+   ],
+   "TWO": [
+    "T wave opposite",
+    "59931005"
+   ],
+   "UW": [
+    "U wave",
+    "164937009"
+   ],
+   "VB": [
+    "ventricular bigeminy",
+    "11157007"
+   ],
+   "VEB": [
+    "ventricular escape beat",
+    "75532003"
+   ],
+   "VFW": [
+    "ventricular fusion wave",
+    "13640000"
+   ],
+   "VPB": [
+    "ventricular premature beat",
+    "17338001"
+   ],
+   "VPE": [
+    "ventricular preexcitation",
+    "195060002"
+   ],
+   "VET": [
+    "ventricular escape trigeminy",
+    "251180001"
+   ],
+   "WAVN": [
+    "Wandering in the atrioventricalualr node",
+    "195101003"
+   ],
+   "WPW": [
+    "WPW",
+    "74390002"
+   ],
+   "SB": [
+    "Sinus Bradycardia",
+    "426177001"
+   ],
+   "SR": [
+    "Sinus Rhythm",
+    "426783006"
+   ],
+   "AFIB": [
+    "Atrial Fibrillation",
+    "164889003"
+   ],
+   "ST": [
+    "Sinus Tachycardia",
+    "427084000"
+   ],
+   "AF": [
+    "Atrial Flutter",
+    "164890007"
+   ],
+   "SA": [
+    "Sinus Irregularity",
+    "427393009"
+   ],
+   "SVT": [
+    "Supraventricular Tachycardia",
+    "426761007"
+   ],
+   "AT": [
+    "Atrial Tachycardia",
+    "713422000"
+   ],
+   "AVNRT": [
+    "Atrioventricular  Node Reentrant Tachycardia",
+    "233896004"
+   ],
+   "AVRT": [
+    "Atrioventricular Reentrant Tachycardia",
+    "233897008"
+   ],
+   "SAAWR": [
+    "Sinus Atrium to Atrial Wandering Rhythm",
+    "195101003"
+   ]
+  }
+ },
+ "addendum": {
+  "added_after_script_run": true,
+  "extra_commands": [
+   "inline analysis (train headers only): timestamp-block label mix, age-0/NaN ID ranges, via python -I with the same manifests",
+   "scratchpad generator for concept_feasibility.csv (reads this file's train label support)"
+  ],
+  "inline_results_train_only": {
+   "timestamp_block": {
+    "n": 811,
+    "id_range": [
+     "JS08344",
+     "JS09373"
+    ],
+    "all_train_ids_in_range_have_timestamp": true,
+    "label_fraction_block_top": {
+     "SB": 0.409,
+     "TWC": 0.206,
+     "AFIB": 0.197,
+     "SR": 0.175,
+     "ST": 0.164
+    },
+    "label_fraction_rest_top": {
+     "SB": 0.368,
+     "SR": 0.184,
+     "AF": 0.184,
+     "ST": 0.164,
+     "TWC": 0.156
+    }
+   },
+   "age0_min_id": 10696,
+   "age_NaN_min_id": 10867,
+   "age0_in_timestamp_block": 0
+  },
+  "superseded_artifact": "inspection_config_run1_strict_parser_superseded.json (first run, parser rejected 811 headers with the optional base time/date; kept, not deleted)",
+  "disclosures": [
+   "one truncated validation-role manifest row was displayed by an early head -c (id, fold, partial role only)",
+   "no .mat file, validation/test/excluded header or waveform was opened"
+  ],
+  "limitations": [
+   "train-role headers only",
+   "units/missing-value conventions undocumented locally",
+   "amplitude calibration unverifiable from headers",
+   "no expert or reference annotations available",
+   "timestamp meaning unknown",
+   "concept methods are candidates, not validated"
+  ],
+  "outputs": [
+   "metadata_inventory.md",
+   "concept_feasibility.csv",
+   "protocol_clarifications.md",
+   "inspection_config.json"
+  ]
+ }
+}

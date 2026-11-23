@@ -1,0 +1,18 @@
+{
+ "previous_run": "results\\xai_ig\\run_20261120_030747",
+ "previous_results_sha256_prefix": "4b5dd1a52f705528",
+ "previous_attributions_sha256": "7038eec047f0d9dd44f513d561728ef2451bc1c3b274e961d8920db86841a853",
+ "checkpoint_sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72",
+ "intervention": "inference-only, in memory: LeadAttention gates replaced by one gate per record = mean over leads of the record's own gates (detached); checkpoint untouched",
+ "target": "the ORIGINAL predicted class index of each pair (fixed)",
+ "ig": {
+  "baseline": "zero in normalised space",
+  "steps": 64,
+  "rule": "midpoint"
+ },
+ "pairs_file": "xai_ig run pairs.csv (same 160 pairs)",
+ "code_sha256": {
+  "scripts/xai_attention_analysis.py": "455454ba8e0551c700408d7439e7906fbc09ba0b2b5b487c4f6112f26d4c21f3",
+  "src/ecg_concept/attribution.py": "e9b037297c200c07dbdbe7513ebb24393ac245159d2b2a9c55ef00cdeec33f89"
+ }
+}

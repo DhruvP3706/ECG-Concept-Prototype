@@ -1,0 +1,61 @@
+{
+ "checks": {
+  "backbone_state_unchanged_during_embedding": true,
+  "backbone_ckpt_sha256_matches_declared": true,
+  "no_train_val_id_overlap": true,
+  "no_train_val_dup_group_overlap": true,
+  "no_test_or_excluded_records_in_caches": true,
+  "roles_only_train_validation": true,
+  "embedding_scaler_fit_on_train_only": true,
+  "concept_scaler_fit_on_accepted_train_only": true,
+  "no_nan_in_predictions": true,
+  "cache_alignment_spot_check_300_ids": true,
+  "prototype_logits_identity_max_abs_diff": 7.62939453125e-06,
+  "prototype_head_inputs_similarities_only": true,
+  "concept_predictor_frozen_during_head_training": true,
+  "reproducibility_seed42_rerun_max_abs_diff": {
+   "B_embedding_linear": 0.0,
+   "C2_concept_only": 0.0,
+   "D_prototype": 0.0,
+   "CTRL_mask_only": 0.0,
+   "CTRL_extracted_target": 0.0,
+   "concept_Zhat_max_abs_diff": 0.0
+  },
+  "extraction_matches_frozen_config": true
+ },
+ "prototype_checks": {
+  "42": {
+   "tau": 0.12243392381716778,
+   "logit_identity_max_abs_diff": 7.62939453125e-06,
+   "prototypes_never_nearest_in_val": 0,
+   "max_usage_fraction": 0.25738111336488617,
+   "min_pairwise_dist_std": 0.5035146309095735,
+   "pairs_closer_than_0.25_std": 0,
+   "pairs_similarity_corr_gt_0.95": 0,
+   "anchors_all_training_ids": true,
+   "n_unique_anchors": 16
+  },
+  "43": {
+   "tau": 0.12336929998550517,
+   "logit_identity_max_abs_diff": 7.62939453125e-06,
+   "prototypes_never_nearest_in_val": 0,
+   "max_usage_fraction": 0.2979490646833446,
+   "min_pairwise_dist_std": 0.582215630037956,
+   "pairs_closer_than_0.25_std": 0,
+   "pairs_similarity_corr_gt_0.95": 0,
+   "anchors_all_training_ids": true,
+   "n_unique_anchors": 16
+  },
+  "44": {
+   "tau": 0.11848544474769762,
+   "logit_identity_max_abs_diff": 7.62939453125e-06,
+   "prototypes_never_nearest_in_val": 0,
+   "max_usage_fraction": 0.24453459544737435,
+   "min_pairwise_dist_std": 0.4600110976151925,
+   "pairs_closer_than_0.25_std": 0,
+   "pairs_similarity_corr_gt_0.95": 0,
+   "anchors_all_training_ids": true,
+   "n_unique_anchors": 16
+  }
+ }
+}

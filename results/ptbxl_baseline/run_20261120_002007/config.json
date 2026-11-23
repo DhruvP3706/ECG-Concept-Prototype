@@ -1,0 +1,42 @@
+{
+ "stage": "embed",
+ "variants": [
+  "A_exact",
+  "B_float",
+  "C_scaled"
+ ],
+ "physionet_uv_per_count_hypothesis": 4.88,
+ "chunk": 1000,
+ "batch": 64,
+ "selection_rule": {
+  "metric": "mean over seeds 42,43,44 of validation macro-AUROC of the LINEAR head",
+  "tie_rule": "if best variant exceeds A_exact by < 0.002 macro-AUROC, keep A_exact",
+  "candidates": [
+   "A_exact",
+   "B_float",
+   "C_scaled"
+  ]
+ },
+ "checkpoint": {
+  "path": "models/pretrained/lightv2_ft_fold0.pt",
+  "sha256": "7779719e9480a0181cff99933d91dbea9051eeda470e4bd0b20fa33119d79f72"
+ },
+ "frozen_inputs": {
+  "manifest_train_val_sha256": "2abf08ca72391afc32f4f0fc1ecde24f08b9befeff65843aa58b01ab6e2a9d24",
+  "benchmark_config_sha256": "3c59a5c4604beb070167af70b792ad287935c545cff4d7228707e203860f98c1",
+  "ptbxl_py_sha256": "29e817015ef3b94016821fedffb546dddfab43765ceef4209490063fe3fef539",
+  "ptbxl_reader_py_sha256": "9b595c4e5f9f3d7b52ce0a1af7961bba498b56becc239962e4053c18d8b57c8a"
+ },
+ "eligible": {
+  "train": 16289,
+  "validation": 2034
+ },
+ "label_vocabulary": [
+  "NORM",
+  "MI",
+  "STTC",
+  "CD",
+  "HYP"
+ ],
+ "fold10_waveforms_read": 0
+}
